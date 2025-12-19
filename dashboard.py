@@ -488,7 +488,11 @@ def module_dashboard(df):
     with c_chart2:
         st.subheader("Tipos de Terapia")
         if 'TIPO DE TERAPIAS' in df_view.columns:
-            therapy_data = df_view['TIPO DE TERAPIAS'].value_counts().reset_index()
+            # Normalizar datos para evitar duplicados
+            df_therapy_chart = df_view.copy()
+            df_therapy_chart['TIPO DE TERAPIAS'] = df_therapy_chart['TIPO DE TERAPIAS'].astype(str).str.strip().str.upper()
+            
+            therapy_data = df_therapy_chart['TIPO DE TERAPIAS'].value_counts().reset_index()
             therapy_data.columns = ['Tipo', 'Cantidad']
             fig_pie = px.pie(therapy_data, values='Cantidad', names='Tipo', hole=0.5, color_discrete_sequence=px.colors.qualitative.Pastel)
             st.plotly_chart(fig_pie, use_container_width=True)
@@ -531,61 +535,88 @@ def module_rutas(df):
             selected_prof = st.selectbox("Profesional:", profs_available)
             
             if selected_prof:
-                df_prof = df[df['PROFESIONAL'] == selected_prof]
+                # Filtrar solo pacientes con vigencia activa (tienen fecha de inicio)
+                df_prof = df[df['PROFESIONAL'] == selected_prof].copy()
                 
-                # Metric 1: Total Patients
-                st.metric("Pacientes Asignados", len(df_prof))
+                # Filtrar pacientes con fecha de inicio válida
+                if 'FECHA DE INGRESO' in df_prof.columns:
+                    df_prof = df_prof[
+                        (df_prof['FECHA DE INGRESO'].notna()) & 
+                        (df_prof['FECHA DE INGRESO'].astype(str).str.strip() != '') &
+                        (df_prof['FECHA DE INGRESO'].astype(str).str.lower() != 'nan')
+                    ]
+                
+                # Metric 1: Total Patients (solo activos)
+                st.metric("Pacientes Activos", len(df_prof))
                 
                 # Metric 2: Total Sessions
                 sessions = df_prof['CANTIDAD'].sum() if 'CANTIDAD' in df_prof.columns else 0
                 st.metric("Total Sesiones", int(sessions))
                 
                 st.divider()
-                st.info("Descargue la hoja de ruta lista para imprimir.")
                 
-                # Pre-generate PDF for direct download (Single Click)
-                pdf_bytes = create_route_pdf(df_prof, selected_prof)
-                
-                st.download_button(
-                    label=f"⬇️ Descargar Ruta PDF",
-                    data=pdf_bytes,
-                    file_name=f"Ruta_{selected_prof.replace(' ', '_')}.pdf",
-                    mime="application/pdf",
-                    type="primary",
-                    use_container_width=True
-                )
+                if len(df_prof) > 0:
+                    st.info("Descargue la hoja de ruta lista para imprimir.")
+                    
+                    # Pre-generate PDF for direct download (Single Click)
+                    pdf_bytes = create_route_pdf(df_prof, selected_prof)
+                    
+                    st.download_button(
+                        label=f"⬇️ Descargar Ruta PDF",
+                        data=pdf_bytes,
+                        file_name=f"Ruta_{selected_prof.replace(' ', '_')}.pdf",
+                        mime="application/pdf",
+                        type="primary",
+                        use_container_width=True
+                    )
+                else:
+                    st.warning("⚠️ Este profesional no tiene pacientes activos (con fecha de inicio).")
 
         with c_view:
             if selected_prof:
+                # Usar el mismo df_prof filtrado
+                df_prof_filtered = df[df['PROFESIONAL'] == selected_prof].copy()
+                
+                # Aplicar el mismo filtro de vigencia
+                if 'FECHA DE INGRESO' in df_prof_filtered.columns:
+                    df_prof_filtered = df_prof_filtered[
+                        (df_prof_filtered['FECHA DE INGRESO'].notna()) & 
+                        (df_prof_filtered['FECHA DE INGRESO'].astype(str).str.strip() != '') &
+                        (df_prof_filtered['FECHA DE INGRESO'].astype(str).str.lower() != 'nan')
+                    ]
+                
                 st.markdown(f"### 📊 Estadísticas: {selected_prof}")
                 
-                # Charts
-                row1_1, row1_2 = st.columns(2)
-                
-                with row1_1:
-                    st.markdown("**Distribución por EPS**")
-                    if 'EPS' in df_prof.columns:
-                        eps_counts = df_prof['EPS'].value_counts().reset_index()
-                        eps_counts.columns = ['EPS', 'Pacientes']
-                        fig_eps = px.pie(eps_counts, values='Pacientes', names='EPS', hole=0.4)
-                        fig_eps.update_layout(margin=dict(t=0, b=0, l=0, r=0), height=250)
-                        st.plotly_chart(fig_eps, use_container_width=True)
-                        
-                with row1_2:
-                    st.markdown("**Tipos de Usuario**")
-                    if 'TIPO DE USUARIO' in df_prof.columns:
-                        type_counts = df_prof['TIPO DE USUARIO'].value_counts().reset_index()
-                        type_counts.columns = ['Tipo', 'Pacientes']
-                        fig_type = px.bar(type_counts, x='Tipo', y='Pacientes', color='Tipo')
-                        fig_type.update_layout(margin=dict(t=0, b=0, l=0, r=0), height=250, showlegend=False)
-                        st.plotly_chart(fig_type, use_container_width=True)
-                
-                st.markdown("**Detalle de Pacientes**")
-                st.dataframe(
-                    df_prof[['NOMBRE', 'APELLIDOS', 'MUNICIPIO', 'EPS', 'TIPO DE USUARIO', 'CANTIDAD']], 
-                    use_container_width=True, 
-                    hide_index=True
-                )
+                if len(df_prof_filtered) == 0:
+                    st.info("No hay pacientes activos para mostrar estadísticas.")
+                else:
+                    # Charts
+                    row1_1, row1_2 = st.columns(2)
+                    
+                    with row1_1:
+                        st.markdown("**Distribución por EPS**")
+                        if 'EPS' in df_prof_filtered.columns:
+                            eps_counts = df_prof_filtered['EPS'].value_counts().reset_index()
+                            eps_counts.columns = ['EPS', 'Pacientes']
+                            fig_eps = px.pie(eps_counts, values='Pacientes', names='EPS', hole=0.4)
+                            fig_eps.update_layout(margin=dict(t=0, b=0, l=0, r=0), height=250)
+                            st.plotly_chart(fig_eps, use_container_width=True)
+                            
+                    with row1_2:
+                        st.markdown("**Tipos de Usuario**")
+                        if 'TIPO DE USUARIO' in df_prof_filtered.columns:
+                            type_counts = df_prof_filtered['TIPO DE USUARIO'].value_counts().reset_index()
+                            type_counts.columns = ['Tipo', 'Pacientes']
+                            fig_type = px.bar(type_counts, x='Tipo', y='Pacientes', color='Tipo')
+                            fig_type.update_layout(margin=dict(t=0, b=0, l=0, r=0), height=250, showlegend=False)
+                            st.plotly_chart(fig_type, use_container_width=True)
+                    
+                    st.markdown("**Detalle de Pacientes Activos**")
+                    st.dataframe(
+                        df_prof_filtered[['NOMBRE', 'APELLIDOS', 'MUNICIPIO', 'EPS', 'TIPO DE USUARIO', 'CANTIDAD']], 
+                        use_container_width=True, 
+                        hide_index=True
+                    )
 
     with tab2:
         st.warning("⚠️ Esta acción generará un archivo ZIP conteniendo un PDF individual para CADA profesional activo.")
@@ -610,6 +641,139 @@ def module_rutas(df):
                         )
                     else:
                         st.error("Error al generar el ZIP.")
+
+def module_pending_events(df):
+    st.markdown("## ⏳ Eventos Pendientes de Autorización")
+    st.markdown("Pacientes sin fecha de inicio - En espera de autorización de EPS.")
+    
+    if 'FECHA DE INGRESO' not in df.columns:
+        st.warning("No se encontró la columna 'FECHA DE INGRESO' en los datos.")
+        return
+    
+    # Filtrar pacientes SIN fecha de inicio (eventos pendientes)
+    df_pending = df[
+        (df['FECHA DE INGRESO'].isna()) | 
+        (df['FECHA DE INGRESO'].astype(str).str.strip() == '') |
+        (df['FECHA DE INGRESO'].astype(str).str.lower() == 'nan')
+    ].copy()
+    
+    if len(df_pending) == 0:
+        st.success("✅ No hay eventos pendientes. Todos los pacientes tienen autorización.")
+        return
+    
+    # KPIs
+    st.markdown("### Resumen")
+    c1, c2, c3, c4 = st.columns(4)
+    
+    total_pending = len(df_pending)
+    pending_eps = df_pending['EPS'].nunique() if 'EPS' in df_pending.columns else 0
+    pending_profs = df_pending['PROFESIONAL'].nunique() if 'PROFESIONAL' in df_pending.columns else 0
+    pending_sessions = df_pending['CANTIDAD'].sum() if 'CANTIDAD' in df_pending.columns else 0
+    
+    c1.metric("Total Pendientes", total_pending)
+    c2.metric("EPS Involucradas", pending_eps)
+    c3.metric("Profesionales Afectados", pending_profs)
+    c4.metric("Sesiones en Espera", int(pending_sessions))
+    
+    st.markdown("---")
+    
+    # Tabs for different views
+    tab1, tab2, tab3 = st.tabs(["📋 Lista Completa", "🏥 Por EPS", "👨‍⚕️ Por Profesional"])
+    
+    with tab1:
+        st.markdown("#### Todos los Eventos Pendientes")
+        
+        # Filters
+        col_f1, col_f2 = st.columns(2)
+        with col_f1:
+            eps_filter = st.multiselect(
+                "Filtrar por EPS:",
+                options=sorted(df_pending['EPS'].unique()) if 'EPS' in df_pending.columns else [],
+                key="pending_eps_filter"
+            )
+        with col_f2:
+            prof_filter = st.multiselect(
+                "Filtrar por Profesional:",
+                options=sorted(df_pending['PROFESIONAL'].unique()) if 'PROFESIONAL' in df_pending.columns else [],
+                key="pending_prof_filter"
+            )
+        
+        # Apply filters
+        df_display = df_pending.copy()
+        if eps_filter:
+            df_display = df_display[df_display['EPS'].isin(eps_filter)]
+        if prof_filter:
+            df_display = df_display[df_display['PROFESIONAL'].isin(prof_filter)]
+        
+        # Display table
+        display_cols = ['NOMBRE', 'APELLIDOS', 'EPS', 'PROFESIONAL', 'TIPO DE USUARIO', 'MUNICIPIO', 'CANTIDAD']
+        available_cols = [col for col in display_cols if col in df_display.columns]
+        
+        st.dataframe(
+            df_display[available_cols],
+            use_container_width=True,
+            hide_index=True
+        )
+        
+        # Download CSV
+        csv = df_display.to_csv(index=False).encode('utf-8')
+        st.download_button(
+            "⬇️ Descargar Lista (CSV)",
+            csv,
+            "eventos_pendientes.csv",
+            "text/csv"
+        )
+    
+    with tab2:
+        st.markdown("#### Agrupado por EPS")
+        
+        if 'EPS' in df_pending.columns:
+            eps_summary = df_pending.groupby('EPS').agg({
+                'NOMBRE': 'count',
+                'CANTIDAD': 'sum'
+            }).reset_index()
+            eps_summary.columns = ['EPS', 'Pacientes', 'Sesiones']
+            eps_summary = eps_summary.sort_values('Pacientes', ascending=False)
+            
+            # Chart
+            fig = px.bar(
+                eps_summary,
+                x='EPS',
+                y='Pacientes',
+                title='Eventos Pendientes por EPS',
+                color='Pacientes',
+                color_continuous_scale='Reds'
+            )
+            st.plotly_chart(fig, use_container_width=True)
+            
+            # Table
+            st.dataframe(eps_summary, use_container_width=True, hide_index=True)
+    
+    with tab3:
+        st.markdown("#### Agrupado por Profesional")
+        
+        if 'PROFESIONAL' in df_pending.columns:
+            prof_summary = df_pending.groupby('PROFESIONAL').agg({
+                'NOMBRE': 'count',
+                'CANTIDAD': 'sum'
+            }).reset_index()
+            prof_summary.columns = ['Profesional', 'Pacientes', 'Sesiones']
+            prof_summary = prof_summary.sort_values('Pacientes', ascending=False)
+            
+            # Chart
+            fig = px.bar(
+                prof_summary,
+                x='Profesional',
+                y='Pacientes',
+                title='Eventos Pendientes por Profesional',
+                color='Sesiones',
+                color_continuous_scale='Oranges'
+            )
+            fig.update_layout(xaxis_tickangle=-45)
+            st.plotly_chart(fig, use_container_width=True)
+            
+            # Table
+            st.dataframe(prof_summary, use_container_width=True, hide_index=True)
 
 def module_data_explorer(df):
     st.markdown("## 🔎 Explorador de Datos y Reportes")
@@ -723,7 +887,7 @@ def main():
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🧭 Navegación")
     
-    options = ["Dashboard Analítico", "Gestión de Rutas", "Explorador de Datos"]
+    options = ["Dashboard Analítico", "Gestión de Rutas", "Eventos Pendientes", "Explorador de Datos"]
     selection = st.sidebar.radio("Ir a:", options, label_visibility="collapsed")
     
     st.sidebar.info(f"📁 Archivo: {sheet_input[:20]}...")
@@ -733,6 +897,8 @@ def main():
         module_dashboard(df)
     elif selection == "Gestión de Rutas":
         module_rutas(df)
+    elif selection == "Eventos Pendientes":
+        module_pending_events(df)
     elif selection == "Explorador de Datos":
         module_data_explorer(df)
 

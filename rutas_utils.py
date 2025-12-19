@@ -49,6 +49,11 @@ def create_route_pdf(df_filtered, professional_name):
     
     # Iterate patients
     for index, row in df_filtered.iterrows():
+        # Verificar vigencia - saltar si no tiene fecha de inicio (eventos pendientes)
+        f_ingreso = str(row.get('FECHA DE INGRESO', '')).strip()
+        if not f_ingreso or f_ingreso == '' or f_ingreso.lower() == 'nan':
+            continue  # Saltar este paciente
+        
         # Extract Data
         name = clean_text(f"{row.get('NOMBRE', '')} {row.get('APELLIDOS', '')}")
         address = clean_text(str(row.get('DIRECCION', '')))
@@ -62,8 +67,7 @@ def create_route_pdf(df_filtered, professional_name):
         eps = clean_text(str(row.get('EPS', '')))
         diagnosis = clean_text(str(row.get('DIAGNOSTICO', '')))
 
-
-        f_ingreso = clean_text(str(row.get('FECHA DE INGRESO', '')))
+        f_ingreso = clean_text(f_ingreso)
         f_egreso = clean_text(str(row.get('FECHA DE EGRESO', '')))
 
         # --- Card Start ---
