@@ -706,7 +706,7 @@ def module_pending_events(df):
             df_display = df_display[df_display['PROFESIONAL'].isin(prof_filter)]
         
         # Display table
-        display_cols = ['NOMBRE', 'APELLIDOS', 'EPS', 'PROFESIONAL', 'TIPO DE USUARIO', 'MUNICIPIO', 'CANTIDAD']
+        display_cols = ['NOMBRE', 'APELLIDOS', 'TIPO DE TERAPIAS', 'EPS', 'PROFESIONAL', 'TIPO DE USUARIO', 'MUNICIPIO', 'CANTIDAD']
         available_cols = [col for col in display_cols if col in df_display.columns]
         
         st.dataframe(
