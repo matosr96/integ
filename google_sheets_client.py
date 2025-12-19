@@ -1,20 +1,34 @@
 import gspread
 import os
+import json
 
 class GoogleSheetsClient:
     def __init__(self, credentials_path='credentials.json'):
         """
         Inicializa el cliente de Google Sheets.
+        Soporta tanto credenciales locales como Streamlit Cloud secrets.
         
         Args:
             credentials_path (str): Ruta al archivo JSON de credenciales de servicio.
         """
+        try:
+            # Intentar cargar desde Streamlit secrets (cuando está desplegado)
+            import streamlit as st
+            if hasattr(st, 'secrets') and 'gcp_service_account' in st.secrets:
+                credentials_dict = dict(st.secrets["gcp_service_account"])
+                self.gc = gspread.service_account_from_dict(credentials_dict)
+                print("Autenticación exitosa con Google Sheets (Streamlit Secrets).")
+                return
+        except (ImportError, KeyError, FileNotFoundError):
+            pass  # Continuar con archivo local
+        
+        # Cargar desde archivo local (desarrollo)
         if not os.path.exists(credentials_path):
             raise FileNotFoundError(f"No se encontró el archivo de credenciales en: {credentials_path}")
             
         try:
             self.gc = gspread.service_account(filename=credentials_path)
-            print("Autenticación exitosa con Google Sheets.")
+            print("Autenticación exitosa con Google Sheets (archivo local).")
         except Exception as e:
             raise Exception(f"Error al autenticar con Google Sheets: {e}")
 
