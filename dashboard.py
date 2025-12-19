@@ -90,32 +90,307 @@ class BasePDF(FPDF):
         self.cell(0, 10, f'Página {self.page_no()}', 0, 0, 'C')
 
 def create_executive_pdf(df_filtered, kpi_data):
+    """Genera un reporte ejecutivo completo y profesional"""
     pdf = BasePDF()
+    
+    # ==================== PORTADA ====================
     pdf.add_page()
-    pdf.set_font("Arial", size=12)
-    
-    # KPIs
-    pdf.set_font("Arial", 'B', 14)
-    pdf.cell(0, 10, "1. Resumen Ejecutivo", 0, 1)
-    pdf.set_font("Arial", size=11)
-    for key, value in kpi_data.items():
-        pdf.cell(0, 8, f"{key}: {value}", 0, 1)
+    pdf.ln(40)
+    pdf.set_font("Arial", 'B', 24)
+    pdf.cell(0, 15, "REPORTE APOYO TERAPEUTICO", 0, 1, 'C')
     pdf.ln(10)
+    pdf.set_font("Arial", '', 12)
+    pdf.cell(0, 8, f"Periodo: {datetime.now().strftime('%B %Y')}", 0, 1, 'C')
+    pdf.cell(0, 8, f"Fecha de generacion: {datetime.now().strftime('%d/%m/%Y')}", 0, 1, 'C')
+    pdf.ln(60)
+    pdf.set_font("Arial", 'I', 10)
+    pdf.cell(0, 6, "Documento Confidencial", 0, 1, 'C')
+    pdf.cell(0, 6, "Sistema de Gestion Terapeutica", 0, 1, 'C')
     
-    # EPS Summary
-    pdf.set_font("Arial", 'B', 14)
-    pdf.cell(0, 10, "2. Distribución por EPS", 0, 1)
-    pdf.set_font("Arial", size=10)
+    # ==================== RESUMEN EJECUTIVO ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "1. RESUMEN EJECUTIVO", 0, 1)
+    pdf.ln(3)
+    
+    # KPIs Principales en cajas
+    pdf.set_font("Arial", 'B', 11)
+    total_patients = len(df_filtered)
+    total_sessions = df_filtered['CANTIDAD'].sum() if 'CANTIDAD' in df_filtered.columns else 0
+    active_profs = df_filtered['PROFESIONAL'].nunique() if 'PROFESIONAL' in df_filtered.columns else 0
+    municipalities = df_filtered['MUNICIPIO'].nunique() if 'MUNICIPIO' in df_filtered.columns else 0
+    
+    # Fila 1 de KPIs
+    pdf.set_fill_color(230, 240, 255)
+    pdf.cell(90, 10, "Total Pacientes Activos", 1, 0, 'L', 1)
+    pdf.set_font("Arial", '', 11)
+    pdf.cell(90, 10, f"{total_patients:,}", 1, 1, 'C')
+    
+    pdf.set_font("Arial", 'B', 11)
+    pdf.cell(90, 10, "Sesiones Programadas", 1, 0, 'L', 1)
+    pdf.set_font("Arial", '', 11)
+    pdf.cell(90, 10, f"{int(total_sessions):,}", 1, 1, 'C')
+    
+    pdf.set_font("Arial", 'B', 11)
+    pdf.cell(90, 10, "Profesionales Activos", 1, 0, 'L', 1)
+    pdf.set_font("Arial", '', 11)
+    pdf.cell(90, 10, f"{active_profs}", 1, 1, 'C')
+    
+    pdf.set_font("Arial", 'B', 11)
+    pdf.cell(90, 10, "Cobertura Geografica", 1, 0, 'L', 1)
+    pdf.set_font("Arial", '', 11)
+    pdf.cell(90, 10, f"{municipalities} municipios", 1, 1, 'C')
+    
+    pdf.ln(5)
+    
+    # Promedio de sesiones por paciente
+    avg_sessions = total_sessions / total_patients if total_patients > 0 else 0
+    pdf.set_font("Arial", 'B', 11)
+    pdf.cell(90, 10, "Promedio Sesiones/Paciente", 1, 0, 'L', 1)
+    pdf.set_font("Arial", '', 11)
+    pdf.cell(90, 10, f"{avg_sessions:.1f}", 1, 1, 'C')
+    
+    # Promedio de pacientes por profesional
+    avg_patients_prof = total_patients / active_profs if active_profs > 0 else 0
+    pdf.set_font("Arial", 'B', 11)
+    pdf.cell(90, 10, "Promedio Pacientes/Profesional", 1, 0, 'L', 1)
+    pdf.set_font("Arial", '', 11)
+    pdf.cell(90, 10, f"{avg_patients_prof:.1f}", 1, 1, 'C')
+    
+    # ==================== DISTRIBUCION POR EPS ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "2. ANALISIS POR EPS", 0, 1)
+    pdf.ln(3)
+    
     if 'EPS' in df_filtered.columns:
-        eps_counts = df_filtered['EPS'].value_counts().head(10)
-        pdf.cell(120, 8, "EPS", 1)
-        pdf.cell(40, 8, "Pacientes", 1)
-        pdf.ln()
-        for eps, count in eps_counts.items():
-            eps_str = str(eps)[:50].encode('latin-1', 'replace').decode('latin-1')
-            pdf.cell(120, 8, eps_str, 1)
-            pdf.cell(40, 8, str(count), 1)
-            pdf.ln()
+        eps_counts = df_filtered['EPS'].value_counts()
+        eps_sessions = df_filtered.groupby('EPS')['CANTIDAD'].sum() if 'CANTIDAD' in df_filtered.columns else None
+        
+        pdf.set_font("Arial", 'B', 10)
+        pdf.set_fill_color(200, 220, 255)
+        pdf.cell(80, 8, "EPS", 1, 0, 'C', 1)
+        pdf.cell(30, 8, "Pacientes", 1, 0, 'C', 1)
+        pdf.cell(25, 8, "%", 1, 0, 'C', 1)
+        pdf.cell(35, 8, "Sesiones", 1, 1, 'C', 1)
+        
+        pdf.set_font("Arial", '', 9)
+        for eps in eps_counts.index[:15]:  # Top 15
+            eps_str = str(eps)[:35].encode('latin-1', 'replace').decode('latin-1')
+            count = eps_counts[eps]
+            percentage = (count / total_patients * 100) if total_patients > 0 else 0
+            sessions = int(eps_sessions[eps]) if eps_sessions is not None else 0
+            
+            pdf.cell(80, 7, eps_str, 1, 0, 'L')
+            pdf.cell(30, 7, f"{count:,}", 1, 0, 'C')
+            pdf.cell(25, 7, f"{percentage:.1f}%", 1, 0, 'C')
+            pdf.cell(35, 7, f"{sessions:,}", 1, 1, 'C')
+        
+        # Total row
+        pdf.set_font("Arial", 'B', 9)
+        pdf.set_fill_color(240, 240, 240)
+        pdf.cell(80, 7, "TOTAL", 1, 0, 'L', 1)
+        pdf.cell(30, 7, f"{total_patients:,}", 1, 0, 'C', 1)
+        pdf.cell(25, 7, "100%", 1, 0, 'C', 1)
+        pdf.cell(35, 7, f"{int(total_sessions):,}", 1, 1, 'C', 1)
+    
+    # ==================== TIPOS DE USUARIO ====================
+    pdf.ln(10)
+    pdf.set_font("Arial", 'B', 14)
+    pdf.cell(0, 10, "3. DISTRIBUCION POR TIPO DE USUARIO", 0, 1)
+    pdf.ln(3)
+    
+    if 'TIPO DE USUARIO' in df_filtered.columns:
+        # Normalizar datos para evitar duplicados
+        df_usertype = df_filtered.copy()
+        df_usertype['TIPO DE USUARIO'] = df_usertype['TIPO DE USUARIO'].astype(str).str.strip().str.upper()
+        
+        type_counts = df_usertype['TIPO DE USUARIO'].value_counts()
+        
+        pdf.set_font("Arial", 'B', 10)
+        pdf.set_fill_color(200, 220, 255)
+        pdf.cell(100, 8, "Tipo de Usuario", 1, 0, 'C', 1)
+        pdf.cell(40, 8, "Cantidad", 1, 0, 'C', 1)
+        pdf.cell(30, 8, "Porcentaje", 1, 1, 'C', 1)
+        
+        pdf.set_font("Arial", '', 10)
+        for user_type, count in type_counts.items():
+            type_str = str(user_type).encode('latin-1', 'replace').decode('latin-1')
+            percentage = (count / total_patients * 100) if total_patients > 0 else 0
+            pdf.cell(100, 7, type_str, 1, 0, 'L')
+            pdf.cell(40, 7, f"{count:,}", 1, 0, 'C')
+            pdf.cell(30, 7, f"{percentage:.1f}%", 1, 1, 'C')
+    
+    # ==================== TIPOS DE TERAPIA ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "4. ANALISIS DE SERVICIOS", 0, 1)
+    pdf.ln(3)
+    
+    if 'TIPO DE TERAPIAS' in df_filtered.columns:
+        # Normalizar datos para evitar duplicados (espacios, mayúsculas)
+        df_therapy = df_filtered.copy()
+        df_therapy['TIPO DE TERAPIAS'] = df_therapy['TIPO DE TERAPIAS'].astype(str).str.strip().str.upper()
+        
+        therapy_counts = df_therapy['TIPO DE TERAPIAS'].value_counts()
+        therapy_sessions = df_therapy.groupby('TIPO DE TERAPIAS')['CANTIDAD'].sum() if 'CANTIDAD' in df_therapy.columns else None
+        
+        pdf.set_font("Arial", 'B', 10)
+        pdf.set_fill_color(200, 220, 255)
+        pdf.cell(60, 8, "Tipo de Terapia", 1, 0, 'C', 1)
+        pdf.cell(35, 8, "Pacientes", 1, 0, 'C', 1)
+        pdf.cell(35, 8, "Sesiones", 1, 0, 'C', 1)
+        pdf.cell(40, 8, "Promedio/Pac", 1, 1, 'C', 1)
+        
+        pdf.set_font("Arial", '', 10)
+        for therapy in therapy_counts.index:
+            therapy_str = str(therapy).encode('latin-1', 'replace').decode('latin-1')
+            count = therapy_counts[therapy]
+            sessions = int(therapy_sessions[therapy]) if therapy_sessions is not None else 0
+            avg = sessions / count if count > 0 else 0
+            
+            pdf.cell(60, 7, therapy_str, 1, 0, 'L')
+            pdf.cell(35, 7, f"{count:,}", 1, 0, 'C')
+            pdf.cell(35, 7, f"{sessions:,}", 1, 0, 'C')
+            pdf.cell(40, 7, f"{avg:.1f}", 1, 1, 'C')
+    
+    # ==================== CARGA POR PROFESIONAL ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "5. CARGA DE TRABAJO POR PROFESIONAL", 0, 1)
+    pdf.ln(3)
+    
+    if 'PROFESIONAL' in df_filtered.columns and 'MUNICIPIO' in df_filtered.columns:
+        # Obtener datos por profesional
+        prof_data = []
+        for prof in sorted(df_filtered['PROFESIONAL'].unique()):
+            df_prof = df_filtered[df_filtered['PROFESIONAL'] == prof]
+            count = len(df_prof)
+            sessions = int(df_prof['CANTIDAD'].sum()) if 'CANTIDAD' in df_prof.columns else 0
+            avg = sessions / count if count > 0 else 0
+            # Obtener municipios únicos donde trabaja
+            municipios = df_prof['MUNICIPIO'].unique()
+            mun_str = ', '.join([str(m)[:20] for m in municipios[:3]])  # Max 3 municipios
+            if len(municipios) > 3:
+                mun_str += f" (+{len(municipios)-3})"
+            
+            prof_data.append({
+                'nombre': str(prof),
+                'pacientes': count,
+                'sesiones': sessions,
+                'promedio': avg,
+                'municipios': mun_str
+            })
+        
+        # Encabezados
+        pdf.set_font("Arial", 'B', 8)
+        pdf.set_fill_color(200, 220, 255)
+        pdf.cell(55, 7, "Profesional", 1, 0, 'C', 1)
+        pdf.cell(20, 7, "Pac.", 1, 0, 'C', 1)
+        pdf.cell(20, 7, "Ses.", 1, 0, 'C', 1)
+        pdf.cell(18, 7, "Prom", 1, 0, 'C', 1)
+        pdf.cell(57, 7, "Municipios", 1, 1, 'C', 1)
+        
+        # Datos
+        pdf.set_font("Arial", '', 7)
+        for item in prof_data:
+            prof_str = item['nombre'][:30].encode('latin-1', 'replace').decode('latin-1')
+            mun_str = item['municipios'].encode('latin-1', 'replace').decode('latin-1')
+            
+            pdf.cell(55, 6, prof_str, 1, 0, 'L')
+            pdf.cell(20, 6, f"{item['pacientes']}", 1, 0, 'C')
+            pdf.cell(20, 6, f"{item['sesiones']}", 1, 0, 'C')
+            pdf.cell(18, 6, f"{item['promedio']:.1f}", 1, 0, 'C')
+            pdf.cell(57, 6, mun_str, 1, 1, 'L')
+    
+    # ==================== COBERTURA GEOGRAFICA ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "6. COBERTURA GEOGRAFICA", 0, 1)
+    pdf.ln(3)
+    
+    if 'MUNICIPIO' in df_filtered.columns:
+        mun_counts = df_filtered['MUNICIPIO'].value_counts()
+        
+        pdf.set_font("Arial", 'B', 10)
+        pdf.set_fill_color(200, 220, 255)
+        pdf.cell(100, 8, "Municipio", 1, 0, 'C', 1)
+        pdf.cell(35, 8, "Pacientes", 1, 0, 'C', 1)
+        pdf.cell(35, 8, "Porcentaje", 1, 1, 'C', 1)
+        
+        pdf.set_font("Arial", '', 9)
+        for mun in mun_counts.index[:15]:
+            mun_str = str(mun)[:45].encode('latin-1', 'replace').decode('latin-1')
+            count = mun_counts[mun]
+            percentage = (count / total_patients * 100) if total_patients > 0 else 0
+            
+            pdf.cell(100, 7, mun_str, 1, 0, 'L')
+            pdf.cell(35, 7, f"{count:,}", 1, 0, 'C')
+            pdf.cell(35, 7, f"{percentage:.1f}%", 1, 1, 'C')
+    
+    # ==================== INDICADORES CLAVE ====================
+    pdf.ln(10)
+    pdf.set_font("Arial", 'B', 14)
+    pdf.cell(0, 10, "7. INDICADORES DE GESTION", 0, 1)
+    pdf.ln(3)
+    
+    # Calcular indicadores
+    eps_count = df_filtered['EPS'].nunique() if 'EPS' in df_filtered.columns else 0
+    therapy_types = df_filtered['TIPO DE TERAPIAS'].nunique() if 'TIPO DE TERAPIAS' in df_filtered.columns else 0
+    
+    pdf.set_font("Arial", '', 10)
+    indicators = [
+        ("Numero de EPS atendidas", eps_count),
+        ("Tipos de terapia ofrecidos", therapy_types),
+        ("Municipios con cobertura", municipalities),
+        ("Tasa de ocupacion promedio", f"{(avg_patients_prof / 30 * 100):.1f}%"),
+        ("Sesiones por profesional", f"{(total_sessions / active_profs):.1f}" if active_profs > 0 else "0"),
+    ]
+    
+    pdf.set_fill_color(245, 245, 245)
+    for indicator, value in indicators:
+        pdf.cell(120, 8, indicator, 1, 0, 'L', 1)
+        pdf.cell(50, 8, str(value), 1, 1, 'C')
+    
+    # ==================== CONCLUSIONES ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "8. CONCLUSIONES", 0, 1)
+    pdf.ln(5)
+    
+    pdf.set_font("Arial", 'B', 11)
+    pdf.cell(0, 8, "Puntos Destacados:", 0, 1)
+    pdf.set_font("Arial", '', 10)
+    
+    # Generar conclusiones automáticas
+    conclusions = []
+    
+    if total_patients > 0:
+        conclusions.append(f"- Se estan atendiendo {total_patients:,} pacientes activos en el periodo.")
+    
+    if 'EPS' in df_filtered.columns:
+        top_eps = df_filtered['EPS'].value_counts().index[0]
+        top_eps_count = df_filtered['EPS'].value_counts().iloc[0]
+        top_eps_pct = (top_eps_count / total_patients * 100)
+        conclusions.append(f"- {top_eps} es la EPS con mayor volumen ({top_eps_count} pacientes, {top_eps_pct:.1f}%).")
+    
+    if active_profs > 0:
+        conclusions.append(f"- El equipo cuenta con {active_profs} profesionales activos.")
+        if avg_patients_prof > 25:
+            conclusions.append(f"- ALERTA: Carga promedio de {avg_patients_prof:.1f} pacientes/profesional es alta.")
+    
+    if municipalities > 5:
+        conclusions.append(f"- Amplia cobertura geografica en {municipalities} municipios.")
+    
+    for conclusion in conclusions:
+        pdf.multi_cell(0, 6, conclusion.encode('latin-1', 'replace').decode('latin-1'))
+        pdf.ln(2)
+    
+    # Footer final
+    pdf.ln(20)
+    pdf.set_font("Arial", 'I', 9)
+    pdf.cell(0, 6, "--- Fin del Reporte Ejecutivo ---", 0, 1, 'C')
+    
     return pdf.output(dest='S').encode('latin-1', 'replace')
 
 def create_novedades_pdf(df_filtered):
