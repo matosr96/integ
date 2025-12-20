@@ -16,9 +16,9 @@ plt.style.use('ggplot')
 sns.set_palette("husl")
 
 # Custom Modules
-from profesionales_component import render_professionals_tab
-from rutas_utils import create_route_pdf, generate_all_routes_zip
-from trazabilidad_utils import scan_trazabilidades, get_rendicion_stats, load_historical_data_db, load_historical_data_json
+from src.components.profesionales_component import render_professionals_tab
+from src.utils.rutas_utils import create_route_pdf, generate_all_routes_zip
+from src.utils.trazabilidad_utils import scan_trazabilidades, get_rendicion_stats, load_historical_data_db, load_historical_data_json
 
 # --- CONFIG & STYLING ---
 st.set_page_config(
@@ -1532,7 +1532,7 @@ def main():
     elif selection == "Explorador de Datos":
         module_data_explorer(df)
     elif selection == "Análisis Histórico":
-        module_historical_analysis('DATA/PROCESSED_JSON')
+        module_historical_analysis('data/raw/PROCESSED_JSON')
 
 if __name__ == "__main__":
     main()

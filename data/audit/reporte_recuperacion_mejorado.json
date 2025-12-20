@@ -1,0 +1,18 @@
+{
+  "fecha": "2025-12-20T15:05:21.118093",
+  "registros_originales_rechazados": 16,
+  "registros_eliminados_sin_id": 0,
+  "registros_procesados": 16,
+  "recuperacion": {
+    "por_cedula": 2,
+    "por_nombre_exacto": 0,
+    "por_fuzzy_matching": 1,
+    "total": 3
+  },
+  "resultados": {
+    "recuperados": 3,
+    "aun_rechazados": 13,
+    "total_validos_final": 34629
+  },
+  "tasa_recuperacion": "18.8%"
+}

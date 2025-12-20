@@ -1,0 +1,9230 @@
+{
+  "EL PRADO POR": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UCARAMANGA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA CLARA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 29,
+    "total": 30,
+    "confianza": 96.7
+  },
+  "SAN": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 32,
+    "total": 45,
+    "confianza": 71.1
+  },
+  "ALTO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 27,
+    "total": 27,
+    "confianza": 100.0
+  },
+  "LOS ABETOS": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 23,
+    "total": 31,
+    "confianza": 74.2
+  },
+  "CGT LOS VENADOS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "COROZA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BUENOS AIRES": {
+    "municipio": "PURÍSIMA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 46,
+    "total": 46,
+    "confianza": 100.0
+  },
+  "MUNDO NUEVO": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ERNARDO": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ELA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "FRANCISCO": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RECREO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 47,
+    "total": 52,
+    "confianza": 90.4
+  },
+  "ARRIO EL CARMEN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 19,
+    "total": 22,
+    "confianza": 86.4
+  },
+  "EL CARMEN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 44,
+    "total": 61,
+    "confianza": 72.1
+  },
+  "LA INMACULADA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 39,
+    "total": 50,
+    "confianza": 78.0
+  },
+  "BRISALIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "SANTA FE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 61,
+    "total": 62,
+    "confianza": 98.4
+  },
+  "LOS ALMENDROS": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "EL EDEN": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 73,
+    "total": 81,
+    "confianza": 90.1
+  },
+  "EL DORADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 103,
+    "total": 103,
+    "confianza": 100.0
+  },
+  "INDE": {
+    "municipio": "COTORRA",
+    "frecuencia": 39,
+    "total": 39,
+    "confianza": 100.0
+  },
+  "MONTECRISTO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 45,
+    "total": 45,
+    "confianza": 100.0
+  },
+  "ROJAL": {
+    "municipio": "COTORRA",
+    "frecuencia": 20,
+    "total": 23,
+    "confianza": 87.0
+  },
+  "LOSA ROBLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 23,
+    "total": 23,
+    "confianza": 100.0
+  },
+  "NUEVA COLOMBIA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 65,
+    "total": 80,
+    "confianza": 81.2
+  },
+  "REMOLINO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "LAS PALMAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 15,
+    "total": 16,
+    "confianza": 93.8
+  },
+  "ONGOS": {
+    "municipio": "COTORRA",
+    "frecuencia": 46,
+    "total": 46,
+    "confianza": 100.0
+  },
+  "VILLA MELISA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 32,
+    "total": 32,
+    "confianza": 100.0
+  },
+  "SARABANDA": {
+    "municipio": "COTORRA",
+    "frecuencia": 30,
+    "total": 30,
+    "confianza": 100.0
+  },
+  "FLORESTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 32,
+    "total": 32,
+    "confianza": 100.0
+  },
+  "LA CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 111,
+    "total": 124,
+    "confianza": 89.5
+  },
+  "SAN GREGORIO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "JERUSALEN": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 57,
+    "total": 57,
+    "confianza": 100.0
+  },
+  "SAN PEDRO LORICA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "VILLA MARIA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 12,
+    "total": 17,
+    "confianza": 70.6
+  },
+  "SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 118,
+    "total": 120,
+    "confianza": 98.3
+  },
+  "MORROSQUILLO": {
+    "municipio": "COTORRA",
+    "frecuencia": 24,
+    "total": 24,
+    "confianza": 100.0
+  },
+  "ALTO PRADO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 38,
+    "total": 44,
+    "confianza": 86.4
+  },
+  "ABILLAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 40,
+    "total": 40,
+    "confianza": 100.0
+  },
+  "CENTROP": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTA ELENA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 64,
+    "total": 79,
+    "confianza": 81.0
+  },
+  "CACAGUAL": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ERASTEGUI": {
+    "municipio": "CERETÉ",
+    "frecuencia": 34,
+    "total": 41,
+    "confianza": 82.9
+  },
+  "BERASTEGUI": {
+    "municipio": "CERETÉ",
+    "frecuencia": 34,
+    "total": 40,
+    "confianza": 85.0
+  },
+  "BETANCI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "CANTA CLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 24,
+    "total": 24,
+    "confianza": 100.0
+  },
+  "EL ORIENTE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 15,
+    "total": 16,
+    "confianza": 93.8
+  },
+  "ANITA": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "VALLEJUELOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "GARZONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 18,
+    "total": 18,
+    "confianza": 100.0
+  },
+  "LA EQUIS": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "AJO LIMON": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "GRANADA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 14,
+    "total": 20,
+    "confianza": 70.0
+  },
+  "ARRIO LIBERTAD": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "LIBERTAD": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "PRADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 14,
+    "total": 20,
+    "confianza": 70.0
+  },
+  "EL JARDIN": {
+    "municipio": "CERETÉ",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "ELLA VISTA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 102,
+    "total": 102,
+    "confianza": 100.0
+  },
+  "EL SOCORRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 21,
+    "total": 22,
+    "confianza": 95.5
+  },
+  "ONGAMELIA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "CORINTO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "LA ESPERANZA POR LA\nPRIMERA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "WILCHES": {
+    "municipio": "CERETÉ",
+    "frecuencia": 25,
+    "total": 25,
+    "confianza": 100.0
+  },
+  "LAS PALMAS  PRIMERA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "VENUS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 54,
+    "total": 54,
+    "confianza": 100.0
+  },
+  "RR VILCHES": {
+    "municipio": "CERETÉ",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "R SAN ANTERO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CARRILLO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 44,
+    "total": 44,
+    "confianza": 100.0
+  },
+  "ANUEVA": {
+    "municipio": "COTORRA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "VARITAL": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "FATIMA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 38,
+    "total": 38,
+    "confianza": 100.0
+  },
+  "UYA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 41,
+    "total": 41,
+    "confianza": 100.0
+  },
+  "URGOS": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "BOSQUE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 23,
+    "total": 23,
+    "confianza": 100.0
+  },
+  "GUAYABAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 96,
+    "total": 101,
+    "confianza": 95.0
+  },
+  "SALITRAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "ARRIO BOSQUE CENTRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "BOSQUE CENTRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 37,
+    "total": 37,
+    "confianza": 100.0
+  },
+  "BERNARDO DUQUE ULTIMA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "VENECIA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 68,
+    "total": 70,
+    "confianza": 97.1
+  },
+  "SAN FERNANDO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "NUEVA GRANADA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 25,
+    "total": 30,
+    "confianza": 83.3
+  },
+  "SAN JUAN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 45,
+    "total": 61,
+    "confianza": 73.8
+  },
+  "PLAYA RICA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 13,
+    "total": 14,
+    "confianza": 92.9
+  },
+  "CENTENARIO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 50,
+    "total": 50,
+    "confianza": 100.0
+  },
+  "POLO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 54,
+    "total": 54,
+    "confianza": 100.0
+  },
+  "CHAMBACÚ": {
+    "municipio": "CHINÚ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "SAN JOSE DE GAITA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "CHIMALITO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 39,
+    "total": 39,
+    "confianza": 100.0
+  },
+  "ARRIO LOMA DE CLODO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOMA DE CLODO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN JOSE LA GAITA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "ARRIO ANDES": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 25,
+    "total": 25,
+    "confianza": 100.0
+  },
+  "ANDES": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 25,
+    "total": 25,
+    "confianza": 100.0
+  },
+  "SAN VICENTE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "RODEITO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 32,
+    "total": 34,
+    "confianza": 94.1
+  },
+  "FLORIZAN": {
+    "municipio": "MOMIL",
+    "frecuencia": 29,
+    "total": 29,
+    "confianza": 100.0
+  },
+  "ERAL": {
+    "municipio": "SAN ANDRÉS DE SOTAVENTO",
+    "frecuencia": 37,
+    "total": 37,
+    "confianza": 100.0
+  },
+  "LAS AGUADAS": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "LITO": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "RR VILLA NAZARETH": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 37,
+    "total": 37,
+    "confianza": 100.0
+  },
+  "NAZARETH": {
+    "municipio": "VALENCIA",
+    "frecuencia": 38,
+    "total": 38,
+    "confianza": 100.0
+  },
+  "EL ROSARIO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "VILLA ESPERANZA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 91,
+    "total": 91,
+    "confianza": 100.0
+  },
+  "LANCA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 38,
+    "total": 51,
+    "confianza": 74.5
+  },
+  "ILLAS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "LOMA LINDA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 21,
+    "total": 21,
+    "confianza": 100.0
+  },
+  "CALLE CORDOBA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "JERUSALEM": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "LA CRUZ": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 29,
+    "total": 39,
+    "confianza": 74.4
+  },
+  "ANCO AGRARIO": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 35,
+    "total": 38,
+    "confianza": 92.1
+  },
+  "JUAN XXIII": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 59,
+    "total": 72,
+    "confianza": 81.9
+  },
+  "BUENAVISTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 35,
+    "total": 37,
+    "confianza": 94.6
+  },
+  "ANAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 75,
+    "total": 81,
+    "confianza": 92.6
+  },
+  "CANTACLARO SECTOR EL PARAISO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 21,
+    "total": 21,
+    "confianza": 100.0
+  },
+  "PASATIEMPO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 92,
+    "total": 92,
+    "confianza": 100.0
+  },
+  "EL RECREO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 56,
+    "total": 72,
+    "confianza": 77.8
+  },
+  "BUENA VISTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 31,
+    "total": 31,
+    "confianza": 100.0
+  },
+  "POLICARPA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 47,
+    "total": 47,
+    "confianza": 100.0
+  },
+  "LA GRANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 98,
+    "total": 100,
+    "confianza": 98.0
+  },
+  "ARRIO SAN FRANCISCO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 40,
+    "total": 45,
+    "confianza": 88.9
+  },
+  "RR\nBUENAVISTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARAUJOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GRANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "PARAISO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 22,
+    "total": 31,
+    "confianza": 71.0
+  },
+  "SAMARIA II": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "MOCARI EL BOSQUE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO EL ALIVIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "EL ALIVIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "CANTACLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 77,
+    "total": 77,
+    "confianza": 100.0
+  },
+  "PANZENU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 48,
+    "total": 48,
+    "confianza": 100.0
+  },
+  "LAS VIÑAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 36,
+    "total": 39,
+    "confianza": 92.3
+  },
+  "EDMUNDO LOPEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 96,
+    "total": 96,
+    "confianza": 100.0
+  },
+  "CAMILO TORRES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "RANCHO GRANDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 24,
+    "total": 24,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVA ESPERANZA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 18,
+    "total": 18,
+    "confianza": 100.0
+  },
+  "NUEVA ESPERANZA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 19,
+    "total": 21,
+    "confianza": 90.5
+  },
+  "ARRIO PASATIEMPO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "ARRIO CENTRO SEGUNDO PISO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "CENTRO SEGUNDO PISO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "LOS RECUERDOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 53,
+    "total": 53,
+    "confianza": 100.0
+  },
+  "DORADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ARRIO SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 47,
+    "total": 48,
+    "confianza": 97.9
+  },
+  "CARACOLI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "RISARALDA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 40,
+    "total": 40,
+    "confianza": 100.0
+  },
+  "RR CANTA CLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 29,
+    "total": 29,
+    "confianza": 100.0
+  },
+  "FURATENA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 34,
+    "total": 34,
+    "confianza": 100.0
+  },
+  "ARRIO EDMUNDO LOPEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 36,
+    "total": 36,
+    "confianza": 100.0
+  },
+  "COLON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 26,
+    "total": 26,
+    "confianza": 100.0
+  },
+  "LOS CEDROS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 56,
+    "total": 58,
+    "confianza": 96.6
+  },
+  "MOCARI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "ORRERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "VILLA GALENO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "ARRIO CHUCHURUBY": {
+    "municipio": "CERETÉ",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "CHUCHURUBY": {
+    "municipio": "CERETÉ",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "VILLA NUEVA ETAPA I": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R ALTO PRADO DETRAS DEL ESTADIO DE SOTBOL": {
+    "municipio": "MOMIL",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "MONTE VERDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 27,
+    "total": 27,
+    "confianza": 100.0
+  },
+  "ANIZACION MUSSA BESAILE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO MASINGA": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "MASINGA": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTA LUCIA LAS CRUCES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 7,
+    "confianza": 71.4
+  },
+  "LAS PALMERAS": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 28,
+    "total": 28,
+    "confianza": 100.0
+  },
+  "ARRIO SAN MARTÍN": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "SAN MARTÍN": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "MANGUELITO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 5,
+    "total": 6,
+    "confianza": 83.3
+  },
+  "SEVILLA": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ALASTRERA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ANITA DE LA BURRA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "SABANETA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 14,
+    "total": 17,
+    "confianza": 82.4
+  },
+  "URBINA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 23,
+    "total": 30,
+    "confianza": 76.7
+  },
+  "LANCAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 17,
+    "total": 18,
+    "confianza": 94.4
+  },
+  "O LARGO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 80,
+    "total": 95,
+    "confianza": 84.2
+  },
+  "RR WILCHES": {
+    "municipio": "CERETÉ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO BIENESTAR SO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "BIENESTAR SO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO CENTRO AL LADO DE LA ANTIGUA NOTARIA AL LADO DEL BANCO BANCOLOMBIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 29,
+    "total": 29,
+    "confianza": 100.0
+  },
+  "CENTRO AL LADO DE LA ANTIGUA NOTARIA AL LADO DEL BANCO BANCOLOMBIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 29,
+    "total": 29,
+    "confianza": 100.0
+  },
+  "ARRIO MATEO GOMEZ": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MATEO GOMEZ": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO ANTERO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 25,
+    "total": 25,
+    "confianza": 100.0
+  },
+  "ANTERO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 25,
+    "total": 25,
+    "confianza": 100.0
+  },
+  "ARRIO EL CANAL": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "EL CANAL": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "INESIA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO INCORA VIA EL BONGO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "INCORA VIA EL BONGO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ONGO": {
+    "municipio": "COTORRA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO LAS": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "ARRIO LAS COLINAS": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 8,
+    "total": 9,
+    "confianza": 88.9
+  },
+  "LAS COLINAS": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 23,
+    "total": 31,
+    "confianza": 74.2
+  },
+  "EL RINCON": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 19,
+    "total": 23,
+    "confianza": 82.6
+  },
+  "ARRIO REMNEDIA POBRE": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "REMNEDIA POBRE": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO GUARUMAL": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 41,
+    "total": 41,
+    "confianza": 100.0
+  },
+  "GUARUMAL": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 43,
+    "total": 43,
+    "confianza": 100.0
+  },
+  "ARRIO REMEDIA POBRE": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "REMEDIA POBRE": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "BOSQUE BARAJI": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 21,
+    "total": 21,
+    "confianza": 100.0
+  },
+  "RR GUAYABAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 23,
+    "total": 23,
+    "confianza": 100.0
+  },
+  "SAN RAFAEL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 65,
+    "total": 87,
+    "confianza": 74.7
+  },
+  "BERNARDO DUQUE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "ARRIO LAS AMÉRICAS": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "LAS AMÉRICAS": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "R LA PAZ": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "ARRIO CENTENARIO CERCA AL PAQUEG": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "CENTENARIO CERCA AL PAQUEG": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "ARRIO GUAYABAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "SIMON BOLIVAR": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 41,
+    "total": 41,
+    "confianza": 100.0
+  },
+  "ARRIO ANDRES RODRIGUEZ": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "ANDRES RODRIGUEZ": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "HEREDIA": {
+    "municipio": "CHINÚ",
+    "frecuencia": 30,
+    "total": 30,
+    "confianza": 100.0
+  },
+  "SANTA TERESITA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 29,
+    "total": 29,
+    "confianza": 100.0
+  },
+  "ARRIO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "ATAZO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "ARRIO ALTO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO BAJO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "BAJO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ARRIO NAVIDAD": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 32,
+    "total": 32,
+    "confianza": 100.0
+  },
+  "NAVIDAD": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 34,
+    "total": 34,
+    "confianza": 100.0
+  },
+  "NUEVO HORIZONTE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "ARRIO EL PROGRESO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 45,
+    "total": 48,
+    "confianza": 93.8
+  },
+  "EL PROGRESO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 50,
+    "total": 53,
+    "confianza": 94.3
+  },
+  "SAN GABRIEL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 48,
+    "total": 48,
+    "confianza": 100.0
+  },
+  "ARRIO LOMA DE LODO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 29,
+    "total": 29,
+    "confianza": 100.0
+  },
+  "LOMA DE LODO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 29,
+    "total": 29,
+    "confianza": 100.0
+  },
+  "KENEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 33,
+    "total": 33,
+    "confianza": 100.0
+  },
+  "RR NAVIDAD": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVA COLOMBIA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 24,
+    "total": 28,
+    "confianza": 85.7
+  },
+  "SACANA": {
+    "municipio": "MOMIL",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "ARRIO ALFONSO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "ALFONSO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA PRADA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 23,
+    "total": 23,
+    "confianza": 100.0
+  },
+  "VILLA PRADA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 28,
+    "total": 28,
+    "confianza": 100.0
+  },
+  "AJO SECTOR ISLAS": {
+    "municipio": "VALENCIA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ISLAS": {
+    "municipio": "VALENCIA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "NIEVES": {
+    "municipio": "VALENCIA",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "ARRIO BUENAVISTA DESPUES LA TIENDA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "BUENAVISTA DESPUES LA TIENDA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ARRIO SAN LUIS": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "SAN LUIS": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA DEL ROSARIO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "VILLA DEL ROSARIO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "ARRIO ANCIZAR FLORES": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ANCIZAR FLORES": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PUERTO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "POLIDEPORTIVO": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "LA AVENIDA BOLIVAR": {
+    "municipio": "AYAPEL",
+    "frecuencia": 22,
+    "total": 22,
+    "confianza": 100.0
+  },
+  "ALICANTE": {
+    "municipio": "AYAPEL",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "OCA DEL TORO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 21,
+    "total": 21,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA ANA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 24,
+    "total": 24,
+    "confianza": 100.0
+  },
+  "SANTA ANA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 35,
+    "total": 35,
+    "confianza": 100.0
+  },
+  "ARRIO GONZALO MEJIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 30,
+    "total": 30,
+    "confianza": 100.0
+  },
+  "GONZALO MEJIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 34,
+    "total": 34,
+    "confianza": 100.0
+  },
+  "ARRIO LOS ABETOS": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 22,
+    "total": 24,
+    "confianza": 91.7
+  },
+  "ARRIO BRASILIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 24,
+    "total": 24,
+    "confianza": 100.0
+  },
+  "BRASILIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 30,
+    "total": 31,
+    "confianza": 96.8
+  },
+  "ARRIO LA BOMBA": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "LA BOMBA": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "ARRIO EL CENTRO": {
+    "municipio": "CANALETE",
+    "frecuencia": 24,
+    "total": 24,
+    "confianza": 100.0
+  },
+  "EL CENTRO": {
+    "municipio": "CANALETE",
+    "frecuencia": 24,
+    "total": 25,
+    "confianza": 96.0
+  },
+  "ARRIO VILLA CAMPESTRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "VILLA CAMPESTRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "RR LA FLORESTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "ETANCI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "LACHARME  CONJUNTO CERRADO CAMINO REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 23,
+    "total": 23,
+    "confianza": 100.0
+  },
+  "VILLA ROSARIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 23,
+    "total": 29,
+    "confianza": 79.3
+  },
+  "ARRIO LOS LAURELES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 30,
+    "total": 30,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA MARGARITA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 21,
+    "total": 21,
+    "confianza": 100.0
+  },
+  "VILLA MARGARITA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 21,
+    "total": 21,
+    "confianza": 100.0
+  },
+  "MOGAMBITO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 30,
+    "total": 30,
+    "confianza": 100.0
+  },
+  "VILLA NORTE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA JIMENEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "VILLA JIMENEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "FLORISANTO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "MORINDO": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 12,
+    "total": 16,
+    "confianza": 75.0
+  },
+  "RR CANTA CLARO\nSECTOR LA UNION": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CORAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "ARRIO LA CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 45,
+    "total": 46,
+    "confianza": 97.8
+  },
+  "GALILEA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 22,
+    "total": 26,
+    "confianza": 84.6
+  },
+  "NUEVA HOLANDA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 24,
+    "total": 24,
+    "confianza": 100.0
+  },
+  "BARRIO SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "LA PALMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 15,
+    "total": 18,
+    "confianza": 83.3
+  },
+  "EL  RECREO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "ARRIO RANCHO GRANDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO RISARALDA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "LA JULIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 50,
+    "total": 50,
+    "confianza": 100.0
+  },
+  "VILLA DEL RIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 20,
+    "total": 21,
+    "confianza": 95.2
+  },
+  "ARRIO MOGAMBO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "MOGAMBO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 20,
+    "total": 21,
+    "confianza": 95.2
+  },
+  "ARRIO CARACOLI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "ARRIO REPUBLICA DE PANAMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "REPUBLICA DE PANAMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "INMACULADA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 27,
+    "total": 33,
+    "confianza": 81.8
+  },
+  "BOSQUES DE CASTILLA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "CASITA NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "VILLA JUANA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "EL BONGO DESPUÉS DE LA VIRGENCITA ORILLA DEL RIO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "MIRADOR": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "CONCEPCION": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LLERAS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 34,
+    "total": 34,
+    "confianza": 100.0
+  },
+  "UGRE": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "SAN MIGUEL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "OMBA PUMA BARRIO SAN PEDRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ESITO VOLAO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "CHUCHURIBI": {
+    "municipio": "CERETÉ",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ANIZACIOACUTE N VILLA ROSA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO VENUS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LETICIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "LETICIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 12,
+    "total": 14,
+    "confianza": 85.7
+  },
+  "ARRIO EL CAÑITO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "EL CAÑITO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "ITA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "VILCHES AL LADO DE LA BONGA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "ALBU": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "PELAYITO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "ARRIO IGNACIO": {
+    "municipio": "COTORRA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "IGNACIO": {
+    "municipio": "COTORRA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "CASCAJAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "R SANTA TERESITA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ARRIO CRISTO\nREY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "CRISTO\nREY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ARRIO REMOLINO SECTOR RESIDENCIAL AL LADO DE LA CLINICA\nTRINIDAD": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "REMOLINO SECTOR RESIDENCIAL AL LADO DE LA CLINICA\nTRINIDAD": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "RESIDENCIAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "LOS ANDES": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 31,
+    "total": 31,
+    "confianza": 100.0
+  },
+  "NUEVO CAMPOALEGRE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "RERO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "ASTIAN": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 23,
+    "total": 23,
+    "confianza": 100.0
+  },
+  "ARRIO SAN JUAN": {
+    "municipio": "PURÍSIMA",
+    "frecuencia": 16,
+    "total": 19,
+    "confianza": 84.2
+  },
+  "OBRERO": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 25,
+    "total": 25,
+    "confianza": 100.0
+  },
+  "RILLANTE": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "AJO LIMON FINCA VILLANUEVA": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "RASIL": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "ARRIO CARTAGENITA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "CARTAGENITA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ARRIO MILAGRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "MILAGRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO SEIS DE ENERO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "SEIS DE ENERO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "LOS\nALPES": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ROSA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ARRIO SAN\nROQUE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "SAN\nROQUE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PATIOBONITO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LAS MACARENA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "LAS MACARENA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ENDITAS ALITAS": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "SAN ROQUE ANILLO VIAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO SAN RAFAEL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 22,
+    "total": 24,
+    "confianza": 91.7
+  },
+  "ARRIO VENECIA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "ARRIO BOSQUE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "ARRIO SIMON BOLIVAR": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ONGA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "ARRIO EL\nPRADO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "EL\nPRADO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "MATURIN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 18,
+    "total": 18,
+    "confianza": 100.0
+  },
+  "SAN\nPEDRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "IRLANDA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "LAS MERCEDES": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 18,
+    "total": 18,
+    "confianza": 100.0
+  },
+  "ARRIO SAN JOSE BAJANDO LA AUTECO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "SAN JOSE BAJANDO LA AUTECO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "ARRIO POLO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "BETULIA": {
+    "municipio": "MOMIL",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ARRIO SANTANDER": {
+    "municipio": "MOMIL",
+    "frecuencia": 15,
+    "total": 17,
+    "confianza": 88.2
+  },
+  "ALSAS": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ARRIO LIBARDO LOPEZ": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "LIBARDO LOPEZ": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "LA UNIÓN": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ARRIO ESCOLAR": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 28,
+    "total": 28,
+    "confianza": 100.0
+  },
+  "ESCOLAR": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 39,
+    "total": 39,
+    "confianza": 100.0
+  },
+  "ARR": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 19,
+    "total": 19,
+    "confianza": 100.0
+  },
+  "ARRIO LAS MARIAS": {
+    "municipio": "VALENCIA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "LAS MARIAS": {
+    "municipio": "VALENCIA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ARRIO JARAGUAY": {
+    "municipio": "VALENCIA",
+    "frecuencia": 27,
+    "total": 27,
+    "confianza": 100.0
+  },
+  "JARAGUAY": {
+    "municipio": "VALENCIA",
+    "frecuencia": 28,
+    "total": 28,
+    "confianza": 100.0
+  },
+  "ARRIO JERUSALEN": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 21,
+    "total": 21,
+    "confianza": 100.0
+  },
+  "COREA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 10,
+    "total": 14,
+    "confianza": 71.4
+  },
+  "ARRIO TIERRA GRATA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "TIERRA GRATA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ARRIO\nMUCHA JAGUA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "MUCHA JAGUA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "ARRIO CANCUN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "CANCUN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "ARRIO VENDE AGUJA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "VENDE AGUJA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "R CAMILO JIMENEZ": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "BOGOTA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "VILLA": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 10,
+    "total": 13,
+    "confianza": 76.9
+  },
+  "ARRIOS LO ALMENDROS": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "PORVENIR POR LA PLAZA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "ARRIO LLERA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "LLERA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "R LLERAS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "MIRA FLOREZ": {
+    "municipio": "AYAPEL",
+    "frecuencia": 20,
+    "total": 22,
+    "confianza": 90.9
+  },
+  "ARRIO SAN JERNIMO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "SAN JERNIMO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "DIVINO NIÑO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 25,
+    "total": 33,
+    "confianza": 75.8
+  },
+  "ARRIO SANTA ELENA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 23,
+    "total": 25,
+    "confianza": 92.0
+  },
+  "ARRIO SOTO": {
+    "municipio": "CANALETE",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "SOTO": {
+    "municipio": "CANALETE",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "CAÑAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "INA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "ARRIO BUENA VISTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "ARRIO ROBINSON PITALUA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ROBINSON PITALUA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "PORTAL DE NAVARRA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "ESITO  BOLAO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "RR EL DORADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
+  "ERSALES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "PRADO NORTE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "URBANIZACION CARACOLI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "SANTACLARA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "VILLA NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ARRIO CANTA CLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "ARRIO NARIÑO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 15,
+    "total": 15,
+    "confianza": 100.0
+  },
+  "NARIÑO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 28,
+    "total": 30,
+    "confianza": 93.3
+  },
+  "RR BRISAS DEL SINU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "AGUAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 30,
+    "total": 32,
+    "confianza": 93.8
+  },
+  "ARRIO COLON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "ARRIO MONTE VERDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 17,
+    "total": 17,
+    "confianza": 100.0
+  },
+  "BALBOA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 28,
+    "total": 28,
+    "confianza": 100.0
+  },
+  "ARRIO SAN  FRANCISCO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "SAN  FRANCISCO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 20,
+    "total": 20,
+    "confianza": 100.0
+  },
+  "ARRIO EL TAMBO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "EL TAMBO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "BOLIVAR": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EL SILENCIO": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PASTRANA BORRERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "SAN  PEDRO": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "CAROLINA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 7,
+    "total": 10,
+    "confianza": 70.0
+  },
+  "ARRIO GUYABAL SAHAGUN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "GUYABAL SAHAGUN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO\nSANTA LUCIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "MONTEVERDE II": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "COSTA DE ORO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "MANDALA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "O DESPUES DE COTORRA LOS GOMEZ": {
+    "municipio": "COTORRA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO MILAN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "MILAN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "MI REFUGIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO SAN SIMUN": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SAN SIMUN": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR EDMUNDO LOPEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO CASITA NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ISLA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "RIZALIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ARRIO LA LUCHA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ELLO": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "LA BALSA": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 23,
+    "total": 23,
+    "confianza": 100.0
+  },
+  "KUNDAMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "ARRIO PUENTECITO": {
+    "municipio": "COTORRA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PUENTECITO": {
+    "municipio": "COTORRA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO LA GLORIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 5,
+    "total": 7,
+    "confianza": 71.4
+  },
+  "ARRIO EL POSO": {
+    "municipio": "PURÍSIMA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "EL POSO": {
+    "municipio": "PURÍSIMA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "AJO GRANDE": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 18,
+    "total": 19,
+    "confianza": 94.7
+  },
+  "RR ANDRES RODRIGUEZ": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO RECREO": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO PRIMERA DE MAYO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "PRIMERA DE MAYO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "SANTA FE  SECTOR LAS CAMPANAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "R ALFONSO LOPEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA CARIBE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "VILLA CARIBE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "R LA CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "RR CHUCHURUBI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA ESPERANZA EN LA IGLESIA CUADRANGULAR": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "MANDALA II": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "SIMON BOLIVAR BAJANDO POR EL ALMACEN MEDELLIN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CALLE ANTIOQUIA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "ARRIO SAN\nMARTIN": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "SAN\nMARTIN": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "SAN TA FE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "ESMERALDA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 11,
+    "total": 13,
+    "confianza": 84.6
+  },
+  "ARRIO SAN JERÓNIMO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "SAN JERÓNIMO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO INMACULADA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "EL ZIZA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL PARAISO ULTIMA": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO EL EDEN": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 15,
+    "total": 16,
+    "confianza": 93.8
+  },
+  "PANAMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "LOS ANDES DEL NORTE": {
+    "municipio": "CHINÚ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "AGUA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ERNANDO OSPINA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ELPRADO": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "RR LA GRANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "GALILEA DETRAS DE\nALMA VIVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "RR OSPINA PEREZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LA FE": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LAS FLORES": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "VILLA MARY": {
+    "municipio": "AYAPEL",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARAUCA FRENTE A IPS MANEXCA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAS BRISAS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA  TERESITA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA  TERESITA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BARRANQUILLITA": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "BARRANQUILLITA": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "ARRIO PALMASORIANA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PALMASORIANA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA\nCLEMEN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA\nCLEMEN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO FINZENU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "FINZENU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 12,
+    "confianza": 75.0
+  },
+  "RR LOS ANGELES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO LA RIVERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA RIVERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "RR GALILEA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "PAZ EL NORTE MOCARY": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "RIO JANEIRO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA CIELO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "VILLA CIELO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 5,
+    "confianza": 80.0
+  },
+  "LAS ACASIAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR EL CARMEN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 5,
+    "total": 7,
+    "confianza": 71.4
+  },
+  "RR CANTA CLARO SC EL PARAISO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "NUEVO CENTRAL": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "NUEVA ESTRELLA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "COSTA LINDA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LLERAS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "COLÓN": {
+    "municipio": "PUERTO ESCONDIDO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA LUCIA LAS GARITAS": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "SANTA LUCIA LAS GARITAS": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO TRES DE ENERO": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "TRES DE ENERO": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "MONTEVERDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "NUEVO\nHORIZONTE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTAFE": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO ALFONSO GOMEZ": {
+    "municipio": "SAN ANDRÉS DE SOTAVENTO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ALFONSO GOMEZ": {
+    "municipio": "SAN ANDRÉS DE SOTAVENTO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "CALLE CENTRAL": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO LA PRADERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "EL MAMON": {
+    "municipio": "MOMIL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R VILLAHERMOSA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "CARDALES": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA INMACULADA VIA COROCITO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "R SAN VICENTE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "R GUAYABAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "R MIRAFLORES": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO EL SOCORRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "R SAN JUAN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO EL RINCON": {
+    "municipio": "MOMIL",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO EL HORIENTE": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL HORIENTE": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA ESTRELLA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 10,
+    "total": 12,
+    "confianza": 83.3
+  },
+  "LA ESTRELLA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 10,
+    "total": 12,
+    "confianza": 83.3
+  },
+  "INURBE": {
+    "municipio": "AYAPEL",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PORTAL SECTOR LA FE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAMPOALEGRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 14,
+    "total": 17,
+    "confianza": 82.4
+  },
+  "SAN FRANSICO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "STA TERESA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO LOS GARZONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LOS GARZONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO MOCARI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "VILLA LUZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO PANAMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LAS DELICIAS": {
+    "municipio": "COTORRA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LAS FLORES  AL LADO DE LA CANCHA LA PIMPINELA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "LAS FLORES  AL LADO DE LA CANCHA LA PIMPINELA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "SANTA PAULA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO JUAN DE DIOS": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "JUAN DE DIOS": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "MONTEVIDEO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA\nELENA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTA\nELENA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR MINUTO DE DIOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CAMPO ALEGRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAMPO ALEGRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ALTOS LIBANO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "LAS VILLAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CARIBE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO  CENTRO EN LORICA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CENTRO EN LORICA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PORTAL DEL NAVARRA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO OBRERO": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO  LAS  LAMAS  CONCEPCIÓN": {
+    "municipio": "MOMIL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAS  LAMAS  CONCEPCIÓN": {
+    "municipio": "MOMIL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTA CECILIA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO IDEMA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "IDEMA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO  NUEVA  COLOMBIA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "NUEVA  COLOMBIA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA JUANA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO CUIVA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "CUIVA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "VILLA PRADO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PUERTO RICO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "MOLINA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ARRIO MIRA FLOREZ": {
+    "municipio": "AYAPEL",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO EL MANGO": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "EL MANGO": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA CLEMEN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA CLEMEN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LA GRNAJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LA GRNAJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA LUZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR COLINA REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "RR POLICARPA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CARIBE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO EL AMPARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "EL AMPARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "MANUEL JIMENEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO PRIMERO DE MAYO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "PRIMERO DE MAYO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ERSALLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA NUEVA  AL LADO DE  VILLA  REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA NUEVA  AL LADO DE  VILLA  REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA HERMOSA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO LOS ANDES": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "NUEVO MILENIO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "VILCHES": {
+    "municipio": "CERETÉ",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "RR VILLA FATIMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 6,
+    "confianza": 83.3
+  },
+  "ARRIO VILLA ROCIO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA ROCIO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA BARBARA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "SANTA BARBARA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "GALILIEA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION CECILIA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LA PLAMA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA PAZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA PAZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SAN DIEGO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "SAN DIEGO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "EL CAÑITO SECTOR LOS SABANALES": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ERASTEGUI BARRIO EL CARMEN": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "SAN SIMON CARRETERA TRONCAL": {
+    "municipio": "CHINÚ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ALFONSO LOPEZ VIA VILLANUEVA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO EL DORADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ARRIO CANTA CLARO SC NISPERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CANTA CLARO SC NISPERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R CANTA CLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "FLECHA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "AJO LIMÓN\nCERCA A LA SUBASTA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EL QUEMAO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO MONTEVERDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO PLAYA RICA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "SANTO": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "RE POR EL MATADERO VIEJO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "RR SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "R SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "EL PORTAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 5,
+    "total": 7,
+    "confianza": 71.4
+  },
+  "VILLA SORRENTO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ZARABANDA": {
+    "municipio": "COTORRA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CANOA": {
+    "municipio": "CHINÚ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MAMON": {
+    "municipio": "MOMIL",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LAS LAMAS": {
+    "municipio": "MOMIL",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "JORGE ELIECER GAITAN": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "NISPERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PRADERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "EL BOSQUE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "MAGDALENA": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANDIEGO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTA MARIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "EL TOTUMO A ORILLA DEL RIO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LO VI": {
+    "municipio": "CERETÉ",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ULLA SAN CARLOS": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CALLE  LARGA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARR CENTRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "PAYARICA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "NUEVO CAMPO ALEGRE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "TIERRALTICA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "SAN PEDRO ANA YEPES SOLICITA SOLO FONO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "R ARENAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VENEZUELA": {
+    "municipio": "MOMIL",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "LAUREANO GOMEZ": {
+    "municipio": "PURÍSIMA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO HIQUERON": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "HIQUERON": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "EL POBLADO": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 4,
+    "total": 5,
+    "confianza": 80.0
+  },
+  "VILLA NAZARE": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ROSARIO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "VILLA LIBIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ALTOS DE CASTILLA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO URBINA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "VILLA CLARA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "R REPUBLICA DE PANAMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LACHARME": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RIO DE JANEIRO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO POLICARPA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO LA VID": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "LA VID": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "LOS EBANOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "VILLA ANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO FLORESTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LA SANTA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LA SANTA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "UENOS AIRES EL CHUZO  LA ENTRADA VIA CRUZ DEL RAMAL": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO SANPEDRO": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "SANPEDRO": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVO  POR  LA TIENDA  DE LA  CACHACA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "NUEVO  POR  LA TIENDA  DE LA  CACHACA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LA ENCAÑADA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA ENCAÑADA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R SAN JERONIMO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CANTATACLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BORRERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "BORRERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVO ORIENTE ORILLA DEL RIO DESPUÉS DE LA FLORESTA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NUEVO ORIENTE ORILLA DEL RIO DESPUÉS DE LA FLORESTA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  LAS  FLORES": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LAS  FLORES": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "SAN JORGE": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "RR MAMONAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTA LUCIA CERCA LA BONGA VENECIA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO BRISAS DEL SINU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "BRISAS DEL SINU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 8,
+    "total": 9,
+    "confianza": 88.9
+  },
+  "HOLANDA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO PRADERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PORTAL DE ALMERIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "POR LA IGLESIA LOS MORMONES MONTEVERDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EL RECUERDO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ÑIPI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ETH COGOLLO": {
+    "municipio": "CANALETE",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BONANZA ORIENTAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "BONANZA ORIENTAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO URBINA MONTERIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "URBINA MONTERIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "TORRES DE LA CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "AJO LA REINA": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO\nCENTRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R JUAN XXIII": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R EL DORADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "R CUNDAMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R NUEVA ESPERANZA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA NOVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "BOSQUES DE SEVILLA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO BALBOA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO MARÍA AUXILIADORA\nDIRECCIÓN": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "MARÍA AUXILIADORA\nDIRECCIÓN": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LAS FLOREZ": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GETSEMANI": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "OHORQUEZ": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "VISTA HERMOSA": {
+    "municipio": "CANALETE",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO PABLO SEXTO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "PABLO SEXTO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVA COLOMBIA SECTOR EL MUNDO LOPEZ": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "NUEVA COLOMBIA SECTOR EL MUNDO LOPEZ": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R FATIMA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO JUAN IIIXXX": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "JUAN IIIXXX": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "GARZONES BUENAVENTURA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARAUCA FRENTE CLINICA MANEXKA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EL QUEMADO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "CUIVAS SAN CARLOS": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "MATA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 4,
+    "confianza": 75.0
+  },
+  "IJAITO": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "NUEVO MAJAGUAL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "MONTE VERDE EDIF PADUA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "R CENTRO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "COSTA DE ORO SECTOR CHOCOLATE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LABALOMO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LABALOMO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "EL MORA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CHINULITO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ER VIVIR": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO EL POZON": {
+    "municipio": "AYAPEL",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "EL POZON": {
+    "municipio": "AYAPEL",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "R PASA TIEMPO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "VILLA CLAMEN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA CELINA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA CELINA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PUEBLECITO": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "RR MONTEVERDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GARZONEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ALBOA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ALBORAYA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARAUJOS VIEJOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MAZINGA": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ANIZACION LOS HEROES": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO EL\nPROGRESO": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EL\nPROGRESO": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R CHAMBACO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO EL MORA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO PORTAL DE NAVARRA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARBACOAS  BARRIO NUEVO PRADO LA SEGUNDA PLAZA  ESTRADA FRENTE AL ACUEDUCTO": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "NUEVO PRADO LA SEGUNDA PLAZA  ESTRADA FRENTE AL ACUEDUCTO": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR CARTAGENITA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CANTA CLARO SECTOR ÑIPI B": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA LOS ALPES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BURRO QUEMAO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BIENESTAR SOCIAL": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL GALAN": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MORALITO": {
+    "municipio": "COTORRA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R PALACIN CERCA DE LATIENDA LA ROCA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "JARAGUEY": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS  CEDROS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LEU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "IS MONTEVERDE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "TURBO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "BRIZALIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ALEJANDRIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA DEL RIO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "FURATENA  SERCA DE  LA TIENDA DIVINO NIÑO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ELLO DEL": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA ESPERANZA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO  VILLA REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  CHAMBACU": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CHAMBACU": {
+    "municipio": "CHINÚ",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "MARCO FIDEL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS ALAMOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BOLIVAR": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION TACASUAN": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARBARA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL ROSARIO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANATA MARIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "TRES MAYO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MARSELLA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ELLO FINCA IRACALL": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "DEL": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CALLE NUEVA": {
+    "municipio": "SAN ANDRÉS DE SOTAVENTO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO CAJASCAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CAJASCAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SAN MARCO SEGUNDA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAFE": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA PALMA POR LOS CORRALES": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO RANCHERIA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RANCHERIA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA  CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RE CERCA DEL TALLER DE CARROS EL PAPO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "LAS PALMAS POR LA PRIMERA CALLA SEGUNDA ETAPA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ATALLON DESPUES DEL COLEGIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GALAN": {
+    "municipio": "VALENCIA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CHAMBACU": {
+    "municipio": "CHINÚ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO CARACAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "CARACAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ONGAMELLA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BUENAVENTURA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LOS ARAUJOS VIEJOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LOS ARAUJOS VIEJOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "VILLA CIELO SECTOR LOS ALPES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  GUAYABAL": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NEMESIO NADE": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO GAITA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GAITA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UCARAMANGA POR EL COLEGIO MARCO FIDEL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ALTO KENEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA CRUZ AL LADO DEL RESTAURANTE MAYO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN NICOLAS CASA DE LA NIÑA MONTES": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA ANA DESPUES DEL POLI": {
+    "municipio": "AYAPEL",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "RIO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LOS ARAUJOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LOS ARAUJOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SAN ISIDRO CENTRO LLEGANGO AL COSECHERO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN ISIDRO CENTRO LLEGANGO AL COSECHERO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LIBERTAD FRENTE AL CEMENTERIO": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARROYON": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA GRANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 13,
+    "total": 13,
+    "confianza": 100.0
+  },
+  "R VILLACLEMN": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO MIRAFLORES": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MIRAFLORES": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BUENAVISTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 5,
+    "confianza": 80.0
+  },
+  "ARRIO LA TRINIDAD": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LA TRINIDAD": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAS COLINAS DESPUES DE LA POLICIAS": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CASTILLERAL": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CASTILLERAL": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJANDO POR LA FISCALIA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "OGACHO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANTONIO ARRIETA": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO EL ORIENTE": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RERIA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VENEZUELA": {
+    "municipio": "MOMIL",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA ROSARIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA LIBERTAD": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "NAZARETH AL LADO DE FREDY CACAO DONDE RAMON AYALA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA CESILIA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAS PIEDRAS": {
+    "municipio": "VALENCIA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LANCA DE DOS PISOS": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CENTRO POR EL COSECHERO A DOS CASAS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ELEN BARRIO EL TAMARINDO CERCA LA PLACA HUEY VIA SANJUAN": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL TAMARINDO CERCA LA PLACA HUEY VIA SANJUAN": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BELEN": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLALIBIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLALIBIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA CATALINA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA FLORIDA": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA FLORIDA": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ANA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "TROPICAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR CARRETERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "JORGE ELIECER": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "JARAGUAY POR  LA  FINCA DE  JHON ALDANA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R SAN JOSE": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN CARLOS POR EL CREN": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LA POPA": {
+    "municipio": "SAN ANDRÉS DE SOTAVENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA POPA": {
+    "municipio": "SAN ANDRÉS DE SOTAVENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LERO DEL ESTADIO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "POPAYAN": {
+    "municipio": "CANALETE",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA  CRUZ": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  SAN JOSE  LOS  ALPES  ANTIGUO IDEMA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN JOSE  LOS  ALPES  ANTIGUO IDEMA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA  CRUZ AL  FRENTE  DE  LA  IGLESIA  TRE VITERENA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MARRA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CUITIVA POR  EL BILLAR  PUNTO  EXACTO": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARACHE": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PUERTO  RICO DESPUES  DE  LA  PAVIMENTADA  A  DOS  C ASAS": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA NAZARETH": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA NAZARETH": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LA LIBERTAD": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA  CIELO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN FELIPE": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 14,
+    "total": 14,
+    "confianza": 100.0
+  },
+  "LA CRUZ POR  DONDE EDUIN FARRA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO NEMESIO NADER": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NEMESIO NADER": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VALLE SANTO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "VALLE SANTO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ESTRELLA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OLO CERCA  DEL ECUEDUCTO DE LA  ESMERALDA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GUAMAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "JARAGUAYPOR EL CDI": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOMA  LINDA FRENTE AL  CLUB EL FARO  CASA  AZUL REJA  GRIS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL PROGRESO DIAGONAL A CLINICA DE PILAR": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CALLE PRINCIPAL": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ONGA POR  EL  COLEGIO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA ESPERANZA DESPUES DE COLEGIO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "VILLA ESPERANZA DESPUES DE COLEGIO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ELÉN": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R EDMUD LOPEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PRIVILEGIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CHIQUILITO": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CHIKILITO": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R COLON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAGRADO CORAZON": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN VICENTE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PLAYA ANGEL": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PLAYA ANGEL": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MUSA NADER PRIMERA ETAPA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ALTOS DE CARACOLI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO DIVINO NIÑO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "RR EL ALIVIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OLO": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PRIMAVERA": {
+    "municipio": "PUERTO ESCONDIDO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN GABRIEL VIA SVS SEGUNDO PLANCHON METALICO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN GABRIEL VIA SVS SEGUNDO PLANCHON METALICO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AÑA": {
+    "municipio": "CANALETE",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ELEN BARRIO PORTUGAL": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PORTUGAL": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "IJAO": {
+    "municipio": "PUERTO ESCONDIDO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BIJAO": {
+    "municipio": "PUERTO ESCONDIDO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION  VILLA  HERMOSA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LAVALON": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAVALON": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO TRINIDAD": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "TRINIDAD": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN NICOLAS  FRENTE AL CEMENTERIO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "PEQUIN  POR  EL PARQUE DE LA CRUZ": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO ARENAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO COSTA DE\nORO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "COSTA DE\nORO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO PLATA RICA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PLATA RICA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJO SECTOR PUEBLO CHINO AL LADO DE LA IGLESIAS CRISTIANA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VIERA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PUEBLO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION ALTOS DE ALEJANDRIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VENECIA ANTES DE LLEGAR A SANTA ELENENA POR LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO URBANIZACION VALLEJO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "URBANIZACION VALLEJO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "URBANIZACION PUNTO DE REFERENCIA PREGUNTAR POR EL NEGRO GENES": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR BAJO KENEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO DIVINO NIÑO POR LA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ERTO MUNERA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "DIVINO NIÑO POR LA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA INMACULADA PO LOS CARRANZAS": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LA ESPERANZA POR LA TERCERA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA ELENA POR EL COLEGIO MARCO FIDEL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OLIVAR AL LADO DEL NEGRO ALDANO EL ALCALDE": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ONITA CUATRO CAMINO ENTRADA POR LA FINCA DEL SEÑOR ASAEL MADERA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OSPINA PEREZ POR LA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CARMEN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CARMEN": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VEJIGA": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VEJIGA": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LAS PIEDRAS": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO GALAN": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BUENAVENTURA GARZONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "BUENAVENTURA GARZONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SAMARIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAMARIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CAMILO TORRES MOCARY": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CAMILO TORRES MOCARY": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO ALTOS DEL NOVAL": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ALTOS DEL NOVAL": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO PASTRANA BORRERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR LA ESPERANZA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 4,
+    "confianza": 75.0
+  },
+  "SANTA FE SECTOR LAS CAMPANAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BOSTON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL POBLADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR ESPERANZA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA CLARA AL LADO DEL COLEGIO CORDILLERAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA GRANJA POR EL CAMAJON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA GRANJA POR EL CAMAJON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R LA GRANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LOS LAURELES MATEOGOMEZ": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS LAURELES MATEOGOMEZ": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PABLO VI": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LAS PALMAS PRIMERA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OLARGO AL LADO DEL COLEGIO SEBASTIAN SACHEZ": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION VILLA ROSA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CORINTO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PROLECHE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO MARTINEZ FRENTE AL PARQUE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MARTINEZ FRENTE AL PARQUE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "A VEREDA EL ORRIENTE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CASCAJAL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVO CAMPO ALEGRE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PASTAJAR C": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PASTAJAR C": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "RR MILAGROS": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA INMACULADA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R SAN FRANCISCO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR RIVERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA MARY": {
+    "municipio": "AYAPEL",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "TUCHISINTO": {
+    "municipio": "PUERTO ESCONDIDO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ITA FRONTERA FINCA SAN FELIPE O LA CUBANA": {
+    "municipio": "CANALETE",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CORDOBITA": {
+    "municipio": "CANALETE",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PROGRESO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LLERAS AL LADO DEL FLACO MARTIEZ": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJO BLANCO": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO INURBE": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "INURBE DIAGONAL A LA CANTINA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PRIMERO DE ENERO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR MINUTO D EDIOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OSORIO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO\nSAN LUIS": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OSPINA PEREZ  DETRAS DEL HOSPITAL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CUIBA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CUIBA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LOMA FRESCA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOMA FRESCA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PORVENIR": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 4,
+    "total": 5,
+    "confianza": 80.0
+  },
+  "INCORA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJO POR ARROLLO GRANDE  DESPUES DEL COLEGIO  CASA DE TABLA  A MANO": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RRO VILLA LIBERTAD EL PARAISO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL PARAÍSO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "EL PARAÍSO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO SN GABRIEL": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SN GABRIEL": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR EL ESCOLAR": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RRO VILLA MAGOLA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO MARIA AUXILIADORA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OS AL LADO DE LA IGLESIA EVANGELICA MONTE LOS OLIVOS": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SNA MARTIN": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "SNA MARTIN": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LIGADO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BARRIO VILLA DEL ROSARIO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SAN GREGORIO POR LA FONDA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO LAS PALMERAS FRENTE A LA IGLESIA PENTECOSTAL UNIDA DE COLOMBIA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LAS PALMERAS FRENTE A LA IGLESIA PENTECOSTAL UNIDA DE COLOMBIA": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTANA HOTEL LUNA PREGUNTAR  POR EL SR  PETROLEO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN PEDRO POR  VARIEDADES  MALU": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN PEDRO POR  VARIEDADES  MALU": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL PRADO AL FRENTE DEL  EL POLIDEPORTIVO": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL PRADO AL FRENTE DEL  EL POLIDEPORTIVO": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO FURATENA POR LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "FURATENA POR LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LLERA POR  DONDE  ANIBAL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LLERA POR  DONDE  ANIBAL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ERASTEGUI BARRIO LA VICTORIA AL LADO DE RECOD": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA VICTORIA AL LADO DE RECOD": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ICACION EL CERRO": {
+    "municipio": "CANALETE",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "TUIS": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RERIA A LA IZQUIERDA ANTEPINULTIMA CASA DE REJA\nCOLOR BEIS": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "COTOCA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ERASTEGUI BARRIO LA VICTORIA DESPUES DE LA QUESERA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LA VICTORIA DESPUES DE LA QUESERA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "OLIVAR VIA ARBOLEDA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO POR TI MONTELIBANO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "POR TI MONTELIBANO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJANDO POR LA CASONA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN JERONIMO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LAS LANAS": {
+    "municipio": "MOMIL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN\n PEDRO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BARRIO NUEVA GRANADA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO ISLA CAPRY": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ISLA CAPRY": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CENTENARIO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R PUERTO ARRIBA": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ROQUELES": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BROQUELES": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CORPAS": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "TIJERETA": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR SAN JOSE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "OLETES": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MINUTO": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LAS MARIAS A LA SALIDA": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LAS MARIAS A LA SALIDA": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "CRUZ": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SARANDELO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CUIVA POR  EL PARQUE": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CUIVA POR  EL PARQUE": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRANCON": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO HORIZONTE VIA A LA PESQUERA T": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "HORIZONTE VIA A LA PESQUERA T": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA COPSECION POR LA  FINCA  MASADAY": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LLERAS  POR LA DISCOTECA  PUNTO  AZUL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LLERAS  POR LA DISCOTECA  PUNTO  AZUL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ATALLON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "MIRA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PUEBLECITO": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R LOS ALPES": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN ISISDRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN ISISDRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UENOS AIRES": {
+    "municipio": "CANALETE",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LAS  FLOREZ": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LAS  FLOREZ": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO WINTON LORA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "WINTON LORA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PROVIDENCIA": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA ESTRELLA FRENTE  A LAS EMPANADAS DE MAMY": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PALOTAL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R VILLAMARCELLA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA MELISA  POR EL CAI DE  LOS  ROBLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "VILLA MELISA  POR EL CAI DE  LOS  ROBLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ANIZACION LAS COLINAS": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO ALICANTO LA PRIMERA CASA A LA ENTRADA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ALICANTO LA PRIMERA CASA A LA ENTRADA": {
+    "municipio": "AYAPEL",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ALTOS DE CASTILLA AL FRENTE DEL PAQUE DE LOS SUEÑOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PATAVACA": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACIÓN LOS RECUERDOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 7,
+    "total": 7,
+    "confianza": 100.0
+  },
+  "ARRIO SAN ANTONIO": {
+    "municipio": "MOMIL",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "SAN ANTONIO": {
+    "municipio": "MOMIL",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "BAJO KENEDY POR LA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA  FLORIDA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LAS  AMERICAS": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAS  AMERICAS": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ZABALITO": {
+    "municipio": "PUERTO ESCONDIDO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA ESPEFANZA  POR LA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "IANA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RINDARA  EL SERVICIO  EN EL CAMU": {
+    "municipio": "PUERTO ESCONDIDO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL PARAISO POR LAS CORRALEJAS": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "A  POR LA IGLESIA MANAI BAJANDO  POR  DONDE  LA  MAMA DEL   DR  JHON  WAIDER": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA ESPERANZA POR LA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "IANA ESQUINA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LAURELES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVA GRANADA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 5,
+    "total": 6,
+    "confianza": 83.3
+  },
+  "ARRIO SANTA CLARA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 4,
+    "confianza": 75.0
+  },
+  "ARRIO LA VICTORIA PÓR PRIMER PUENTECITO  EN LA CASA DE LA ESQUINA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA VICTORIA PÓR PRIMER PUENTECITO  EN LA CASA DE LA ESQUINA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVAGRANADA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "NUEVAGRANADA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CASTILLA LA NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CASTILLA LA NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LÁVALOMO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LÁVALOMO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CACASJAL FRENTE A ARAN COMPUTADORES": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CACASJAL FRENTE A ARAN COMPUTADORES": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CIENEGA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION LOS  BONGOS  DETRAS  D EL  EXITO DEL NORTE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BONANZA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO REAL BOCA ARACHE": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "REAL BOCA ARACHE": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LE CALZADA POR EL COLEGIO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ERNARDO DUQUE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PAPOCHE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO ISLA DE CAPRY": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ISLA DE CAPRY": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO URBINA POR LA ENTRADA DE LA PANADERIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "URBINA POR LA ENTRADA DE LA PANADERIA DIAGONAL A LA IGLESIA DE LOS MORMONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CENTRO EN LORICA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA VENECIA": {
+    "municipio": "MOMIL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA VENECIA": {
+    "municipio": "MOMIL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJADA  DE  LA  DERECHA   LLEGAN A  CANCHA  DE FUTBOL  DE BURRO QUEMAO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR LA PALMA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GUASIMAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO ALTOS DEL CONTRI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ALTOS DEL CONTRI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ONBA DEL EXITO VIA SAN BERNARDO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SAN SIMON": {
+    "municipio": "CHINÚ",
+    "frecuencia": 5,
+    "total": 5,
+    "confianza": 100.0
+  },
+  "ARRIO SAN MIGUEL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO MOCARY": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MOCARY": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAMILO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PARAISO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RADA ONDA SECTRO MI POLL AL LADO DE LA FINCA DE RONAL CORCHO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "QUEBRADA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO CENTRO LA SALADAS POR LOS CORDOBAS": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CENTRO LA SALADAS POR LOS CORDOBAS": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CANTA CLARO LA UNION": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CANTA CLARO LA UNION": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ANO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PLAYA RICA A ORILLAS DEL CAÑO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PLAYA RICA A ORILLAS DEL CAÑO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO JESUS MARIA LUGO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "JESUS MARIA LUGO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MAYORIA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA GALENO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACIÓN CAMPO ALEGRE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJANDO LA PRIMERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NIZACION MARIA ANGELICA BARRIO SANTA CLARA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SAN JORGE": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LA PESQUERA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LOS ANDES DESPUES DE LA CLINICA LOMAS VERDE EN LA MISMA ACERA FRENTE A LA FERRETERIA ELECTRICOS Y PINTURAS VIA LORICA A COVEÑAS LORICA CORDOVA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS ANDES DESPUES DE LA CLINICA LOMAS VERDE EN LA MISMA ACERA FRENTE A LA FERRETERIA ELECTRICOS Y PINTURAS VIA LORICA A COVEÑAS LORICA CORDOVA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARCELONA": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "BARCELONA": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO PANTEÓN": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "PANTEÓN": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ALLOS AFUERA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR EL DORADO POR LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R PENJAMO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CAÑITO SC LAS BRISAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAÑITO SC LAS BRISAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVO ORIENTE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NUEVO ORIENTE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VERSALLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VERSALLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO POLICARPA  POR  EL PUENTE AMARRILLO  LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "POLICARPA  POR  EL PUENTE AMARRILLO  LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO BUENOS AIRES": {
+    "municipio": "PURÍSIMA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SANTAMARIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTAMARIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR LOS LAURELES": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAMILO TORRES MOCARY POR EL CAMU": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION LA VICTORIA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VALLEJO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VALLEJO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "BERLY": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ONGO NELY GARCIA HIJA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CARITO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GUAIMARAL": {
+    "municipio": "MOMIL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PASTRANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA LUCIA VIA PUNTA DE LLANES": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SANTA LUCIA VIA PUNTA DE LLANES": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ABILLAS LOS GARZONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OLIVO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ONGAMEYA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BONGAMEYA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CANTACLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR VILLA CECILIA POR EL ESTADERO VILLA CELINA": {
+    "municipio": "MOMIL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJANDO LA BALSA A LA DERECHA": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA FRONTERA": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CANTACLARO SECTOR LA UNION": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CANTACLARO SECTOR LA UNION": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "COMEJEN": {
+    "municipio": "PURÍSIMA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  ALFONSO GOMEZ": {
+    "municipio": "SAN ANDRÉS DE SOTAVENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CANNAN": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CANNAN": {
+    "municipio": "TUCHÍN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UENAS VISTA RETIRO DE LOS INDIOS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BUENAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SANTO DOMINGO": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJANDO POR LA BOMBA UN PORTÓN DE MADERA A MANO DERECHA": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R EL PROGRESO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ILLAR FRENTE A UN TANQUE ELEVADO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AEROPUERTO": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "RR LA PRADERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BONANZA AL LADO DE LA TIENDA DULIO CUELLO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA PRADERA POR LA TIENDA EL PUNTO PRECISO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA PRADERA POR LA TIENDA EL PUNTO PRECISO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ONITA ENTRADA A VILLA FATIMA FINCA LOS BARCOS": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO JUVENAL QUINTERO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "JUVENAL QUINTERO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "USCANDO COLEGIO CAMILO TORRES POR LA FERRETERÍA A DOS CASAS SE  CONFIRMA  CAMBIO DE  DOMICILIO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN GABRIEL": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARBERIA  A  MITAD  DE CUADRA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "INSON PITALUA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA MARGARITAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA MARGARITAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ATAZO BARRIO KENNEDY DESPUÉS SURTIMAX": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "KENNEDY DESPUÉS SURTIMAX": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO MUCHA JAGUA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "COROZALITO": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO LAS MERCEDES": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO BERNARDO DUQUE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ANAL AL LADO DE TERNICEL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAMILO TORRES MOCARI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO FURATENA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PATIO": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OSPINA PEREZ PRIMERA": {
+    "municipio": "VALENCIA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "A VEREDA RIONUEVO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RIONUEVO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR EL CAÑITO DETRÁS DE A IGLESIA EVANGELICA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA MARIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R VILLA JIMENEZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ELLA COHITA CORREG": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R POBLADO": {
+    "municipio": "SAN BERNARDO DEL VIENTO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OLETES CARRETERA PAVIMENTADA": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MUSA NADER": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRICA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO  FURATENA  LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "FURATENA  LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PUNTO DE REFERENCIA  NEGOCIO  VICA  LA LUZ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  PUEBLECITO": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "L GRANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "A   TIENDA  SALUD    EN SUS  MANOS": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PASTRANA BORREO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PASTRANA BORREO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO VERSALLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BELLA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO COLINA REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "COLINA REAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARATON": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  SANTANDER": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO GONZALO MEJIA POR ROBLE CARO": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GONZALO MEJIA POR ROBLE CARO": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LECIMIENTO CHANCAN": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LES POR EL ESTADERO EL YOLI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CANTA CLARO BAJANDO POR PPAL BAJANO LA PRIMERA CUADRA A MANO IZQUIERDA POR EL GRANERO PROVEEDORA   LA QUINTA CASA  CERA DERECHA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CANTA CLARO BAJANDO POR PPAL BAJANO LA PRIMERA CUADRA A MANO IZQUIERDA POR EL GRANERO PROVEEDORA   LA QUINTA CASA  CERA DERECHA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO PUERTO RICO": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAMARIA II": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAMARIA II": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO DIAMANTE": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "DIAMANTE": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CAÑITO": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARIO GARZONES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CARDALES": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UEN PASTOR POR EL VIDRIAL": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SINCELEJITO": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RUSIA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ACU": {
+    "municipio": "CHINÚ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CALLE SAN JOAQUÍN": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANCO  AGRARIO": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CRISTO REY POR PALOS DE COCO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CRISTO REY POR PALOS DE COCO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL EDÉN": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL EDÉN": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LANCA CON REJAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CORINDO POR LA ESCULA PUBLICA Y PARQUE POR LA PRIMERA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CORINDO POR LA ESCULA PUBLICA Y PARQUE POR LA PRIMERA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "EJITA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ESITO BOLAO ENTRANDO POR LAS CLARITAS PREGUNTAR POR EL ABOGADO JULIO SOLANO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR VILLA NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PETARE": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PETARE": {
+    "municipio": "SAN ANTERO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO TIERRALTICA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN JOSE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN JOSE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO COSTA DE ORO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LANCA DE REJAS BLANCAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO SANTA FE ENTRANDO POR EL ARA Y LA CANCHA DE ARENA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SANTA FE ENTRANDO POR EL ARA Y LA CANCHA DE ARENA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OLIVAR BARRIO OSPINA PEREZ": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  FURATENA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL RECREO RECREO EDIFICIO RIO PORTO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EL RECREO RECREO EDIFICIO RIO PORTO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ERASTEGUI BARRIO SAN  JOSE": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN  JOSE": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "QARRIO LA JULIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LOS CEDROS": {
+    "municipio": "COTORRA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "BARRIO NUEVA COLOMBIA POR  EL  POLI": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NUEVA COLOMBIA POR  EL  POLI": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ATALLON  APENAS EMPIEZA EL PAVIMENTO DIAGINAL A LA Y DE JUANILLO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CORREA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ITA LA POZONA AL FRENTE DEL BILLAR EL JOPO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO CASTILLERAL  CERCA DEL COLEGIO BACHILLERATO": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CASTILLERAL  CERCA DEL COLEGIO BACHILLERATO": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO KENEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR LOS ARAUJOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO GUADALAJARA POR LA PISTA MOTOCROS POR EL VIVERO PITOLANDIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "GUADALAJARA POR LA PISTA MOTOCROS POR EL VIVERO PITOLANDIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "COVEÑITAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SABANAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "R CANTACLARO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR FURATENA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CUBA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO MAMONAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL TOTUMO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL TOTUMO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACION VILLA SULTANA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "R CAMILO TORRES MOCARI": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO TURBO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LAVALOMO PREGUNTAR POR  EDITH PINTO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAVALOMO PREGUNTAR POR  EDITH PINTO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAGUNETA": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  LA FLORESTA  POR  EL PARQUE  DROGUERÍA  FAID": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LA FLORESTA  POR  EL PARQUE  DROGUERÍA  FAID": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO FATIMA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ABILLAS AGUAS NEGRAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ERASTEGUI BARRIO SAN JOSE": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO POLO CHINU": {
+    "municipio": "CHINÚ",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "POLO CHINU": {
+    "municipio": "CHINÚ",
+    "frecuencia": 11,
+    "total": 11,
+    "confianza": 100.0
+  },
+  "MONTE CRISTO AL LADO DEL ACUEDUCTO CASA BLANCA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "ARRIO SUCRE CASA EN ESQUINA REJAS NEGRAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "SUCRE CASA EN ESQUINA REJAS NEGRAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO BRIZALIA POR MADERAS COLOMBIA POR LA CIRCUNVALAR": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "BRIZALIA POR MADERAS COLOMBIA POR LA CIRCUNVALAR": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO LAVALOMO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LAVALOMO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO PANAMÁ ENTRADA POR EL PARADERO DE EL BOROJO PON LA TIENDA LA FRONTERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PANAMÁ ENTRADA POR EL PARADERO DE EL BOROJO PON LA TIENDA LA FRONTERA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR POLICARPA POR LA TIENDA LA SUBASTA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 16,
+    "total": 16,
+    "confianza": 100.0
+  },
+  "ARRIO GRANADA AL LADO DEL MERCADO PREGUNTAR POR EL DR GUSTAVO LACA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "GRANADA AL LADO DEL MERCADO PREGUNTAR POR EL DR GUSTAVO LACA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LA JULIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA UNION": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA UNION": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA MARIA": {
+    "municipio": "CHINÚ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "AJO PIEDRA": {
+    "municipio": "CHINÚ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR SAN JOSE POR LA CARCEL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 9,
+    "total": 9,
+    "confianza": 100.0
+  },
+  "ARRIO MONTELIBANO AL LADO DE CALI POLLO": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MONTELIBANO AL LADO DE CALI POLLO": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO GRANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "CANTACLARO SECTOR LAS CAÑAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA DEL RIO POR LA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA DEL RIO POR LA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ONBA UPB": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "OSQUE BARAJI": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "RILLAL": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MEMBRILLAL": {
+    "municipio": "MOÑITOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LTO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LTO KENNEDY": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "O LARGO PUNTO DE REFERENCIA PREGUNTAR POR TOÑO PETRO POR EL CAÑO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL AMPARO POR LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EIGE DE REJAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ILLAR LA SEGUNDA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANIZACIÓN SAMARIA \n MONTERÍA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL BONGO": {
+    "municipio": "COTORRA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AJANDO AL BARRIO SAN JOSE EN TODA LA ESQUINA PREGUNTAR POR LA USUARIA VIVE AL LADO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN JOSE EN TODA LA ESQUINA PREGUNTAR POR LA USUARIA VIVE AL LADO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA LUZ MUNICIPIO LOS CORDOBAS": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA LUZ MUNICIPIO LOS CORDOBAS": {
+    "municipio": "LOS CÓRDOBAS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "OCA LA CEIBA LLEGAR VERDA ARENAL FRENTE A LA ESCUELA ARENAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PANAMÁ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PANAMÁ": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "POR LA BOMBA AGUAS NEGRAS POR EL GRANERO DOMIMARQUE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO PALO DE AGUA POR LA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "PALO DE AGUA POR LA": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ITA VIA SAN CARLOS POR EL RESTAURANTE LA CEIBA DESPUES DE LA ESCUELITA SAN ANTONIO": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SUCRE PUNTO DE REFEENCIA EL CAMU DE SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SUCRE PUNTO DE REFEENCIA EL CAMU DE SUCRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SAN JOSÉ AL LADO DEL COLEGIO SAN JOSÉ": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "SAN JOSÉ AL LADO DEL COLEGIO SAN JOSÉ": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LA ENCAÑADA POR EL ACUEDUCTO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA ENCAÑADA POR EL ACUEDUCTO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "OMBA SEO FRENTE A LA SECADORA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "RISUA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "LAS PALMAS FRENTE AL PAQUE LAS PALMAS": {
+    "municipio": "CERETÉ",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "ARRIO LAS LAMAS CONCEPCIÓN": {
+    "municipio": "MOMIL",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "LAS LAMAS CONCEPCIÓN": {
+    "municipio": "MOMIL",
+    "frecuencia": 8,
+    "total": 8,
+    "confianza": 100.0
+  },
+  "LA ESTRELLA SALIENDO PARA LA FINCA EL CACO": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL CANTEL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL CANTEL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO PORVERNIR POR EL COLEGIO SAGRADO CORAZÓN DE JESÚS DOBLAMOS A LA MANO DERECHA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "PORVERNIR POR EL COLEGIO SAGRADO CORAZÓN DE JESÚS DOBLAMOS A LA MANO DERECHA DIAGONAL A LA TIENDA LA CASA DE LA ESQUINA DE COLOR BLANCA": {
+    "municipio": "BUENAVISTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LANCAS BARRIO EL\nDORADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "EL\nDORADO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO PRADO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO ALFONSO LOPEZ CERCA AL ESTADIO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ALFONSO LOPEZ CERCA AL ESTADIO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO NUEVA\n ESTRELLA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NUEVA\n ESTRELLA": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RETIRO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA CANDELARIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CHUCHURUBI VIA A CALDERON": {
+    "municipio": "CERETÉ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "BRISAS DE AYAPEL": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "PORTAL DE JESÚS": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LANCO": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "PUNTA": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA HERMOSA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "RR VENDE AGUJAS": {
+    "municipio": "PUERTO LIBERTADOR",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO NAZARETH": {
+    "municipio": "VALENCIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CANTARANA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  VILLA  LIBERTAD": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "VILLA  LIBERTAD": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN ISIDRO POR LA PRINCIPAL DEL BARRIO IMPERIAL POR EL DIVINO NIÑO TERCERA CUADRA A MANO DERECHA AL FONDO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN ISIDRO POR LA PRINCIPAL DEL BARRIO IMPERIAL POR EL DIVINO NIÑO TERCERA CUADRA A MANO DERECHA AL FONDO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CALLE": {
+    "municipio": "SANTA CRUZ DE LORICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LANCA DE REJAS BLANCAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LA PRADERA PRIMERA ETAPA DETRAS DE LA SALLE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "LA PRADERA PRIMERA ETAPA DETRAS DE LA SALLE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 10,
+    "total": 10,
+    "confianza": 100.0
+  },
+  "AJANDO POR LUBRIYA MOTOS POR LA TRONCAL": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO MANDALA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BARRIO LA CASTELLANA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRO GUARUMAL": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO COLINA A DOS CUADRAS DE LA OLÍMPICA EL BIENESTAR FAMILIAR": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "COLINA A DOS CUADRAS DE LA OLÍMPICA EL BIENESTAR FAMILIAR": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO EL PARAÍSO POR LA BOMBA DE LA PETROMIL POR ESA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL PARAÍSO POR LA BOMBA DE LA PETROMIL POR ESA": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA CASTELLANA POR KID CENTER A DOS CUADRAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA CASTELLANA POR KID CENTER A DOS CUADRAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CALIFORNIA CAMPESTRE ENTRANDO POR EL TAPAO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CALIFORNIA CAMPESTRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO ESMERALDA": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "AJAR FRENTE EL CONCESIONARIO DE MOTOS A DOS CUADRAS EN TODA LA ESQUINA CASA AZUL": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "LAR A LA DERECHA MITAD DE CUADRA": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UENAVISTA EL QUEMADO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIOL ESCOLAR": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "AJO SAN CARLOS  ENTRAR POR EL PUENTE LA RAICO AL FRENTE DE LA SEGUNDA TIENDA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO CORREA BAJANDO POR EL MERCADO LA  ULTIMA CASA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CORREA BAJANDO POR EL MERCADO LA  ULTIMA CASA": {
+    "municipio": "SAN CARLOS",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO MOCARI CAMILO TORRES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "MOCARI CAMILO TORRES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "INSON PINTALUA Y EN EL RECORD ENTRAR POR ESA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LANCA PREGUNTAR DONDE VIVE LA SRA DEBORA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "URRO MUERTO": {
+    "municipio": "CHIMÁ",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO FRANCI GARCIA": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "FRANCI GARCIA": {
+    "municipio": "LA APARTADA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO SAN ISIDRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN ISIDRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ANA DE LA FUENTE": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ALOMO": {
+    "municipio": "CHINÚ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UELVAS": {
+    "municipio": "PUEBLO NUEVO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LOS ÁLAMOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS ÁLAMOS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO EL MILAGRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL MILAGRO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "CALLE DEL COMERCIO": {
+    "municipio": "SAHAGÚN",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO SAN\n BERNARDO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "SAN\n BERNARDO": {
+    "municipio": "MONTELÍBANO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO  EL PRADO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "IO OTERO ALFRENTE DE UNA CASA DE SOS PISO COLOR AZUL CON BLANCO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS ROBLES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LA GRANJA POR LA POLICIA PREGUNTAR POR LOS PEÑAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "LA GRANJA POR LA POLICIA PREGUNTAR POR LOS PEÑAS": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 6,
+    "total": 6,
+    "confianza": 100.0
+  },
+  "ARRIO LAS AMERICAS": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA GRANJA \nPOR EL COLEGIO ALMIRANTE COLON LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA GRANJA \nPOR EL COLEGIO ALMIRANTE COLON LA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO LOS CANALES": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS CANALES": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LE A POR LA CASA DE LOS\nSOLANO": {
+    "municipio": "TIERRALTA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "CALDERON": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "UENOS AIRES CORREGIMIENTO DE SAN PELAYO": {
+    "municipio": "SAN PELAYO",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "NUEVOORIENTE": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "BARRIO LA GRANJA POR EL COLEGIO ANTONIA SANTO VIA AL BATALLON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LA GRANJA POR EL COLEGIO ANTONIA SANTO VIA AL BATALLON": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO VILLA NUEVA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ARRIO LA ESPERANZA POR EL RESTAURANTE EL PALACIO DEL BOCACHICO AL FRENTE DE RECORD": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LA ESPERANZA POR EL RESTAURANTE EL PALACIO DEL BOCACHICO AL FRENTE DE RECORD": {
+    "municipio": "CERETÉ",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "ARRIO LAS AMÉRICAS CIÉNAGA DE ORO CERCA DEL COLEGIO PRIVADO DEL MUNICIPIO LUIS AMIGO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LAS AMÉRICAS CIÉNAGA DE ORO CERCA DEL COLEGIO PRIVADO DEL MUNICIPIO LUIS AMIGO": {
+    "municipio": "CIÉNAGA DE ORO",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "ARRIO EL AMPARO ENTRAR POR MAXIMOTO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL AMPARO ENTRAR POR MAXIMOTO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "AGRE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
+  "LA GANJA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "EL RETIRO": {
+    "municipio": "CERETÉ",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LOS ALCASERES": {
+    "municipio": "AYAPEL",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "ESITO BOLAO MONTERIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "fecha_proceso": "2025-12-20T14:36:00",
+  "version": "2.0",
+  "resumen_ejecutivo": {
+    "registros_originales": 36151,
+    "registros_validos": 34250,
+    "registros_rechazados": 400,
+    "registros_eliminados": 1501,
+    "tasa_validez": "94.7%",
+    "tasa_rechazo": "1.1%",
+    "tasa_eliminacion": "4.2%"
+  },
+  "normalizacion": {
+    "eps": {
+      "antes": 54,
+      "despues": 16,
+      "reduccion": "70.4%",
+      "top_5": {
+        "NUEVA EPS": 23425,
+        "MUTUAL SER": 6999,
+        "SALUD TOTAL": 1038,
+        "PROMOSALUD": 786,
+        "SALUDVIDA": 669
+      }
+    },
+    "municipios": {
+      "antes": 82,
+      "despues": 29,
+      "reduccion": "64.6%",
+      "top_5": {
+        "MONTERÍA": 11873,
+        "SANTA CRUZ DE LORICA": 2957,
+        "SAHAGÚN": 2949,
+        "CERETÉ": 2460,
+        "AYAPEL": 1997
+      }
+    }
+  },
+  "recuperacion": {
+    "fase_1_limpieza_inicial": {
+      "script": "limpiar_datos_maestro.py",
+      "validos": 33350,
+      "rechazados": 2801,
+      "descripcion": "Normalización de EPS y municipios, reconstrucción de fechas"
+    },
+    "fase_2_recuperacion_cedula": {
+      "script": "recuperar_datos.py",
+      "recuperados": 441,
+      "metodo": "Búsqueda por número de cédula"
+    },
+    "fase_3_recuperacion_nombre": {
+      "script": "recuperar_datos_mejorado.py",
+      "eliminados_sin_id": 1501,
+      "recuperados": 95,
+      "metodo": "Búsqueda por nombre exacto y fuzzy matching"
+    },
+    "fase_4_recuperacion_direccion": {
+      "script": "recuperar_por_direccion.py",
+      "barrios_identificados": 1655,
+      "barrios_confiables": 1538,
+      "recuperados": 198,
+      "metodo": "Mapeo automático de barrios/sectores a municipios"
+    },
+    "fase_5_barrios_oficiales": {
+      "script": "recuperar_final_barrios.py",
+      "barrios_monteria": 200,
+      "recuperados": 166,
+      "metodo": "Lista oficial de barrios de Montería"
+    },
+    "total_recuperados": 900,
+    "detalle_recuperacion": {
+      "por_cedula": 441,
+      "por_nombre": 95,
+      "por_direccion_automatica": 198,
+      "por_barrios_oficiales": 166
+    }
+  },
+  "calidad_datos": {
+    "fechas_ingreso_validas": 28258,
+    "fechas_egreso_validas": 28852,
+    "sesiones_validas": 33121,
+    "cobertura_fechas_ingreso": "78.1%",
+    "cobertura_fechas_egreso": "79.8%",
+    "cobertura_sesiones": "91.6%"
+  },
+  "archivos_generados": {
+    "principal": {
+      "archivo": "DATA/trazabilidad_LIMPIA.json",
+      "registros": 34250,
+      "descripcion": "Datos limpios y normalizados - USAR ESTE"
+    },
+    "backup": {
+      "archivo": "DATA/trazabilidad_BACKUP.json",
+      "descripcion": "Backup del archivo original"
+    },
+    "rechazados": {
+      "archivo": "DATA/registros_RECHAZADOS.json",
+      "registros": 400,
+      "descripcion": "Registros que requieren revisión manual"
+    },
+    "eliminados": {
+      "archivo": "DATA/registros_ELIMINADOS.json",
+      "registros": 1501,
+      "descripcion": "Registros sin identificación (nombres, apellidos y cédula NULL)"
+    },
+    "indices": {
+      "barrios": "DATA/indice_barrios_municipios.json",
+      "descripcion": "1,538 barrios/sectores mapeados a municipios"
+    }
+  },
+  "scripts_ejecucion": {
+    "orden": [
+      "limpiar_datos_maestro.py",
+      "recuperar_datos.py",
+      "recuperar_datos_mejorado.py",
+      "recuperar_por_direccion.py",
+      "recuperar_final_barrios.py"
+    ],
+    "scripts_antiguos": "scripts_limpieza/"
+  },
+  "listas_maestras": {
+    "eps_oficiales_colombia": 38,
+    "municipios_cordoba": 30,
+    "barrios_sectores_identificados": 1538,
+    "barrios_oficiales_monteria": 200
+  },
+  "metricas_finales": {
+    "tasa_recuperacion": "24.9%",
+    "registros_recuperados_total": 900,
+    "registros_rechazados_inicial": 2801,
+    "registros_rechazados_final": 400,
+    "reduccion_rechazos": "85.7%"
+  }
+}

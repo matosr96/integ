@@ -1,0 +1,9 @@
+{
+  "fecha": "2025-12-20T14:21:00.048116",
+  "barrios_identificados": 1655,
+  "barrios_confiables": 1538,
+  "registros_recuperados": 198,
+  "municipios_recuperados_por_direccion": 202,
+  "total_validos_final": 34084,
+  "total_rechazados_final": 566
+}

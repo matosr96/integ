@@ -1,0 +1,56 @@
+{
+  "fecha_proceso": "2025-12-20T15:05:00",
+  "version": "3.0",
+  "resumen_ejecutivo": {
+    "registros_originales": 36151,
+    "registros_validos": 34629,
+    "registros_rechazados": 13,
+    "registros_eliminados": 1509,
+    "tasa_validez": "95.8%",
+    "tasa_rechazo": "0.04%",
+    "tasa_eliminacion": "4.2%"
+  },
+  "normalizacion": {
+    "eps": {
+      "antes": 54,
+      "despues": 23,
+      "entidades_agregadas": ["AXACOLPATRIA", "COLMENA", "COLMEDICA", "PARTICULAR", "GRUPO VIVIR", "EPS FAMILIAR", "UNICOR"],
+      "top_5": {
+        "NUEVA EPS": 23425,
+        "MUTUAL SER": 6999,
+        "SALUD TOTAL": 1038,
+        "PROMOSALUD": 786,
+        "SALUDVIDA": 669
+      }
+    },
+    "municipios": {
+      "antes": 82,
+      "despues": 30,
+      "municipios_agregados": ["CAUCASIA", "TRES PALMAS (MONTERÍA)"],
+      "top_5": {
+        "MONTERÍA": 12415,
+        "SANTA CRUZ DE LORICA": 2957,
+        "SAHAGÚN": 2949,
+        "CERETÉ": 2460,
+        "AYAPEL": 1997
+      }
+    }
+  },
+  "recuperacion_total": {
+    "validos_iniciales": 33350,
+    "recuperados_totales": 1279,
+    "fases": [
+      {"fase": "Cédula", "cantidad": 441},
+      {"fase": "Nombre/Fuzzy", "cantidad": 95},
+      {"fase": "Dirección/Barrios", "cantidad": 364},
+      {"fase": "Entidades adicionales", "cantidad": 32},
+      {"fase": "Por defecto (Montería)", "cantidad": 219},
+      {"fase": "Final patient cross-ref", "cantidad": 128}
+    ]
+  },
+  "archivos_finales": {
+    "datos_limpios": "DATA/trazabilidad_LIMPIA.json",
+    "rechazados_finales": "DATA/registros_RECHAZADOS.json",
+    "eliminados": "DATA/registros_ELIMINADOS.json"
+  }
+}
