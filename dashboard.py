@@ -6,10 +6,19 @@ from google_sheets_client import GoogleSheetsClient
 from fpdf import FPDF
 from datetime import datetime
 import time
+import matplotlib.pyplot as plt
+import tempfile
+import seaborn as sns
+import os
+
+# Configuración de matplotlib para estilo profesional
+plt.style.use('ggplot')
+sns.set_palette("husl")
 
 # Custom Modules
 from profesionales_component import render_professionals_tab
 from rutas_utils import create_route_pdf, generate_all_routes_zip
+from trazabilidad_utils import scan_trazabilidades, get_rendicion_stats, load_historical_data_db, load_historical_data_json
 
 # --- CONFIG & STYLING ---
 st.set_page_config(
@@ -263,7 +272,7 @@ def create_executive_pdf(df_filtered, kpi_data):
     if 'PROFESIONAL' in df_filtered.columns and 'MUNICIPIO' in df_filtered.columns:
         # Obtener datos por profesional
         prof_data = []
-        for prof in sorted(df_filtered['PROFESIONAL'].unique()):
+        for prof in sorted([p for p in df_filtered['PROFESIONAL'].unique() if pd.notna(p)], key=str):
             df_prof = df_filtered[df_filtered['PROFESIONAL'] == prof]
             count = len(df_prof)
             sessions = int(df_prof['CANTIDAD'].sum()) if 'CANTIDAD' in df_prof.columns else 0
@@ -417,6 +426,218 @@ def create_novedades_pdf(df_filtered):
         pdf.ln(3)
     return pdf.output(dest='S').encode('latin-1', 'replace')
 
+def create_historical_report_pdf(df):
+    """Genera un reporte EVOLUTIVO y ANALÍTICO (2018-Presente)"""
+    pdf = BasePDF()
+    
+    # --- HELPER: Save Plot to Temp File ---
+    def save_plot_to_image(fig):
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmpfile:
+            fig.savefig(tmpfile.name, dpi=300, bbox_inches='tight')
+            return tmpfile.name
+
+    # Datos Preparados
+    if 'AÑO_DATA' not in df.columns:
+        return None
+        
+    # Agrupar por año
+    df_yearly = df.groupby('AÑO_DATA').agg({
+        'CEDULA': 'nunique',
+        'CANTIDAD': 'sum',
+        'PROFESIONAL': 'nunique',
+        'MUNICIPIO': 'nunique'
+    }).reset_index().sort_values('AÑO_DATA')
+    df_yearly.columns = ['Año', 'Pacientes', 'Sesiones', 'Profesionales', 'Municipios']
+
+    # ==================== PÁGINA 1: PORTADA Y RESUMEN ====================
+    pdf.add_page()
+    pdf.ln(30)
+    pdf.set_font("Arial", 'B', 26)
+    pdf.cell(0, 15, "INFORME DE EVOLUCIÓN HISTÓRICA", 0, 1, 'C')
+    pdf.set_font("Arial", '', 14)
+    min_year = df_yearly['Año'].min()
+    max_year = df_yearly['Año'].max()
+    pdf.cell(0, 10, f"Análisis Longitudinal {min_year} - {max_year}", 0, 1, 'C')
+    pdf.ln(10)
+    
+    # Resumen acumulado
+    pdf.set_font("Arial", 'B', 12)
+    pdf.cell(0, 8, "Cifras Acumuladas del Periodo:", 0, 1, 'C')
+    
+    total_sess_hist = df['CANTIDAD'].sum()
+    unique_pats_hist = df['CEDULA'].nunique()
+    
+    pdf.set_font("Arial", '', 12)
+    pdf.cell(0, 8, f"Total Sesiones Realizadas: {int(total_sess_hist):,}", 0, 1, 'C')
+    pdf.cell(0, 8, f"Total Pacientes Atendidos: {unique_pats_hist:,}", 0, 1, 'C')
+    
+    pdf.ln(30)
+    pdf.set_font("Arial", 'I', 10)
+    pdf.multi_cell(0, 5, "Este documento presenta el análisis detallado del comportamiento operativo a lo largo de los años. Se enfoca en identificar tendencias de crecimiento, patrones estacionales y la evolución de la demanda de servicios terapéuticos.", 0, 'C')
+
+    # ==================== PÁGINA 2: EVOLUCIÓN DEL CRECIMIENTO ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "1. CURVA DE CRECIMIENTO ANUAL", 0, 1)
+    pdf.ln(5)
+    
+    # Gráfico 1: Evolución Pacientes vs Sesiones
+    fig, ax1 = plt.subplots(figsize=(10, 5))
+    
+    color = 'tab:blue'
+    ax1.set_xlabel('Año')
+    ax1.set_ylabel('Pacientes', color=color)
+    ax1.plot(df_yearly['Año'], df_yearly['Pacientes'], color=color, marker='o', linewidth=2, label='Pacientes')
+    ax1.tick_params(axis='y', labelcolor=color)
+    ax1.grid(True, alpha=0.3)
+    
+    ax2 = ax1.twinx()  
+    color = 'tab:red'
+    ax2.set_ylabel('Sesiones', color=color)  
+    ax2.plot(df_yearly['Año'], df_yearly['Sesiones'], color=color, marker='s', linestyle='--', linewidth=2, label='Sesiones')
+    ax2.tick_params(axis='y', labelcolor=color)
+    
+    plt.title("Evolución de Volumen Operativo")
+    fig.tight_layout()
+    
+    img_path = save_plot_to_image(fig)
+    pdf.image(img_path, x=10, w=190)
+    plt.close(fig)
+    os.remove(img_path)
+    
+    pdf.ln(5)
+    
+    # Tabla de Datos Anual
+    pdf.set_font("Arial", 'B', 10)
+    pdf.set_fill_color(220, 220, 220)
+    pdf.cell(25, 8, "Año", 1, 0, 'C', 1)
+    pdf.cell(40, 8, "Pacientes", 1, 0, 'C', 1)
+    pdf.cell(40, 8, "Sesiones", 1, 0, 'C', 1)
+    pdf.cell(40, 8, "Profesionales", 1, 0, 'C', 1)
+    pdf.cell(40, 8, "Var. Pacientes", 1, 1, 'C', 1) # Variación Anual
+    
+    pdf.set_font("Arial", '', 10)
+    prev_pats = 0
+    for idx, row in df_yearly.iterrows():
+        year = str(int(row['Año']))
+        pats = int(row['Pacientes'])
+        sess = int(row['Sesiones'])
+        profs = int(row['Profesionales'])
+        
+        # Calcular variación porcentual
+        if prev_pats > 0:
+            var_pct = ((pats - prev_pats) / prev_pats) * 100
+            var_str = f"{var_pct:+.1f}%"
+        else:
+            var_str = "-"
+        prev_pats = pats
+        
+        pdf.cell(25, 7, year, 1, 0, 'C')
+        pdf.cell(40, 7, f"{pats:,}", 1, 0, 'C')
+        pdf.cell(40, 7, f"{sess:,}", 1, 0, 'C')
+        pdf.cell(40, 7, f"{profs}", 1, 0, 'C')
+        pdf.cell(40, 7, var_str, 1, 1, 'C')
+
+    # ==================== PÁGINA 3: EVOLUCIÓN DE SERVICIOS ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "2. EVOLUCIÓN DE TIPOS DE TERAPIA", 0, 1)
+    pdf.ln(5)
+    pdf.set_font("Arial", '', 10)
+    pdf.multi_cell(0, 5, "Análisis de cómo ha cambiado la composición de las terapias a lo largo de los años.")
+    pdf.ln(5)
+    
+    if 'TIPO_TERAPIA' in df.columns or 'TIPO DE TERAPIAS' in df.columns:
+        col_terapia = 'TIPO_TERAPIA' if 'TIPO_TERAPIA' in df.columns else 'TIPO DE TERAPIAS'
+        
+        # Limpieza rápida
+        df_srv = df.copy()
+        df_srv[col_terapia] = df_srv[col_terapia].astype(str).str.strip().str.upper()
+        
+        # Pivot Table: Año vs Terapia (Cantidad)
+        pivot_srv = df_srv.groupby(['AÑO_DATA', col_terapia])['CANTIDAD'].sum().unstack(fill_value=0)
+        
+        # Filtrar Top 5 Terapias históricas para el gráfico (para no saturar)
+        top_services = df_srv.groupby(col_terapia)['CANTIDAD'].sum().sort_values(ascending=False).head(5).index
+        pivot_plot = pivot_srv[top_services]
+        
+        # Área Plot
+        fig2, ax2 = plt.subplots(figsize=(10, 6))
+        pivot_plot.plot(kind='area', stacked=True, alpha=0.6, ax=ax2)
+        plt.title("Tendencia de Volumen por Tipo de Terapia (Top 5)")
+        plt.ylabel("Número de Sesiones")
+        plt.xlabel("Año")
+        plt.legend(loc='upper left', bbox_to_anchor=(1, 1))
+        fig2.tight_layout()
+        
+        img_path2 = save_plot_to_image(fig2)
+        pdf.image(img_path2, x=10, w=180)
+        plt.close(fig2)
+        os.remove(img_path2)
+        
+    # ==================== PÁGINA 4: ANÁLISIS POR EPS ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "3. DINÁMICA DE CLIENTES (EPS)", 0, 1)
+    
+    if 'EPS' in df.columns:
+        # Pivot: Año vs EPS (Pacientes)
+        df_eps_clean = df.copy()
+        # Limpiar EPS nulas
+        df_eps_clean = df_eps_clean[df_eps_clean['EPS'].notna()]
+        
+        # Top 6 EPS históricas
+        top_eps = df_eps_clean['EPS'].value_counts().head(6).index
+        
+        df_eps_evo = df_eps_clean[df_eps_clean['EPS'].isin(top_eps)].groupby(['AÑO_DATA', 'EPS'])['CEDULA'].nunique().unstack(fill_value=0)
+        
+        # Line Plot Multiserie
+        fig3, ax3 = plt.subplots(figsize=(10, 6))
+        df_eps_evo.plot(kind='line', marker='o', linewidth=2, ax=ax3)
+        plt.title("Evolución de Pacientes en Top 6 EPS")
+        plt.ylabel("Pacientes Activos")
+        plt.grid(True, alpha=0.3)
+        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+        fig3.tight_layout()
+        
+        img_path3 = save_plot_to_image(fig3)
+        pdf.image(img_path3, x=10, w=180)
+        plt.close(fig3)
+        os.remove(img_path3)
+        
+    # ==================== CONCLUSIONES (Generadas Dinámicamente) ====================
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "4. CONCLUSIONES ESTRATÉGICAS", 0, 1)
+    pdf.ln(5)
+    pdf.set_font("Arial", '', 11)
+    
+    conclusions = []
+    
+    # 1. Crecimiento Total
+    start_vals = df_yearly.iloc[0]
+    end_vals = df_yearly.iloc[-1]
+    years_diff = end_vals['Año'] - start_vals['Año']
+    if years_diff > 0:
+        growth_pats = ((end_vals['Pacientes'] - start_vals['Pacientes']) / start_vals['Pacientes']) * 100
+        conclusions.append(f"• En el periodo de {int(years_diff)} años, la base de pacientes ha variado un {growth_pats:+.1f}%.")
+    
+    # 2. Año Pico
+    peak_year_row = df_yearly.loc[df_yearly['Sesiones'].idxmax()]
+    conclusions.append(f"• El año {int(peak_year_row['Año'])} registró la mayor actividad histórica con {int(peak_year_row['Sesiones']):,} sesiones.")
+
+    # 3. Diversificación
+    if 'EPS' in df.columns:
+        eps_start = df[df['AÑO_DATA'] == min_year]['EPS'].nunique()
+        eps_end = df[df['AÑO_DATA'] == max_year]['EPS'].nunique()
+        conclusions.append(f"• La cartera de clientes ha pasado de {eps_start} EPS en {min_year} a {eps_end} EPS en {max_year}.")
+
+    for c in conclusions:
+        pdf.multi_cell(0, 8, c.encode('latin-1', 'replace').decode('latin-1'))
+        pdf.ln(2)
+
+    return pdf.output(dest='S').encode('latin-1', 'replace')
+
 @st.cache_data(ttl=300)
 def load_data(sheet_url):
     client = GoogleSheetsClient('credentials.json')
@@ -437,6 +658,417 @@ def render_sidebar_header():
 
 # --- MODULES ---
 
+def module_historical_analysis(json_dir):
+    """
+    Módulo de Análisis Histórico Completo (2018-2025).
+    Análisis ejecutivo con KPIs avanzados y reporte descargable.
+    """
+    st.header("📊 Análisis Histórico Ejecutivo (2018 - Presente)")
+    st.markdown("---")
+
+    # Load Data
+    with st.spinner("Cargando base de datos histórica..."):
+        df = load_historical_data_json(json_dir)
+        
+    if df.empty:
+        st.warning("No se encontraron datos históricos procesados en JSON.")
+        return
+
+    # --- SIDEBAR FILTERS ---
+    st.sidebar.subheader("🔍 Filtros de Análisis")
+    
+    # 1. Year Filter
+    if 'AÑO_DATA' in df.columns:
+        available_years = sorted([y for y in df['AÑO_DATA'].unique() if y != 9999])
+        selected_years = st.sidebar.multiselect(
+            "Seleccionar Años", 
+            options=available_years,
+            default=available_years
+        )
+    else:
+        selected_years = []
+    
+    # 2. Therapy Type Filter
+    if 'TIPO_TERAPIA' in df.columns:
+        available_therapies = sorted([t for t in df['TIPO_TERAPIA'].unique() if pd.notna(t)])
+        selected_therapies = st.sidebar.multiselect(
+            "Tipo de Terapia",
+            options=available_therapies,
+            default=available_therapies
+        )
+    else:
+        selected_therapies = []
+    
+    # 3. EPS Filter
+    if 'EPS' in df.columns:
+        available_eps = sorted([e for e in df['EPS'].unique() if pd.notna(e)])
+        selected_eps = st.sidebar.multiselect(
+            "EPS",
+            options=available_eps,
+            default=available_eps
+        )
+    else:
+        selected_eps = []
+
+    # --- FILTERING LOGIC ---
+    mask = pd.Series([True]*len(df))
+    
+    if selected_years and 'AÑO_DATA' in df.columns:
+        mask = mask & df['AÑO_DATA'].isin(selected_years)
+        
+    if selected_therapies and 'TIPO_TERAPIA' in df.columns:
+        mask = mask & df['TIPO_TERAPIA'].isin(selected_therapies)
+        
+    if selected_eps and 'EPS' in df.columns:
+        mask = mask & df['EPS'].isin(selected_eps)
+        
+    df_filtered = df[mask]
+    
+    # =========================
+    # SECCIÓN 1: KPIs PRINCIPALES (12 INDICADORES)
+    # =========================
+    st.subheader("📈 Indicadores Clave de Desempeño")
+    
+    # Calcular métricas
+    total_sesiones = df_filtered['CANTIDAD'].sum() if 'CANTIDAD' in df_filtered.columns else 0
+    total_pacientes = df_filtered['CEDULA'].nunique() if 'CEDULA' in df_filtered.columns else 0
+    total_registros = len(df_filtered)
+    prom_sesiones_paciente = total_sesiones / total_pacientes if total_pacientes > 0 else 0
+    
+    total_profesionales = df_filtered['PROFESIONAL'].nunique() if 'PROFESIONAL' in df_filtered.columns else 0
+    total_eps = df_filtered['EPS'].nunique() if 'EPS' in df_filtered.columns else 0
+    total_municipios = df_filtered['MUNICIPIO'].nunique() if 'MUNICIPIO' in df_filtered.columns else 0
+    total_terapias = df_filtered['TIPO_TERAPIA'].nunique() if 'TIPO_TERAPIA' in df_filtered.columns else 0
+    
+    # Crecimiento año a año
+    if 'AÑO_DATA' in df_filtered.columns and len(selected_years) >= 2:
+        years_sorted = sorted(selected_years)
+        df_year_current = df_filtered[df_filtered['AÑO_DATA'] == years_sorted[-1]]
+        df_year_previous = df_filtered[df_filtered['AÑO_DATA'] == years_sorted[-2]]
+        
+        sesiones_current = df_year_current['CANTIDAD'].sum() if 'CANTIDAD' in df_year_current.columns else 0
+        sesiones_previous = df_year_previous['CANTIDAD'].sum() if 'CANTIDAD' in df_year_previous.columns else 0
+        
+        growth_rate = ((sesiones_current - sesiones_previous) / sesiones_previous * 100) if sesiones_previous > 0 else 0
+    else:
+        growth_rate = 0
+    
+    # Tasa de retención (pacientes que aparecen en múltiples años)
+    if 'CEDULA' in df_filtered.columns and 'AÑO_DATA' in df_filtered.columns:
+        patient_years = df_filtered.groupby('CEDULA')['AÑO_DATA'].nunique()
+        retention_rate = (patient_years[patient_years > 1].count() / total_pacientes * 100) if total_pacientes > 0 else 0
+    else:
+        retention_rate = 0
+    
+    # Display KPIs en 4 filas de 3 columnas
+    col1, col2, col3 = st.columns(3)
+    col1.metric("💉 Total Sesiones", f"{total_sesiones:,.0f}")
+    col2.metric("👥 Pacientes Únicos", f"{total_pacientes:,.0f}")
+    col3.metric("📋 Total Registros", f"{total_registros:,.0f}")
+    
+    col4, col5, col6 = st.columns(3)
+    col4.metric("👨‍⚕️ Profesionales Activos", f"{total_profesionales}")
+    col5.metric("🏥 EPS Atendidas", f"{total_eps}")
+    col6.metric("📍 Municipios Cubiertos", f"{total_municipios}")
+    
+    col7, col8, col9 = st.columns(3)
+    col7.metric("🎯 Tipos de Terapia", f"{total_terapias}")
+    col8.metric("📊 Prom. Sesiones/Paciente", f"{prom_sesiones_paciente:.1f}")
+    col9.metric("📈 Crecimiento Anual", f"{growth_rate:+.1f}%", delta=f"{growth_rate:.1f}%")
+    
+    col10, col11, col12 = st.columns(3)
+    col10.metric("🔄 Tasa de Retención", f"{retention_rate:.1f}%")
+    sesiones_por_prof = total_sesiones / total_profesionales if total_profesionales > 0 else 0
+    col11.metric("⚡ Sesiones/Profesional", f"{sesiones_por_prof:.0f}")
+    pacientes_por_mun = total_pacientes / total_municipios if total_municipios > 0 else 0
+    col12.metric("🌍 Pacientes/Municipio", f"{pacientes_por_mun:.1f}")
+    
+    st.markdown("---")
+    
+    # =========================
+    # SECCIÓN 2: ANÁLISIS TEMPORAL
+    # =========================
+    st.subheader("📅 Análisis de Tendencias Temporales")
+    
+    tab1, tab2, tab3 = st.tabs(["📈 Evolución Mensual", "📊 Comparación Anual", "🔄 Estacionalidad"])
+    
+    with tab1:
+        if 'FECHA_INICIO' in df_filtered.columns:
+            df_time = df_filtered.dropna(subset=['FECHA_INICIO']).copy()
+            if not df_time.empty:
+                df_time['Periodo'] = df_time['FECHA_INICIO'].dt.to_period('M').astype(str)
+                time_stats = df_time.groupby('Periodo').agg({
+                    'CANTIDAD': 'sum',
+                    'CEDULA': 'nunique'
+                }).reset_index()
+                time_stats.columns = ['Periodo', 'Sesiones', 'Pacientes']
+                
+                fig_time = px.line(
+                    time_stats, 
+                    x='Periodo', 
+                    y=['Sesiones', 'Pacientes'],
+                    title='Evolución Mensual: Sesiones y Pacientes',
+                    markers=True,
+                    template="plotly_white"
+                )
+                fig_time.update_layout(yaxis_title="Cantidad", xaxis_title="Mes")
+                st.plotly_chart(fig_time, use_container_width=True)
+        else:
+            st.info("No hay datos de fecha disponibles.")
+    
+    with tab2:
+        if 'AÑO_DATA' in df_filtered.columns:
+            year_stats = df_filtered.groupby('AÑO_DATA').agg({
+                'CANTIDAD': 'sum',
+                'CEDULA': 'nunique',
+                'PROFESIONAL': 'nunique'
+            }).reset_index()
+            year_stats.columns = ['Año', 'Sesiones', 'Pacientes', 'Profesionales']
+            
+            fig_year = px.bar(
+                year_stats,
+                x='Año',
+                y='Sesiones',
+                title='Sesiones Totales por Año',
+                text='Sesiones',
+                template="plotly_white",
+                color='Sesiones',
+                color_continuous_scale='Viridis'
+            )
+            fig_year.update_traces(texttemplate='%{text:,.0f}', textposition='outside')
+            st.plotly_chart(fig_year, use_container_width=True)
+            
+            # Tabla de comparación
+            st.dataframe(year_stats, use_container_width=True, hide_index=True)
+    
+    with tab3:
+        if 'FECHA_INICIO' in df_filtered.columns:
+            df_season = df_filtered.dropna(subset=['FECHA_INICIO']).copy()
+            if not df_season.empty:
+                df_season['Mes'] = df_season['FECHA_INICIO'].dt.month
+                season_stats = df_season.groupby('Mes')['CANTIDAD'].sum().reset_index()
+                season_stats['Mes_Nombre'] = season_stats['Mes'].apply(lambda x: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'][x-1])
+                
+                fig_season = px.bar(
+                    season_stats,
+                    x='Mes_Nombre',
+                    y='CANTIDAD',
+                    title='Patrón Estacional: Sesiones por Mes del Año',
+                    template="plotly_white",
+                    color='CANTIDAD',
+                    color_continuous_scale='RdYlGn'
+                )
+                st.plotly_chart(fig_season, use_container_width=True)
+    
+    st.markdown("---")
+    
+    # =========================
+    # SECCIÓN 3: ANÁLISIS POR DIMENSIONES
+    # =========================
+    st.subheader("🔍 Análisis Multidimensional")
+    
+    col_left, col_right = st.columns(2)
+    
+    with col_left:
+        st.markdown("#### 🏥 Top 10 EPS por Volumen")
+        if 'EPS' in df_filtered.columns:
+            eps_stats = df_filtered.groupby('EPS').agg({
+                'CANTIDAD': 'sum',
+                'CEDULA': 'nunique'
+            }).reset_index().sort_values('CANTIDAD', ascending=False).head(10)
+            eps_stats.columns = ['EPS', 'Sesiones', 'Pacientes']
+            
+            fig_eps = px.bar(
+                eps_stats,
+                y='EPS',
+                x='Sesiones',
+                orientation='h',
+                title='',
+                template="plotly_white",
+                color='Sesiones',
+                color_continuous_scale='Blues',
+                text='Sesiones'
+            )
+            fig_eps.update_traces(texttemplate='%{text:,.0f}', textposition='outside')
+            fig_eps.update_layout(yaxis={'categoryorder':'total ascending'})
+            st.plotly_chart(fig_eps, use_container_width=True)
+    
+    with col_right:
+        st.markdown("#### 🎯 Distribución por Tipo de Terapia")
+        if 'TIPO_TERAPIA' in df_filtered.columns:
+            terapia_stats = df_filtered.groupby('TIPO_TERAPIA')['CANTIDAD'].sum().reset_index().sort_values('CANTIDAD', ascending=False)
+            
+            fig_therapy = px.pie(
+                terapia_stats,
+                values='CANTIDAD',
+                names='TIPO_TERAPIA',
+                title='',
+                template="plotly_white",
+                hole=0.4
+            )
+            st.plotly_chart(fig_therapy, use_container_width=True)
+    
+    # =========================
+    # SECCIÓN 4: ANÁLISIS DE PROFESIONALES
+    # =========================
+    st.markdown("---")
+    st.subheader("👨‍⚕️ Desempeño de Profesionales")
+    
+    if 'PROFESIONAL' in df_filtered.columns:
+        prof_stats = df_filtered.groupby('PROFESIONAL').agg({
+            'CEDULA': 'nunique',
+            'CANTIDAD': 'sum',
+            'MUNICIPIO': 'nunique'
+        }).reset_index()
+        prof_stats.columns = ['Profesional', 'Pacientes', 'Sesiones', 'Municipios']
+        prof_stats['Prom_Sesiones'] = prof_stats['Sesiones'] / prof_stats['Pacientes']
+        prof_stats = prof_stats.sort_values('Sesiones', ascending=False).head(20)
+        
+        st.dataframe(
+            prof_stats.style.format({
+                'Pacientes': '{:,.0f}',
+                'Sesiones': '{:,.0f}',
+                'Prom_Sesiones': '{:.1f}'
+            }),
+            use_container_width=True,
+            hide_index=True
+        )
+    
+    # =========================
+    # SECCIÓN 5: COBERTURA GEOGRÁFICA
+    # =========================
+    st.markdown("---")
+    st.subheader("🗺️ Cobertura Geográfica Completa")
+    
+    if 'MUNICIPIO' in df_filtered.columns:
+        # Calcular estadísticas completas por municipio
+        mun_stats_full = df_filtered.groupby('MUNICIPIO').agg({
+            'CEDULA': 'nunique',
+            'CANTIDAD': 'sum',
+            'PROFESIONAL': 'nunique'
+        }).reset_index().sort_values('CEDULA', ascending=False)
+        mun_stats_full.columns = ['Municipio', 'Pacientes', 'Sesiones', 'Profesionales']
+        
+        # KPIs de cobertura
+        col_geo1, col_geo2, col_geo3 = st.columns(3)
+        col_geo1.metric("🌍 Total Municipios", len(mun_stats_full))
+        col_geo2.metric("🏆 Municipio Principal", mun_stats_full.iloc[0]['Municipio'] if len(mun_stats_full) > 0 else "N/A")
+        col_geo3.metric("👥 Pacientes (Principal)", f"{mun_stats_full.iloc[0]['Pacientes']:,.0f}" if len(mun_stats_full) > 0 else "0")
+        
+        st.markdown("---")
+        
+        # Tabs para diferentes vistas
+        tab_chart, tab_list, tab_table = st.tabs(["📊 Top 15 Municipios", "📋 Lista Completa", "📈 Tabla Detallada"])
+        
+        with tab_chart:
+            # Gráfico Top 15
+            mun_top15 = mun_stats_full.head(15)
+            fig_mun = px.bar(
+                mun_top15,
+                x='Municipio',
+                y='Pacientes',
+                title='Top 15 Municipios por Pacientes Atendidos',
+                template="plotly_white",
+                color='Pacientes',
+                color_continuous_scale='Greens',
+                text='Pacientes'
+            )
+            fig_mun.update_traces(texttemplate='%{text:,.0f}', textposition='outside')
+            st.plotly_chart(fig_mun, use_container_width=True)
+        
+        with tab_list:
+            st.markdown("#### 🗺️ Listado Alfabético de Todos los Municipios Atendidos")
+            st.caption(f"Total: {len(mun_stats_full)} municipios")
+            
+            # Ordenar alfabéticamente
+            municipios_sorted = sorted(mun_stats_full['Municipio'].dropna().unique())
+            
+            # Mostrar en columnas para mejor visualización
+            num_cols = 3
+            cols = st.columns(num_cols)
+            
+            for idx, municipio in enumerate(municipios_sorted):
+                col_idx = idx % num_cols
+                with cols[col_idx]:
+                    # Obtener stats del municipio
+                    mun_data = mun_stats_full[mun_stats_full['Municipio'] == municipio].iloc[0]
+                    st.markdown(f"**{idx+1}. {municipio}**")
+                    st.caption(f"👥 {mun_data['Pacientes']:,.0f} pacientes | 💉 {mun_data['Sesiones']:,.0f} sesiones")
+        
+        with tab_table:
+            st.markdown("#### 📊 Estadísticas Detalladas por Municipio")
+            
+            # Agregar columnas calculadas
+            mun_stats_full['Prom_Sesiones_Paciente'] = mun_stats_full['Sesiones'] / mun_stats_full['Pacientes']
+            mun_stats_full['% del Total'] = (mun_stats_full['Pacientes'] / mun_stats_full['Pacientes'].sum() * 100)
+            
+            st.dataframe(
+                mun_stats_full.style.format({
+                    'Pacientes': '{:,.0f}',
+                    'Sesiones': '{:,.0f}',
+                    'Profesionales': '{:.0f}',
+                    'Prom_Sesiones_Paciente': '{:.1f}',
+                    '% del Total': '{:.2f}%'
+                }),
+                use_container_width=True,
+                hide_index=True,
+                height=400
+            )
+    
+    # =========================
+    # SECCIÓN 6: REPORTE DESCARGABLE
+    # =========================
+    st.markdown("---")
+    st.subheader("📥 Generar Reporte Ejecutivo")
+    
+    col_btn1, col_btn2 = st.columns(2)
+    
+    with col_btn1:
+        if st.button("📄 Descargar Reporte PDF Completo", type="primary", use_container_width=True):
+            with st.spinner("Generando reporte ejecutivo profesional..."):
+                # Preparar datos para el reporte
+                kpi_data = {
+                    "Total Sesiones": int(total_sesiones),
+                    "Pacientes Únicos": total_pacientes,
+                    "Profesionales Activos": total_profesionales,
+                    "EPS Atendidas": total_eps,
+                    "Municipios Cubiertos": total_municipios,
+                    "Crecimiento Anual": f"{growth_rate:.1f}%",
+                    "Tasa de Retención": f"{retention_rate:.1f}%"
+                }
+                
+                # Renombrar columnas para compatibilidad con PDF existente
+                df_pdf = df_filtered.rename(columns={
+                    'NOMBRES': 'NOMBRE',
+                    'TIPO_TERAPIA': 'TIPO DE TERAPIAS',
+                })
+                
+                pdf_bytes = create_historical_report_pdf(df_pdf)
+                
+                if pdf_bytes:
+                    st.download_button(
+                        "⬇️ Descargar Reporte Histórico PDF",
+                        data=pdf_bytes,
+                        file_name=f"Reporte_Historico_Ejecutivo_{datetime.now().strftime('%Y%m%d')}.pdf",
+                        mime="application/pdf",
+                        use_container_width=True
+                    )
+    
+    with col_btn2:
+        # Exportar datos filtrados a CSV
+        csv = df_filtered.to_csv(index=False).encode('utf-8-sig')
+        st.download_button(
+            "📊 Exportar Datos a CSV",
+            data=csv,
+            file_name=f"Datos_Historicos_{datetime.now().strftime('%Y%m%d')}.csv",
+            mime="text/csv",
+            use_container_width=True
+        )
+    
+    # --- RAW DATA VIEW ---
+    with st.expander("🔎 Ver Datos Detallados (Tabla Completa)"):
+        st.dataframe(df_filtered.head(1000), use_container_width=True)
+
 def module_dashboard(df):
     st.markdown("## 📊 Dashboard Analítico")
     st.markdown("Resumen general del estado de la operación.")
@@ -444,10 +1076,10 @@ def module_dashboard(df):
     # Context Filters for Dashboard
     with st.expander("🔎 Filtros de Visualización", expanded=False):
         c1, c2 = st.columns(2)
-        mun_opt = ['Todos'] + sorted(list(df['MUNICIPIO'].unique())) if 'MUNICIPIO' in df.columns else ['Todos']
+        mun_opt = ['Todos'] + sorted([x for x in df['MUNICIPIO'].unique() if pd.notna(x)], key=str) if 'MUNICIPIO' in df.columns else ['Todos']
         sel_mun = c1.selectbox("Filtrar por Municipio", mun_opt)
         
-        eps_opt = ['Todas'] + sorted(list(df['EPS'].unique())) if 'EPS' in df.columns else ['Todas']
+        eps_opt = ['Todas'] + sorted([x for x in df['EPS'].unique() if pd.notna(x)], key=str) if 'EPS' in df.columns else ['Todas']
         sel_eps = c2.selectbox("Filtrar por EPS", eps_opt)
         
     # Apply local filters
@@ -524,7 +1156,7 @@ def module_rutas(df):
 
     tab1, tab2 = st.tabs(["👤 Generación Individual", "📦 Generación Masiva (ZIP)"])
     
-    profs_available = sorted(list(df['PROFESIONAL'].unique()))
+    profs_available = sorted([p for p in df['PROFESIONAL'].unique() if pd.notna(p)], key=str)
     
     with tab1:
         # Selection Column
@@ -549,7 +1181,7 @@ def module_rutas(df):
                 # Metric 1: Total Patients (solo activos)
                 st.metric("Pacientes Activos", len(df_prof))
                 
-                # Metric 2: Total Sessions
+                # Metric 2: Total Sesiones
                 sessions = df_prof['CANTIDAD'].sum() if 'CANTIDAD' in df_prof.columns else 0
                 st.metric("Total Sesiones", int(sessions))
                 
@@ -784,13 +1416,13 @@ def module_data_explorer(df):
         st.markdown("#### Filtros")
         c1, c2, c3, c4 = st.columns(4)
         
-        mun_opt = ['Todos'] + sorted(list(df['MUNICIPIO'].unique())) if 'MUNICIPIO' in df.columns else ['Todos']
+        mun_opt = ['Todos'] + sorted([x for x in df['MUNICIPIO'].unique() if pd.notna(x)], key=str) if 'MUNICIPIO' in df.columns else ['Todos']
         sel_mun = c1.selectbox("Municipio", mun_opt, key="de_mun")
         
-        eps_opt = ['Todas'] + sorted(list(df['EPS'].unique())) if 'EPS' in df.columns else ['Todas']
+        eps_opt = ['Todas'] + sorted([x for x in df['EPS'].unique() if pd.notna(x)], key=str) if 'EPS' in df.columns else ['Todas']
         sel_eps = c2.selectbox("EPS", eps_opt, key="de_eps")
         
-        type_opt = sorted(list(df['TIPO DE USUARIO'].unique())) if 'TIPO DE USUARIO' in df.columns else []
+        type_opt = sorted([x for x in df['TIPO DE USUARIO'].unique() if pd.notna(x)], key=str) if 'TIPO DE USUARIO' in df.columns else []
         sel_type = c3.multiselect("Tipo Usuario", type_opt, key="de_type")
 
         # Filter Logic
@@ -885,9 +1517,7 @@ def main():
 
     # Sidebar Navigation using Radio for clear tabs
     st.sidebar.markdown("---")
-    st.sidebar.markdown("### 🧭 Navegación")
-    
-    options = ["Dashboard Analítico", "Gestión de Rutas", "Eventos Pendientes", "Explorador de Datos"]
+    options = ["Dashboard Analítico", "Gestión de Rutas", "Eventos Pendientes", "Explorador de Datos", "Análisis Histórico"]
     selection = st.sidebar.radio("Ir a:", options, label_visibility="collapsed")
     
     st.sidebar.info(f"📁 Archivo: {sheet_input[:20]}...")
@@ -901,6 +1531,8 @@ def main():
         module_pending_events(df)
     elif selection == "Explorador de Datos":
         module_data_explorer(df)
+    elif selection == "Análisis Histórico":
+        module_historical_analysis('DATA/PROCESSED_JSON')
 
 if __name__ == "__main__":
     main()
