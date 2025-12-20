@@ -1532,7 +1532,7 @@ def main():
     elif selection == "Explorador de Datos":
         module_data_explorer(df)
     elif selection == "Análisis Histórico":
-        module_historical_analysis('data/raw/PROCESSED_JSON')
+        module_historical_analysis('data/processed/trazabilidad_LIMPIA.json')
 
 if __name__ == "__main__":
     main()
