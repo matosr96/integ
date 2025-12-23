@@ -93,7 +93,7 @@ def is_valid_municipio(val):
 def analyze_masters():
     """Analiza y crea listas maestras de EPS y Municipios"""
     
-    file_path = 'data/audit/trazabilidad_consolidada.json'
+    file_path = 'data/raw/trazabilidad_consolidada.json'
     
     print("="*80)
     print("IDENTIFICACIÓN DE DATOS MAESTROS")

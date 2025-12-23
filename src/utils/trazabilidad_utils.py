@@ -65,7 +65,8 @@ def scan_trazabilidades(base_path):
 
     for root, dirs, files in os.walk(base_path):
         for file in files:
-            if file.endswith('.xlsx') and not file.startswith('~$'):
+            # Skip temp files and specifically those marked as COMPLETE (duplicates/consolidated)
+            if file.endswith('.xlsx') and not file.startswith('~$') and 'COMPLETE' not in file.upper():
                 file_path = os.path.join(root, file)
                 try:
                     # Read Excel
@@ -184,7 +185,9 @@ def load_historical_data_json(path):
         'sesiones': 'CANTIDAD',
         'tipo_terapia': 'TIPO_TERAPIA',
         'diagnostico': 'DIAGNOSTICO',
-        'sheet_name': 'ORIGEN_HOJA'
+        'sheet_name': 'ORIGEN_HOJA',
+        'year_folder': 'AÑO_DATA',
+        'year': 'AÑO_DATA'
     }
 
     # PROCESAMIENTO
@@ -211,7 +214,8 @@ def load_historical_data_json(path):
         # Caso 2: Directorio de archivos JSON
         for root, dirs, files in os.walk(path):
             for file in files:
-                if file.endswith('.json'):
+                # Filter out COMPLETE files to avoid duplication
+                if file.endswith('.json') and 'COMPLETE' not in file.upper():
                     file_path = os.path.join(root, file)
                     try:
                         with open(file_path, 'r', encoding='utf-8') as f:
@@ -241,14 +245,25 @@ def load_historical_data_json(path):
     
     # --- PROCESAMIENTO FINAL ---
     
-    # 1. Asegurar AÑO_DATA si falta
-    if 'AÑO_DATA' not in consolidated_df.columns:
-        if 'FECHA_INICIO' in consolidated_df.columns:
-            temp_dates = pd.to_datetime(consolidated_df['FECHA_INICIO'], errors='coerce')
-            consolidated_df['AÑO_DATA'] = temp_dates.dt.year.fillna(datetime.now().year).astype(int)
+    # 1. Asegurar AÑO_DATA si falta o es inválido
+    if 'AÑO_DATA' in consolidated_df.columns:
+        # Limpiar AÑO_DATA (puede venir como string "2018" o similar)
+        consolidated_df['AÑO_DATA'] = pd.to_numeric(consolidated_df['AÑO_DATA'], errors='coerce')
+    
+    if 'FECHA_INICIO' in consolidated_df.columns:
+        consolidated_df['FECHA_INICIO'] = pd.to_datetime(consolidated_df['FECHA_INICIO'], errors='coerce')
+        # Si AÑO_DATA es nulo pero tenemos fecha, extraer del año
+        if 'AÑO_DATA' in consolidated_df.columns:
+            consolidated_df['AÑO_DATA'] = consolidated_df['AÑO_DATA'].fillna(consolidated_df['FECHA_INICIO'].dt.year)
         else:
-            consolidated_df['AÑO_DATA'] = datetime.now().year
+            consolidated_df['AÑO_DATA'] = consolidated_df['FECHA_INICIO'].dt.year
 
+    # Rellenar restantes con año actual y convertir a int
+    consolidated_df['AÑO_DATA'] = consolidated_df['AÑO_DATA'].fillna(datetime.now().year).astype(int)
+    
+    # FILTRO CRÍTICO: Eliminar años menores a 2018 (como 1900 o errores de Excel)
+    consolidated_df = consolidated_df[consolidated_df['AÑO_DATA'] >= 2018]
+    
     # 2. Conversiones de tipos
     if 'CANTIDAD' in consolidated_df.columns:
         consolidated_df['CANTIDAD'] = pd.to_numeric(consolidated_df['CANTIDAD'], errors='coerce').fillna(0)
@@ -295,3 +310,17 @@ def get_rendicion_stats(df):
         'municipio_dist': df['MUNICIPIO'].value_counts().to_dict() if 'MUNICIPIO' in df.columns else {}
     }
     return stats
+
+def get_whatsapp_link(phone, message="Hola"):
+    """Genera un link de WhatsApp para un número dado"""
+    if not phone:
+        return None
+    # Limpiar el número: dejar solo dígitos
+    clean_phone = "".join(filter(str.isdigit, str(phone)))
+    # Si no tiene código de país y parece un celular colombiano
+    if len(clean_phone) == 10 and clean_phone.startswith('3'):
+        clean_phone = "57" + clean_phone
+    
+    import urllib.parse
+    encoded_message = urllib.parse.quote(message)
+    return f"https://wa.me/{clean_phone}?text={encoded_message}"

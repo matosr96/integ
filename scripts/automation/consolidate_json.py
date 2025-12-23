@@ -221,7 +221,7 @@ def consolidate_json_files(json_dir, output_file):
     return master_data
 
 if __name__ == "__main__":
-    JSON_DIR = "DATA/PROCESSED_JSON"
-    OUTPUT_FILE = "DATA/master_data_clean.json"
+    JSON_DIR = "data/raw/PROCESSED_JSON"
+    OUTPUT_FILE = "data/raw/trazabilidad_consolidada.json"
     
     consolidate_json_files(JSON_DIR, OUTPUT_FILE)

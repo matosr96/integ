@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from google_sheets_client import GoogleSheetsClient
+from src.core.google_sheets_client import GoogleSheetsClient
 from fpdf import FPDF
 from datetime import datetime
 import time
@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import tempfile
 import seaborn as sns
 import os
+import re
 
 # Configuración de matplotlib para estilo profesional
 plt.style.use('ggplot')
@@ -97,6 +98,36 @@ class BasePDF(FPDF):
         self.set_y(-15)
         self.set_font('Arial', 'I', 8)
         self.cell(0, 10, f'Página {self.page_no()}', 0, 0, 'C')
+
+def clean_therapy_standard(val):
+    """
+    Normaliza los nombres de terapias a códigos estándar:
+    - TL: Terapia de Lenguaje / Fonoaudiología
+    - TF: Terapia Física / Fisioterapia
+    - TO: Terapia Ocupacional
+    - PS: Psicología
+    Elimina números y caracteres extra.
+    """
+    if pd.isna(val): return "N/A"
+    s = str(val).upper().strip()
+    
+    # 1. Códigos estándar y variaciones comunes
+    if 'TL' in s or 'FONO' in s or 'LENGUAJ' in s or 'COMUNICA' in s: return 'TL'
+    if 'TF' in s or 'FISI' in s: return 'TF'
+    if 'TO' in s or 'OCUP' in s: return 'TO'
+    if 'PS' in s or 'SICO' in s: return 'PS'
+    if 'EDUC' in s or 'ESP' in s: return 'EE'
+    
+    # 2. Limpieza de prefijos numéricos ("01. TL", "2-TF")
+    # Eliminar todo lo que NO sea letra
+    cleaned = re.sub(r'[^A-Z]', '', s)
+    
+    # Si queda algo razonable (2-3 chars), usarlo
+    if 2 <= len(cleaned) <= 3:
+        return cleaned
+        
+    # 3. Fallback estricto: Si no se reconoció nada válido (ej: "1", "A", "2023"), agrupar
+    return "OTROS"
 
 def create_executive_pdf(df_filtered, kpi_data):
     """Genera un reporte ejecutivo completo y profesional"""
@@ -239,7 +270,9 @@ def create_executive_pdf(df_filtered, kpi_data):
     if 'TIPO DE TERAPIAS' in df_filtered.columns:
         # Normalizar datos para evitar duplicados (espacios, mayúsculas)
         df_therapy = df_filtered.copy()
-        df_therapy['TIPO DE TERAPIAS'] = df_therapy['TIPO DE TERAPIAS'].astype(str).str.strip().str.upper()
+        df_therapy = df_filtered.copy()
+        # df_therapy['TIPO DE TERAPIAS'] = df_therapy['TIPO DE TERAPIAS'].astype(str).str.strip().str.upper()
+        df_therapy['TIPO DE TERAPIAS'] = df_therapy['TIPO DE TERAPIAS'].apply(clean_therapy_standard)
         
         therapy_counts = df_therapy['TIPO DE TERAPIAS'].value_counts()
         therapy_sessions = df_therapy.groupby('TIPO DE TERAPIAS')['CANTIDAD'].sum() if 'CANTIDAD' in df_therapy.columns else None
@@ -552,7 +585,10 @@ def create_historical_report_pdf(df):
         
         # Limpieza rápida
         df_srv = df.copy()
-        df_srv[col_terapia] = df_srv[col_terapia].astype(str).str.strip().str.upper()
+        # Limpieza rápida
+        df_srv = df.copy()
+        # df_srv[col_terapia] = df_srv[col_terapia].astype(str).str.strip().str.upper()
+        df_srv[col_terapia] = df_srv[col_terapia].apply(clean_therapy_standard)
         
         # Pivot Table: Año vs Terapia (Cantidad)
         pivot_srv = df_srv.groupby(['AÑO_DATA', col_terapia])['CANTIDAD'].sum().unstack(fill_value=0)
@@ -896,12 +932,16 @@ def module_historical_analysis(json_dir):
     with col_right:
         st.markdown("#### 🎯 Distribución por Tipo de Terapia")
         if 'TIPO_TERAPIA' in df_filtered.columns:
-            terapia_stats = df_filtered.groupby('TIPO_TERAPIA')['CANTIDAD'].sum().reset_index().sort_values('CANTIDAD', ascending=False)
+            # Limpieza de datos visual para el gráfico
+            df_chart = df_filtered.copy()
+            df_chart['TIPO_TERAPIA_CLEAN'] = df_chart['TIPO_TERAPIA'].apply(clean_therapy_standard)
+            
+            terapia_stats = df_chart.groupby('TIPO_TERAPIA_CLEAN')['CANTIDAD'].sum().reset_index().sort_values('CANTIDAD', ascending=False)
             
             fig_therapy = px.pie(
                 terapia_stats,
                 values='CANTIDAD',
-                names='TIPO_TERAPIA',
+                names='TIPO_TERAPIA_CLEAN',
                 title='',
                 template="plotly_white",
                 hole=0.4
@@ -1016,7 +1056,130 @@ def module_historical_analysis(json_dir):
             )
     
     # =========================
-    # SECCIÓN 6: REPORTE DESCARGABLE
+    # SECCIÓN 6: DEEP DIVE POR AÑO
+    # =========================
+    st.markdown("---")
+    st.subheader("🔍 Análisis Detallado por Año y Mes (Deep Dive)")
+    
+    if 'AÑO_DATA' in df.columns:
+        all_years = sorted(df['AÑO_DATA'].unique())
+        c1, c2 = st.columns(2)
+        with c1:
+            selected_dive_year = st.selectbox("Seleccione un año:", options=all_years, index=len(all_years)-1)
+        
+        # Filtrar por año primero para obtener meses disponibles
+        df_year_raw = df[df['AÑO_DATA'] == selected_dive_year].copy()
+        
+        # Procesar meses si hay fechas
+        if 'FECHA_INICIO' in df_year_raw.columns:
+            df_year_raw['Mes_Num'] = df_year_raw['FECHA_INICIO'].dt.month
+            meses_disp = sorted(df_year_raw['Mes_Num'].dropna().unique().astype(int))
+            meses_nombres = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+            meses_opciones = {m: meses_nombres[m-1] for m in meses_disp}
+            
+            with c2:
+                selected_dive_months = st.multiselect(
+                    "Filtrar por Meses:", 
+                    options=meses_disp, 
+                    default=meses_disp,
+                    format_func=lambda x: meses_opciones.get(x, str(x))
+                )
+            
+            # Corrección del filtro: usar los meses seleccionados
+            if not selected_dive_months:
+                df_year = df_year_raw
+            else:
+                df_year = df_year_raw[df_year_raw['Mes_Num'].isin(selected_dive_months)]
+        else:
+            df_year = df_year_raw
+            st.warning("No se detectaron columnas de fecha para filtrado mensual en este periodo.")
+
+        if not df_year.empty:
+            # Asegurar que Mes_Num sea int para evitar TypeErrors en el mapeo
+            if 'Mes_Num' in df_year.columns:
+                df_year['Mes_Num'] = df_year['Mes_Num'].fillna(0).astype(int)
+            
+            st.info(f"Mostrando detalles para **{selected_dive_year}** ({len(selected_dive_months) if 'selected_dive_months' in locals() else 'todos'} meses seleccionados)")
+            
+            # Sub-KPIs para el periodo seleccionado
+            s1, s2, s3, s4 = st.columns(4)
+            y_sesiones = df_year['CANTIDAD'].sum()
+            y_pacientes = df_year['CEDULA'].nunique()
+            y_profesionales = df_year['PROFESIONAL'].nunique()
+            y_municipios = df_year['MUNICIPIO'].nunique()
+            
+            s1.metric("💉 Sesiones", f"{y_sesiones:,.0f}")
+            s2.metric("👥 Pacientes", f"{y_pacientes:,.0f}")
+            s3.metric("👨‍⚕️ Profesionales", y_profesionales)
+            s4.metric("📍 Municipios", y_municipios)
+            
+            # Visualizaciones
+            tab_dive1, tab_dive2, tab_dive3 = st.tabs(["📈 Tendencia y EPS", "🔎 Diagnóstico y Geografía", "👥 Lista Detallada"])
+            
+            with tab_dive1:
+                d1, d2 = st.columns(2)
+                with d1:
+                    # Evolución mensual (o diaria si es un solo mes)
+                    if 'Mes_Num' in df_year.columns and len(selected_dive_months) == 1:
+                        df_year['Dia'] = df_year['FECHA_INICIO'].dt.day
+                        y_day_stats = df_year.groupby('Dia')['CANTIDAD'].sum().reset_index()
+                        fig_y_time = px.line(y_day_stats, x='Dia', y='CANTIDAD', title=f'Sesiones Diarias: {meses_opciones[selected_dive_months[0]]} {selected_dive_year}', markers=True)
+                    elif 'Mes_Num' in df_year.columns:
+                        y_time_stats = df_year.groupby('Mes_Num')['CANTIDAD'].sum().reset_index()
+                        # Cast to int to be safe against TypeError
+                        meses_list = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+                        y_time_stats['Nombre_Mes'] = y_time_stats['Mes_Num'].apply(lambda x: meses_list[int(x)-1] if 0 < int(x) <= 12 else "Sin Mes")
+                        fig_y_time = px.line(y_time_stats, x='Nombre_Mes', y='CANTIDAD', title=f'Evolución Mensual en {selected_dive_year}', markers=True)
+                    else:
+                        st.write("Faltan datos temporales para esta gráfica.")
+                    st.plotly_chart(fig_y_time, use_container_width=True)
+                
+                with d2:
+                    if 'EPS' in df_year.columns:
+                        y_eps_stats = df_year.groupby('EPS')['CANTIDAD'].sum().reset_index().sort_values('CANTIDAD', ascending=False).head(10)
+                        fig_y_eps = px.bar(y_eps_stats, x='CANTIDAD', y='EPS', orientation='h', title='Top 10 EPS', color='CANTIDAD', template="plotly_white")
+                        st.plotly_chart(fig_y_eps, use_container_width=True)
+
+            with tab_dive2:
+                g1, g2 = st.columns(2)
+                with g1:
+                    if 'DIAGNOSTICO' in df_year.columns:
+                        y_diag_stats = df_year.groupby('DIAGNOSTICO')['CEDULA'].nunique().reset_index().sort_values('CEDULA', ascending=False).head(10)
+                        y_diag_stats.columns = ['Diagnóstico', 'Pacientes']
+                        fig_y_diag = px.bar(y_diag_stats, x='Pacientes', y='Diagnóstico', orientation='h', title='Top 10 Diagnósticos (Pacientes)', color='Pacientes', color_continuous_scale='Reds')
+                        st.plotly_chart(fig_y_diag, use_container_width=True)
+                
+                with g2:
+                    if 'MUNICIPIO' in df_year.columns:
+                        y_mun_stats = df_year.groupby('MUNICIPIO')['CANTIDAD'].sum().reset_index().sort_values('CANTIDAD', ascending=False).head(10)
+                        fig_y_mun = px.bar(y_mun_stats, x='CANTIDAD', y='MUNICIPIO', orientation='h', title='Top 10 Municipios (Sesiones)', color='CANTIDAD', color_continuous_scale='Purples')
+                        st.plotly_chart(fig_y_mun, use_container_width=True)
+
+            with tab_dive3:
+                # Detalle de Profesionales y Pacientes
+                p_col1, p_col2 = st.columns([1, 1])
+                with p_col1:
+                    st.markdown(f"#### 👨‍⚕️ Profesionales en el Periodo")
+                    y_prof_stats = df_year.groupby('PROFESIONAL').agg({
+                        'CANTIDAD': 'sum',
+                        'CEDULA': 'nunique'
+                    }).reset_index().sort_values('CANTIDAD', ascending=False)
+                    y_prof_stats.columns = ['Profesional', 'Sesiones', 'Pacientes']
+                    st.dataframe(y_prof_stats, use_container_width=True, hide_index=True)
+                
+                with p_col2:
+                    st.markdown(f"#### 👥 Resumen por EPS")
+                    y_eps_detail = df_year.groupby('EPS').agg({
+                        'CEDULA': 'nunique',
+                        'CANTIDAD': 'sum'
+                    }).reset_index().sort_values('CEDULA', ascending=False)
+                    y_eps_detail.columns = ['EPS', 'Pacientes', 'Sesiones']
+                    st.dataframe(y_eps_detail, use_container_width=True, hide_index=True)
+        else:
+            st.warning("No se encontraron datos para la combinación de filtros seleccionada.")
+    
+    # =========================
+    # SECCIÓN 7: REPORTE DESCARGABLE
     # =========================
     st.markdown("---")
     st.subheader("📥 Generar Reporte Ejecutivo")
@@ -1122,7 +1285,10 @@ def module_dashboard(df):
         if 'TIPO DE TERAPIAS' in df_view.columns:
             # Normalizar datos para evitar duplicados
             df_therapy_chart = df_view.copy()
-            df_therapy_chart['TIPO DE TERAPIAS'] = df_therapy_chart['TIPO DE TERAPIAS'].astype(str).str.strip().str.upper()
+            # Normalizar datos para evitar duplicados
+            df_therapy_chart = df_view.copy()
+            # df_therapy_chart['TIPO DE TERAPIAS'] = df_therapy_chart['TIPO DE TERAPIAS'].astype(str).str.strip().str.upper()
+            df_therapy_chart['TIPO DE TERAPIAS'] = df_therapy_chart['TIPO DE TERAPIAS'].apply(clean_therapy_standard)
             
             therapy_data = df_therapy_chart['TIPO DE TERAPIAS'].value_counts().reset_index()
             therapy_data.columns = ['Tipo', 'Cantidad']

@@ -330,6 +330,21 @@ def reconstruir_fecha(val, filename, year_folder):
     
     # Si ya es una fecha válida ISO
     if re.match(r'^\d{4}-\d{2}-\d{2}', val_str):
+        # Si el año es 1900, es probable que Excel haya convertido un número de día
+        # Intentamos rescatar el día y usar el contexto del archivo
+        if val_str.startswith('1900-'):
+            try:
+                # Extraer el día de la fecha 1900-01-DD (o similar)
+                # O simplemente tomar el valor como un posible día si es menor a 32
+                day = int(val_str.split('-')[2][:2])
+                if 1 <= day <= 31:
+                    year, month = extraer_mes_anio_de_archivo(filename, year_folder)
+                    if year and month:
+                        fecha = f"{year}-{month:02d}-{day:02d}"
+                        datetime.strptime(fecha, '%Y-%m-%d')
+                        return fecha
+            except:
+                pass
         return val_str
     
     # Si es solo un número (día del mes)
@@ -400,7 +415,7 @@ def limpiar_texto(val):
 def limpiar_datos_maestro():
     """Limpieza completa con listas maestras oficiales"""
     
-    input_file = 'data/audit/trazabilidad_consolidada.json'
+    input_file = 'data/raw/trazabilidad_consolidada.json'
     output_file = 'data/processed/trazabilidad_LIMPIA.json'
     backup_file = 'data/audit/trazabilidad_BACKUP.json'
     
@@ -470,6 +485,33 @@ def limpiar_datos_maestro():
             ), axis=1
         )
         print(f"   ✓ Fechas egreso: {df['fecha_egreso'].notna().sum()}")
+
+    # Recuperación por Cruce de Fechas (1900 fix)
+    def corregir_por_cruce_fechas(row):
+        fi = str(row.get('fecha_ingreso', ''))
+        fe = str(row.get('fecha_egreso', ''))
+        
+        # Caso A: Ingreso es 1900
+        if fi.startswith('1900-'):
+            if not fe.startswith('1900-') and fe != 'None' and len(fe) > 4:
+                year_correct = fe[:4]
+            else:
+                year_correct = '2019'
+            row['fecha_ingreso'] = year_correct + fi[4:]
+            
+        # Caso B: Egreso es 1900
+        elif fe.startswith('1900-'):
+            if not fi.startswith('1900-') and fi != 'None' and len(fi) > 4:
+                year_correct = fi[:4]
+            else:
+                year_correct = '2019'
+            row['fecha_egreso'] = year_correct + fe[4:]
+            
+        return row
+
+    if 'fecha_ingreso' in df.columns and 'fecha_egreso' in df.columns:
+        print("   ✓ Recuperando fechas 1900 por cruce...")
+        df = df.apply(corregir_por_cruce_fechas, axis=1)
     
     # Sesiones
     if 'sesiones' in df.columns:
@@ -489,16 +531,27 @@ def limpiar_datos_maestro():
     print(f"   - Fechas ingreso: {df['fecha_ingreso'].notna().sum()}")
     print(f"   - Sesiones válidas: {(df['sesiones'] > 0).sum()}")
     
+    # Identificar registros con fecha 1900 (antes de filtrar por EPS/Municipio)
+    def has_1900(row):
+        for col in ['fecha_ingreso', 'fecha_egreso']:
+            if col in row and str(row[col]).startswith('1900-'):
+                return True
+        return False
+    
+    df_1900 = df[df.apply(has_1900, axis=1)].copy()
+    
     # Separar registros válidos e inválidos
     print("\n6. Separando registros válidos e inválidos...")
     
-    # Registros válidos: tienen EPS Y municipio válidos
-    df_validos = df[(df['eps'].notna()) & (df['municipio'].notna())].copy()
+    # Registros válidos: tienen EPS Y municipio válidos Y NO tienen fecha 1900
+    mask_1900 = df.apply(has_1900, axis=1)
+    df_validos = df[(df['eps'].notna()) & (df['municipio'].notna()) & (~mask_1900)].copy()
     
     # Registros rechazados: EPS o municipio inválido
     df_rechazados = df[(df['eps'].isna()) | (df['municipio'].isna())].copy()
     
     print(f"   ✓ Válidos: {len(df_validos)} registros")
+    print(f"   ✓ Con fecha 1900: {len(df_1900)} registros (audit/registros_FECHA_1900.json)")
     print(f"   ✓ Rechazados: {len(df_rechazados)} registros")
     
     # Guardar registros válidos
@@ -510,28 +563,33 @@ def limpiar_datos_maestro():
         json.dump(records_validos, f, indent=2, ensure_ascii=False)
     print(f"   ✓ {output_file}")
     
-    # Guardar registros rechazados para revisión
-    if len(df_rechazados) > 0:
-        print("\n8. Guardando registros rechazados para revisión...")
+    # 8. Guardar registros de auditoría
+    print("\n8. Guardando registros de auditoría...")
+    
+    # 8.1 Registros rechazados (EPS/Municipio inválido)
+    with open('data/audit/registros_RECHAZADOS.json', 'w', encoding='utf-8') as f:
+        df_rechazados_to_save = df_rechazados.where(pd.notna(df_rechazados), None).to_dict('records')
         
-        rechazados_file = 'data/audit/registros_RECHAZADOS.json'
-        df_rechazados_clean = df_rechazados.where(pd.notna(df_rechazados), None)
-        records_rechazados = df_rechazados_clean.to_dict('records')
-        
-        # Agregar razón del rechazo
-        for record in records_rechazados:
-            razones = []
-            if not record.get('eps'):
-                razones.append(f"EPS inválida: {record.get('eps_original', 'N/A')}")
-            if not record.get('municipio'):
-                razones.append(f"Municipio inválido: {record.get('municipio_original', 'N/A')}")
-            record['razon_rechazo'] = ' | '.join(razones)
-        
-        with open(rechazados_file, 'w', encoding='utf-8') as f:
-            json.dump(records_rechazados, f, indent=2, ensure_ascii=False)
-        
-        print(f"   ✓ {rechazados_file}")
-        print(f"   ℹ️  Estos registros requieren revisión manual")
+        # Agregar razón del rechazo si no existe
+        for record in df_rechazados_to_save:
+            if not record.get('razon_rechazo'):
+                razones = []
+                if not record.get('eps'):
+                    razones.append(f"EPS inválida: {record.get('eps_original', 'N/A')}")
+                if not record.get('municipio'):
+                    razones.append(f"Municipio inválido: {record.get('municipio_original', 'N/A')}")
+                record['razon_rechazo'] = ' | '.join(razones)
+                
+        json.dump(df_rechazados_to_save, f, indent=2, ensure_ascii=False)
+    print(f"   ✓ data/audit/registros_RECHAZADOS.json")
+    
+    # 8.2 Registros con fecha 1900
+    with open('data/audit/registros_FECHA_1900.json', 'w', encoding='utf-8') as f:
+        df_1900_to_save = df_1900.where(pd.notna(df_1900), None).to_dict('records')
+        for record in df_1900_to_save:
+            record['razon_rechazo'] = "Año inválido (1900) detectado en fecha ingreso/egreso"
+        json.dump(df_1900_to_save, f, indent=2, ensure_ascii=False)
+    print(f"   ✓ data/audit/registros_FECHA_1900.json")
     
     # Reporte detallado
     print("\n9. Generando reporte...")

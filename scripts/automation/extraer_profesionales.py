@@ -63,9 +63,10 @@ def extraer_y_ordenar_profesionales():
     print(f"\nTotal de profesionales procesados: {len(profesionales)}")
     
     # Guardar datos sin ordenar
-    with open('profesionales_raw.json', 'w', encoding='utf-8') as f:
+    raw_path = 'data/reference/profesionales_raw.json'
+    with open(raw_path, 'w', encoding='utf-8') as f:
         json.dump(profesionales, f, ensure_ascii=False, indent=2)
-    print("\n[OK] Datos sin ordenar guardados en: profesionales_raw.json")
+    print(f"\n[OK] Datos sin ordenar guardados en: {raw_path}")
     
     # Ordenar por nombre
     nombre_key = 'NOMBRE PROFESIONAL'
@@ -81,9 +82,10 @@ def extraer_y_ordenar_profesionales():
         print("\n[AVISO] No se encontro columna de nombre, datos sin ordenar")
     
     # Guardar datos ordenados
-    with open('profesionales_ordenados.json', 'w', encoding='utf-8') as f:
+    ord_path = 'data/reference/profesionales_ordenados.json'
+    with open(ord_path, 'w', encoding='utf-8') as f:
         json.dump(profesionales_ordenados, f, ensure_ascii=False, indent=2)
-    print("[OK] Datos ordenados guardados en: profesionales_ordenados.json")
+    print(f"[OK] Datos ordenados guardados en: {ord_path}")
     
     # Crear también un CSV limpio
     import csv
@@ -95,12 +97,13 @@ def extraer_y_ordenar_profesionales():
         
         columnas_ordenadas = sorted(todas_columnas)
         
-        with open('profesionales_ordenados.csv', 'w', encoding='utf-8-sig', newline='') as f:
+        csv_path = 'data/reference/profesionales_ordenados.csv'
+        with open(csv_path, 'w', encoding='utf-8-sig', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=columnas_ordenadas)
             writer.writeheader()
             writer.writerows(profesionales_ordenados)
         
-        print("[OK] Datos ordenados guardados en: profesionales_ordenados.csv")
+        print(f"[OK] Datos ordenados guardados en: {csv_path}")
     
     # Mostrar resumen
     print("\n" + "="*70)

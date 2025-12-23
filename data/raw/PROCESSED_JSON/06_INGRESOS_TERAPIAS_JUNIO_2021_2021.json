@@ -1,6 +1,6 @@
 {
   "source_file": "06 INGRESOS TERAPIAS JUNIO 2021.xlsx",
-  "source_path": "c:\\Users\\APOYO TERAPEUTICO\\Documents\\rep\\integ\\DATA\\TRAZABILIDADES\\2021\\06 INGRESOS TERAPIAS JUNIO 2021.xlsx",
+  "source_path": "data/raw/TRAZABILIDADES/2021/06 INGRESOS TERAPIAS JUNIO 2021.xlsx",
   "year_folder": "2021",
   "summary": {
     "total_records": 3256,

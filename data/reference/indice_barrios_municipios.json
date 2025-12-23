@@ -17,12 +17,6 @@
     "total": 30,
     "confianza": 96.7
   },
-  "SAN": {
-    "municipio": "SAN PELAYO",
-    "frecuencia": 32,
-    "total": 45,
-    "confianza": 71.1
-  },
   "ALTO KENNEDY": {
     "municipio": "SANTA CRUZ DE LORICA",
     "frecuencia": 27,
@@ -253,8 +247,8 @@
   },
   "ABILLAS": {
     "municipio": "MONTERÍA",
-    "frecuencia": 40,
-    "total": 40,
+    "frecuencia": 41,
+    "total": 41,
     "confianza": 100.0
   },
   "CENTROP": {
@@ -340,6 +334,12 @@
     "frecuencia": 14,
     "total": 20,
     "confianza": 70.0
+  },
+  "ONITO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 15,
+    "total": 19,
+    "confianza": 78.9
   },
   "ARRIO LIBERTAD": {
     "municipio": "TUCHÍN",
@@ -709,9 +709,9 @@
   },
   "ANAL": {
     "municipio": "MONTERÍA",
-    "frecuencia": 75,
-    "total": 81,
-    "confianza": 92.6
+    "frecuencia": 77,
+    "total": 83,
+    "confianza": 92.8
   },
   "CANTACLARO SECTOR EL PARAISO": {
     "municipio": "MONTERÍA",
@@ -745,8 +745,8 @@
   },
   "LA GRANJA": {
     "municipio": "MONTERÍA",
-    "frecuencia": 98,
-    "total": 100,
+    "frecuencia": 99,
+    "total": 101,
     "confianza": 98.0
   },
   "ARRIO SAN FRANCISCO": {
@@ -829,8 +829,8 @@
   },
   "CAMILO TORRES": {
     "municipio": "MONTERÍA",
-    "frecuencia": 22,
-    "total": 22,
+    "frecuencia": 23,
+    "total": 23,
     "confianza": 100.0
   },
   "RANCHO GRANDE": {
@@ -1891,14 +1891,14 @@
   },
   "ARRIO EL CAÑITO": {
     "municipio": "CERETÉ",
-    "frecuencia": 14,
-    "total": 14,
+    "frecuencia": 15,
+    "total": 15,
     "confianza": 100.0
   },
   "EL CAÑITO": {
     "municipio": "CERETÉ",
-    "frecuencia": 17,
-    "total": 17,
+    "frecuencia": 18,
+    "total": 18,
     "confianza": 100.0
   },
   "ITA": {
@@ -2375,6 +2375,12 @@
     "total": 12,
     "confianza": 100.0
   },
+  "AGRE": {
+    "municipio": "CAUCASIA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
   "ARRIO LLERA": {
     "municipio": "AYAPEL",
     "frecuencia": 8,
@@ -2473,8 +2479,8 @@
   },
   "ESITO  BOLAO": {
     "municipio": "MONTERÍA",
-    "frecuencia": 6,
-    "total": 6,
+    "frecuencia": 7,
+    "total": 7,
     "confianza": 100.0
   },
   "RR EL DORADO": {
@@ -2543,6 +2549,12 @@
     "total": 6,
     "confianza": 100.0
   },
+  "RR CARRISAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 12,
+    "total": 12,
+    "confianza": 100.0
+  },
   "AGUAS": {
     "municipio": "MONTERÍA",
     "frecuencia": 30,
@@ -2555,6 +2567,12 @@
     "total": 17,
     "confianza": 100.0
   },
+  "TREMENTINO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 14,
+    "total": 17,
+    "confianza": 82.4
+  },
   "ARRIO MONTE VERDE": {
     "municipio": "MONTERÍA",
     "frecuencia": 17,
@@ -2563,8 +2581,8 @@
   },
   "BALBOA": {
     "municipio": "MONTERÍA",
-    "frecuencia": 28,
-    "total": 28,
+    "frecuencia": 32,
+    "total": 32,
     "confianza": 100.0
   },
   "ARRIO SAN  FRANCISCO": {
@@ -3109,9 +3127,9 @@
   },
   "VILLA CIELO": {
     "municipio": "MONTERÍA",
-    "frecuencia": 4,
-    "total": 5,
-    "confianza": 80.0
+    "frecuencia": 5,
+    "total": 6,
+    "confianza": 83.3
   },
   "LAS ACASIAS": {
     "municipio": "MONTERÍA",
@@ -3925,8 +3943,8 @@
   },
   "NISPERO": {
     "municipio": "MONTERÍA",
-    "frecuencia": 3,
-    "total": 3,
+    "frecuencia": 4,
+    "total": 4,
     "confianza": 100.0
   },
   "PRADERA": {
@@ -5093,6 +5111,12 @@
     "total": 2,
     "confianza": 100.0
   },
+  "LA PLAZA SAN ANTERITO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
   "ARRIO SAN ISIDRO CENTRO LLEGANGO AL COSECHERO": {
     "municipio": "AYAPEL",
     "frecuencia": 1,
@@ -5146,6 +5170,12 @@
     "frecuencia": 4,
     "total": 5,
     "confianza": 80.0
+  },
+  "ARRIO CAMILO TORRES": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
   },
   "ARRIO LA TRINIDAD": {
     "municipio": "CHIMÁ",
@@ -5417,6 +5447,12 @@
     "total": 1,
     "confianza": 100.0
   },
+  "CARRISAL": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
   "ARRIO VILLA NAZARETH": {
     "municipio": "TIERRALTA",
     "frecuencia": 2,
@@ -5535,12 +5571,6 @@
     "municipio": "AYAPEL",
     "frecuencia": 6,
     "total": 6,
-    "confianza": 100.0
-  },
-  "ELÉN": {
-    "municipio": "MONTERÍA",
-    "frecuencia": 1,
-    "total": 1,
     "confianza": 100.0
   },
   "R EDMUD LOPEZ": {
@@ -5663,18 +5693,6 @@
     "total": 1,
     "confianza": 100.0
   },
-  "IJAO": {
-    "municipio": "PUERTO ESCONDIDO",
-    "frecuencia": 1,
-    "total": 1,
-    "confianza": 100.0
-  },
-  "BIJAO": {
-    "municipio": "PUERTO ESCONDIDO",
-    "frecuencia": 1,
-    "total": 1,
-    "confianza": 100.0
-  },
   "ANIZACION  VILLA  HERMOSA": {
     "municipio": "SAHAGÚN",
     "frecuencia": 3,
@@ -5691,6 +5709,18 @@
     "municipio": "CHINÚ",
     "frecuencia": 2,
     "total": 2,
+    "confianza": 100.0
+  },
+  "ARRIO LA CIENAGA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
+    "confianza": 100.0
+  },
+  "LA CIENAGA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 3,
+    "total": 3,
     "confianza": 100.0
   },
   "ARRIO TRINIDAD": {
@@ -5956,6 +5986,12 @@
     "frecuencia": 3,
     "total": 4,
     "confianza": 75.0
+  },
+  "ESITO BOLAO MONTERIA": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
   },
   "SANTA FE SECTOR LAS CAMPANAS": {
     "municipio": "MONTERÍA",
@@ -6653,6 +6689,12 @@
     "total": 1,
     "confianza": 100.0
   },
+  "CANTA CALRO SECTOR NISPERO": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
   "ARRIO SAN ISISDRO": {
     "municipio": "CIÉNAGA DE ORO",
     "frecuencia": 1,
@@ -6891,6 +6933,12 @@
     "municipio": "SAHAGÚN",
     "frecuencia": 2,
     "total": 2,
+    "confianza": 100.0
+  },
+  "TENERIFE": {
+    "municipio": "MONTERÍA",
+    "frecuencia": 1,
+    "total": 1,
     "confianza": 100.0
   },
   "ARRIO CASTILLA LA NUEVA": {
@@ -7649,12 +7697,6 @@
     "total": 1,
     "confianza": 100.0
   },
-  "PATIO": {
-    "municipio": "PLANETA RICA",
-    "frecuencia": 1,
-    "total": 1,
-    "confianza": 100.0
-  },
   "OSPINA PEREZ PRIMERA": {
     "municipio": "VALENCIA",
     "frecuencia": 2,
@@ -8393,6 +8435,12 @@
     "total": 1,
     "confianza": 100.0
   },
+  "ASTA  POR LA  BLOQUERA  SIGUEN A  LOS CORRALES LA  MAYORIA  EN LA  INVACION": {
+    "municipio": "CAUCASIA",
+    "frecuencia": 4,
+    "total": 4,
+    "confianza": 100.0
+  },
   "RR SAN JOSE POR LA CARCEL": {
     "municipio": "MONTERÍA",
     "frecuencia": 9,
@@ -8843,6 +8891,18 @@
     "total": 2,
     "confianza": 100.0
   },
+  "ARRIO  LAS  GAVIOTAS    DETRAS  DEL  EXITO": {
+    "municipio": "CAUCASIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
+  "LAS  GAVIOTAS    DETRAS  DEL  EXITO": {
+    "municipio": "CAUCASIA",
+    "frecuencia": 1,
+    "total": 1,
+    "confianza": 100.0
+  },
   "ARRO GUARUMAL": {
     "municipio": "SAN CARLOS",
     "frecuencia": 2,
@@ -9173,6 +9233,18 @@
     "total": 3,
     "confianza": 100.0
   },
+  "ARRIO VILLA DINE": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
+  "VILLA DINE": {
+    "municipio": "PLANETA RICA",
+    "frecuencia": 2,
+    "total": 2,
+    "confianza": 100.0
+  },
   "ARRIO LAS AMÉRICAS CIÉNAGA DE ORO CERCA DEL COLEGIO PRIVADO DEL MUNICIPIO LUIS AMIGO": {
     "municipio": "CIÉNAGA DE ORO",
     "frecuencia": 4,
@@ -9197,12 +9269,6 @@
     "total": 1,
     "confianza": 100.0
   },
-  "AGRE": {
-    "municipio": "MONTERÍA",
-    "frecuencia": 4,
-    "total": 4,
-    "confianza": 100.0
-  },
   "LA GANJA": {
     "municipio": "MONTERÍA",
     "frecuencia": 1,
@@ -9217,12 +9283,6 @@
   },
   "LOS ALCASERES": {
     "municipio": "AYAPEL",
-    "frecuencia": 1,
-    "total": 1,
-    "confianza": 100.0
-  },
-  "ESITO BOLAO MONTERIA": {
-    "municipio": "MONTERÍA",
     "frecuencia": 1,
     "total": 1,
     "confianza": 100.0

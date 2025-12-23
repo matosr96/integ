@@ -1,6 +1,6 @@
 {
   "source_file": "01 INGRESOS TERAPIAS ENERO.xlsx",
-  "source_path": "c:\\Users\\APOYO TERAPEUTICO\\Documents\\rep\\integ\\DATA\\TRAZABILIDADES\\2018\\01 INGRESOS TERAPIAS ENERO.xlsx",
+  "source_path": "data/raw/TRAZABILIDADES/2018/01 INGRESOS TERAPIAS ENERO.xlsx",
   "year_folder": "2018",
   "summary": {
     "total_records": 190,

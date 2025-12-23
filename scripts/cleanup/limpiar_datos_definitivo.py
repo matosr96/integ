@@ -284,7 +284,7 @@ def limpiar_texto(val):
 def limpiar_datos_completo():
     """Limpieza completa de todos los datos"""
     
-    input_file = 'data/audit/trazabilidad_consolidada.json'
+    input_file = 'data/raw/trazabilidad_consolidada.json'
     output_file = 'data/audit/trazabilidad_consolidada_LIMPIA.json'
     backup_file = 'data/audit/trazabilidad_consolidada_BACKUP.json'
     

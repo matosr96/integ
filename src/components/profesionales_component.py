@@ -11,7 +11,7 @@ import json
 def load_consolidated_professionals():
     """Carga los datos consolidados de profesionales"""
     try:
-        with open('profesionales_consolidados.json', 'r', encoding='utf-8') as f:
+        with open('data/reference/profesionales_consolidados.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
         return pd.DataFrame(data)
     except Exception as e:
@@ -239,7 +239,7 @@ def render_professionals_tab(df_patients):
                         # WhatsApp button
                         telefono = prof.get('TEL CONTACTO', '')
                         if telefono:
-                            from dashboard import get_whatsapp_link
+                            from src.utils.trazabilidad_utils import get_whatsapp_link
                             wa_link = get_whatsapp_link(telefono, f"Hola {prof.get('NOMBRE PROFESIONAL', '')}")
                             if wa_link:
                                 st.markdown(f"[💬 WhatsApp]({wa_link})", unsafe_allow_html=True)

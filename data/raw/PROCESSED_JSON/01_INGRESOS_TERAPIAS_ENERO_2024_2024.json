@@ -1,6 +1,6 @@
 {
   "source_file": "01 INGRESOS TERAPIAS ENERO 2024.xlsx",
-  "source_path": "c:\\Users\\APOYO TERAPEUTICO\\Documents\\rep\\integ\\DATA\\TRAZABILIDADES\\2024\\01 INGRESOS TERAPIAS ENERO 2024.xlsx",
+  "source_path": "data/raw/TRAZABILIDADES/2024/01 INGRESOS TERAPIAS ENERO 2024.xlsx",
   "year_folder": "2024",
   "summary": {
     "total_records": 882,

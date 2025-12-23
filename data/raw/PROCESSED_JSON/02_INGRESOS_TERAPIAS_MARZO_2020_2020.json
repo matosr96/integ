@@ -1,6 +1,6 @@
 {
   "source_file": "02 INGRESOS TERAPIAS MARZO 2020.xlsx",
-  "source_path": "c:\\Users\\APOYO TERAPEUTICO\\Documents\\rep\\integ\\DATA\\TRAZABILIDADES\\2020\\02 INGRESOS TERAPIAS MARZO 2020.xlsx",
+  "source_path": "data/raw/TRAZABILIDADES/2020/02 INGRESOS TERAPIAS MARZO 2020.xlsx",
   "year_folder": "2020",
   "summary": {
     "total_records": 2009,

@@ -188,20 +188,22 @@ def consolidar_datos():
     print("="*70)
     
     # Guardar JSON completo
-    with open('profesionales_consolidados.json', 'w', encoding='utf-8') as f:
+    output_path = 'data/reference/profesionales_consolidados.json'
+    with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(profesionales_consolidados, f, ensure_ascii=False, indent=2)
-    print("[OK] Datos consolidados guardados en: profesionales_consolidados.json")
+    print(f"[OK] Datos consolidados guardados en: {output_path}")
     
     # Guardar CSV limpio (sin campos internos)
     if profesionales_consolidados:
+        csv_path = 'data/reference/profesionales_consolidados.csv'
         campos_excluir = ['_fuente', '_id_original', '_match_encontrado', '_match_score', '_match_tipo', '_contacto_csv_nombre']
         campos = [k for k in profesionales_consolidados[0].keys() if k not in campos_excluir]
         
-        with open('profesionales_consolidados.csv', 'w', encoding='utf-8-sig', newline='') as f:
+        with open(csv_path, 'w', encoding='utf-8-sig', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=campos, extrasaction='ignore')
             writer.writeheader()
             writer.writerows(profesionales_consolidados)
-        print("[OK] Datos consolidados guardados en: profesionales_consolidados.csv")
+        print(f"[OK] Datos consolidados guardados en: {csv_path}")
     
     # 6. Mostrar resumen
     print("\n" + "="*70)

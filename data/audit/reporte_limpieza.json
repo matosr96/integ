@@ -1,0 +1,47 @@
+{
+  "fecha_limpieza": "2025-12-22T13:46:45.710899",
+  "registros_procesados": 117743,
+  "registros_validos": 100672,
+  "registros_rechazados": 17070,
+  "eps": {
+    "antes": 71,
+    "despues": 21,
+    "top_10": {
+      "NUEVA EPS": 65026,
+      "MUTUAL SER": 19331,
+      "PROMOSALUD": 4265,
+      "SALUD TOTAL": 3024,
+      "SALUDVIDA": 2745,
+      "UNICOR": 1801,
+      "SANITAS": 1214,
+      "FOMAG": 948,
+      "MEDICINA INTEGRAL": 890,
+      "COLSANITAS": 629
+    }
+  },
+  "municipios": {
+    "antes": 102,
+    "despues": 30,
+    "top_10": {
+      "MONTERÍA": 37365,
+      "CERETÉ": 8735,
+      "SANTA CRUZ DE LORICA": 8243,
+      "SAHAGÚN": 7864,
+      "AYAPEL": 5377,
+      "PLANETA RICA": 3179,
+      "CIÉNAGA DE ORO": 3042,
+      "TIERRALTA": 3036,
+      "MONTELÍBANO": 2894,
+      "COTORRA": 2649
+    }
+  },
+  "fechas": {
+    "ingreso_validas": 78143,
+    "egreso_validas": 79890
+  },
+  "sesiones_validas": 88099,
+  "rechazos_por_razon": {
+    "eps_invalida": 15564,
+    "municipio_invalido": 2050
+  }
+}

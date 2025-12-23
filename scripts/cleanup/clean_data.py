@@ -97,7 +97,7 @@ def clean_telefono(val):
 def clean_data():
     """Limpia todos los datos del archivo consolidado"""
     
-    input_file = 'data/audit/trazabilidad_consolidada.json'
+    input_file = 'data/raw/trazabilidad_consolidada.json'
     output_file = 'data/audit/trazabilidad_consolidada_CLEAN.json'
     backup_file = 'data/audit/trazabilidad_consolidada_BACKUP.json'
     

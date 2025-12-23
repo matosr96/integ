@@ -5,8 +5,9 @@ import json
 import numpy as np
 
 # Configuration
-BASE_PATH = pathlib.Path(r"c:\Users\APOYO TERAPEUTICO\Documents\rep\integ\DATA\TRAZABILIDADES")
-OUTPUT_DIR = pathlib.Path(r"c:\Users\APOYO TERAPEUTICO\Documents\rep\integ\DATA\PROCESSED_JSON")
+# Configuration
+BASE_PATH = pathlib.Path("data/raw/TRAZABILIDADES")
+OUTPUT_DIR = pathlib.Path("data/raw/PROCESSED_JSON")
 
 # Standardized Column Names Mapping
 # Key: Standardized Name, Value: List of possible column names in Excel
@@ -137,7 +138,8 @@ def process_files():
     error_count = 0
     
     for file_path in files:
-        if file_path.name.startswith("~$"):
+        # Skip temp files and 'COMPLETE' files (duplicates)
+        if file_path.name.startswith("~$") or 'COMPLETE' in file_path.name.upper():
             continue
             
         print(f"Processing: {file_path.relative_to(BASE_PATH)}")

@@ -1,0 +1,25 @@
+[
+  {
+    "nombres": "MARTHA DE LA CRUZ",
+    "apellidos": "MORALES PEREZ",
+    "tipo_id": "CC",
+    "numero_id": 1133869204.0,
+    "eps": "MUTUAL SER",
+    "diagnostico": "ECV",
+    "municipio": "MONTERÍA",
+    "direccion": "CRA 15 # 126-457 B/COSTA DE ORO SECTOR CHOCOLATE",
+    "telefono": "3118956840-3126285602",
+    "fecha_ingreso": "2019-01-22T00:00:00",
+    "fecha_egreso": "1900-01-21T00:00:00",
+    "profesional": "JAIME PETRO",
+    "observaciones": "ENTREGADO POR LA JEFE ERIKE EL 22/10/2020",
+    "sesiones": 20.0,
+    "tipo_terapia": null,
+    "sheet_name": "PACIENTES TERAPIAS",
+    "year": 2020,
+    "source_file": "10_INGRESOS_TERAPIAS_OCTUBRE_2020_2020.json",
+    "eps_original": "MUTUALSER",
+    "municipio_original": "MONTERIA",
+    "razon_rechazo": "Año inválido (1900) detectado en fecha ingreso/egreso"
+  }
+]

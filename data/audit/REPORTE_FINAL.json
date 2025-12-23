@@ -49,8 +49,9 @@
     ]
   },
   "archivos_finales": {
-    "datos_limpios": "DATA/trazabilidad_LIMPIA.json",
-    "rechazados_finales": "DATA/registros_RECHAZADOS.json",
-    "eliminados": "DATA/registros_ELIMINADOS.json"
+    "datos_limpios": "data/processed/trazabilidad_LIMPIA.json",
+    "rechazados_finales": "data/audit/registros_RECHAZADOS.json",
+    "eliminados": "data/audit/registros_ELIMINADOS.json",
+    "profesionales": "data/reference/profesionales_consolidados.json"
   }
 }

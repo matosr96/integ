@@ -31,7 +31,7 @@ def is_phone(val):
     return len(digits) >= 7 and len(digits) <= 15
 
 def analyze():
-    file_path = 'data/audit/trazabilidad_consolidada.json'
+    file_path = 'data/raw/trazabilidad_consolidada.json'
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
