@@ -343,6 +343,6 @@ def create_general_professionals_report_pdf(df):
     for p in profs:
         clean_name = clean_text(str(p))
         pdf.cell(10, 8, "", 0, 0) # Indent
-        pdf.cell(0, 8, f"• {clean_name}", 0, 1)
+        pdf.cell(0, 8, f"- {clean_name}", 0, 1)
         
     return pdf.output(dest='S').encode('latin-1', 'replace')
