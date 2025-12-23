@@ -175,7 +175,7 @@ def create_route_pdf(df_full, professional_name):
         pdf.cell(0, 10, "EVENTOS PENDIENTES (NO INICIAR SIN AUTORIZACIÓN)", 0, 1, 'C')
         
         pdf.set_font("Arial", 'B', 10)
-        pdf.multi_cell(0, 5, "⚠️ PACIENTES PENDIENTES: Estos usuarios están por llegar. Solo deben iniciarse cuando se envíe la confirmación. Si se trabajan antes, la empresa NO se hace responsable de las sesiones en caso de que no lleguen.", 0, 'C')
+        pdf.multi_cell(0, 5, "[!] PACIENTES PENDIENTES: Estos usuarios están por llegar. Solo deben iniciarse cuando se envíe la confirmación. Si se trabajan antes, la empresa NO se hace responsable de las sesiones en caso de que no lleguen.", 0, 'C')
         pdf.set_text_color(0, 0, 0) # Reset
         pdf.ln(10)
         
