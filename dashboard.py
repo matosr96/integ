@@ -19,7 +19,7 @@ sns.set_palette("husl")
 
 # Custom Modules
 from src.components.profesionales_component import render_professionals_tab
-from src.utils.rutas_utils import create_route_pdf, generate_all_routes_zip, create_municipality_report_pdf
+from src.utils.rutas_utils import create_route_pdf, generate_all_routes_zip, create_municipality_report_pdf, create_general_professionals_report_pdf
 from src.utils.trazabilidad_utils import scan_trazabilidades, get_rendicion_stats, load_historical_data_db, load_historical_data_json
 
 # --- CONFIG & STYLING ---
@@ -1703,11 +1703,18 @@ def module_data_explorer(df):
             #     st.info("Sin novedades.")
 
     with c_down4:
-        st.markdown("**4. Cobertura Profesional**")
-        st.caption("PDF: Profesionales x Municipio y Especialidad.")
-        # Generamos directamente el boton de descarga para evitar recargas dobles
+        st.markdown("**4. Reportes PDF**")
+        st.caption("Generación de informes.")
+        
+        # Report 1: Municipality
         pdf_cov = create_municipality_report_pdf(df_filtered)
-        st.download_button("⬇️ Descargar Reporte", pdf_cov, "cobertura_municipios.pdf", "application/pdf")
+        st.download_button("⬇️ Cobertura por Municipio", pdf_cov, "cobertura_municipios.pdf", "application/pdf")
+        
+        st.divider()
+        
+        # Report 2: General Directory
+        pdf_gen = create_general_professionals_report_pdf(df_filtered)
+        st.download_button("⬇️ Directorio General", pdf_gen, "directorio_profesionales.pdf", "application/pdf")
 
 # --- MAIN ---
 

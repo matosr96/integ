@@ -315,3 +315,34 @@ def create_municipality_report_pdf(df):
         pdf.ln(3)
         
     return pdf.output(dest='S').encode('latin-1', 'replace')
+
+def create_general_professionals_report_pdf(df):
+    """
+    Generates a PDF report listing ALL professionals (Uncategorized, Alphabetical).
+    """
+    pdf = RoutePDF(orientation='P')
+    pdf.add_page()
+    
+    # Title
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "Directorio General de Profesionales", 0, 1, 'C')
+    pdf.set_font("Arial", 'I', 10)
+    pdf.cell(0, 10, f"Generado: {datetime.now().strftime('%Y-%m-%d %H:%M')}", 0, 1, 'C')
+    pdf.ln(5)
+    
+    if 'PROFESIONAL' not in df.columns:
+        pdf.set_font("Arial", '', 12)
+        pdf.cell(0, 10, "Error: Falta columna PROFESIONAL.", 0, 1)
+        return pdf.output(dest='S').encode('latin-1', 'replace')
+        
+    # Get Unique Professionals
+    profs = sorted([p for p in df['PROFESIONAL'].dropna().unique() if str(p).strip() != ''], key=str)
+    
+    pdf.set_font("Arial", '', 12)
+    # 2 columns layout logic could be nice, but simple list for now as requested
+    for p in profs:
+        clean_name = clean_text(str(p))
+        pdf.cell(10, 8, "", 0, 0) # Indent
+        pdf.cell(0, 8, f"• {clean_name}", 0, 1)
+        
+    return pdf.output(dest='S').encode('latin-1', 'replace')
