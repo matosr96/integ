@@ -32,6 +32,7 @@ class RoutePDF(FPDF):
     def footer(self):
         self.set_y(-15)
         self.set_font('Arial', 'I', 8)
+        self.set_text_color(0, 0, 0) # Ensure footer is Black
         self.cell(0, 10, f'Página {self.page_no()}', 0, 0, 'C')
 
 def create_route_pdf(df_full, professional_name):
@@ -101,9 +102,11 @@ def create_route_pdf(df_full, professional_name):
         # Color Logic
         if is_pending:
             pdf.set_fill_color(255, 240, 230) # Light Orange for Pending
+            pdf.set_text_color(200, 0, 0)     # RED TEXT for Pending
             entry_title = f"[PENDIENTE] {name} ({doc_type}: {doc_num})"
         else:
             pdf.set_fill_color(230, 240, 255) # Light Blue for Active
+            pdf.set_text_color(0, 0, 0)       # BLACK TEXT for Active
             entry_title = f"{name} ({doc_type}: {doc_num})"
 
         # Header
