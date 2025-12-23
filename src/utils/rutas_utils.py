@@ -338,11 +338,18 @@ def create_general_professionals_report_pdf(df):
     # Get Unique Professionals
     profs = sorted([p for p in df['PROFESIONAL'].dropna().unique() if str(p).strip() != ''], key=str)
     
-    pdf.set_font("Arial", '', 12)
-    # 2 columns layout logic could be nice, but simple list for now as requested
+    
+    # Table Header
+    pdf.set_font("Arial", 'B', 12)
+    pdf.set_fill_color(240, 240, 240)
+    pdf.cell(100, 10, "PROFESIONAL", 1, 0, 'C', 1)
+    pdf.cell(90, 10, "NOVEDAD / OBSERVACIÓN", 1, 1, 'C', 1)
+    
+    # Rows
+    pdf.set_font("Arial", '', 11)
     for p in profs:
         clean_name = clean_text(str(p))
-        pdf.cell(10, 8, "", 0, 0) # Indent
-        pdf.cell(0, 8, f"- {clean_name}", 0, 1)
+        pdf.cell(100, 10, f" {clean_name}", 1, 0, 'L')
+        pdf.cell(90, 10, "", 1, 1, 'L') # Empty cell for remarks
         
     return pdf.output(dest='S').encode('latin-1', 'replace')
