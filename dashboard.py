@@ -19,7 +19,7 @@ sns.set_palette("husl")
 
 # Custom Modules
 from src.components.profesionales_component import render_professionals_tab
-from src.utils.rutas_utils import create_route_pdf, generate_all_routes_zip
+from src.utils.rutas_utils import create_route_pdf, generate_all_routes_zip, create_municipality_report_pdf
 from src.utils.trazabilidad_utils import scan_trazabilidades, get_rendicion_stats, load_historical_data_db, load_historical_data_json
 
 # --- CONFIG & STYLING ---
@@ -1672,7 +1672,7 @@ def module_data_explorer(df):
     # Downloads Section
     st.subheader("📂 Centro de Descargas")
     
-    c_down1, c_down2, c_down3 = st.columns(3)
+    c_down1, c_down2, c_down3, c_down4 = st.columns(4)
     
     with c_down1:
         st.markdown("**1. Datos Filtrados (CSV)**")
@@ -1694,11 +1694,20 @@ def module_data_explorer(df):
         st.markdown("**3. Bitácora de Novedades**")
         st.caption("PDF con observaciones registradas.")
         if st.button("Generar PDF Novedades"):
-            pdf_nov = create_novedades_pdf(df_filtered)
-            if pdf_nov:
-                st.download_button("⬇️ Descargar PDF", pdf_nov, "novedades.pdf", "application/pdf")
-            else:
-                st.info("Sin novedades.")
+            # Placeholder for novelty PDF (if existing) or similar
+            st.info("Función de novedades en mantenimiento.")
+            # pdf_nov = create_novedades_pdf(df_filtered)
+            # if pdf_nov:
+            #     st.download_button("⬇️ Descargar PDF", pdf_nov, "novedades.pdf", "application/pdf")
+            # else:
+            #     st.info("Sin novedades.")
+
+    with c_down4:
+        st.markdown("**4. Cobertura Profesional**")
+        st.caption("PDF: Profesionales x Municipio y Especialidad.")
+        # Generamos directamente el boton de descarga para evitar recargas dobles
+        pdf_cov = create_municipality_report_pdf(df_filtered)
+        st.download_button("⬇️ Descargar Reporte", pdf_cov, "cobertura_municipios.pdf", "application/pdf")
 
 # --- MAIN ---
 

@@ -222,3 +222,96 @@ def generate_all_routes_zip(df_full):
                 print(f"Error generating route for {prof_name}: {e}")
                 
     return zip_buffer.getvalue()
+
+def create_municipality_report_pdf(df):
+    """
+    Generates a PDF report listing coverage by Municipality and Specialty.
+    """
+    pdf = RoutePDF(orientation='P')
+    pdf.add_page()
+    
+    # Title
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "Informe de Cobertura por Municipio", 0, 1, 'C')
+    pdf.set_font("Arial", 'I', 10)
+    pdf.cell(0, 10, f"Generado: {datetime.now().strftime('%Y-%m-%d %H:%M')}", 0, 1, 'C')
+    pdf.ln(5)
+    
+    if 'MUNICIPIO' not in df.columns or 'PROFESIONAL' not in df.columns:
+        pdf.set_font("Arial", '', 12)
+        pdf.cell(0, 10, "Error: Faltan columnas requeridas (MUNICIPIO, PROFESIONAL).", 0, 1)
+        return pdf.output(dest='S').encode('latin-1', 'replace')
+        
+    # Get Municipalities
+    municipalities = sorted([m for m in df['MUNICIPIO'].dropna().unique() if str(m).strip() != ''], key=str)
+    
+    for muni in municipalities:
+        # Filter for Muni
+        df_muni = df[df['MUNICIPIO'] == muni]
+        
+        # Header for Municipality
+        pdf.set_font("Arial", 'B', 14)
+        pdf.set_fill_color(240, 240, 240)
+        pdf.cell(0, 10, f"📍 {clean_text(str(muni).upper())}", 0, 1, 'L', 1)
+        pdf.ln(2)
+        
+        # Identify Professionals and their Specialties in this context
+        # We assume a professional has one main specialty per row, or we aggregate logic
+        # Logic: Iterate unique professionals, find their most common therapy type
+        
+        profs_in_muni = df_muni['PROFESIONAL'].dropna().unique()
+        
+        # Categorize
+        specialties_map = {
+            'FISIOTERAPIA': [],
+            'FONOAUDIOLOGÍA': [],
+            'TERAPIA OCUPACIONAL': [],
+            'PSICOLOGÍA': [],
+            'PEDAGOGÍA': [],
+            'OTROS': []
+        }
+        
+        for prof in profs_in_muni:
+            # Determine Specialty based on available data for this prof in this muni
+            df_p = df_muni[df_muni['PROFESIONAL'] == prof]
+            
+            # Check therapies
+            therapies_str = " ".join(df_p['TIPO DE TERAPIAS'].astype(str).unique()).upper()
+            
+            clean_name = clean_text(str(prof))
+            
+            if 'FISIO' in therapies_str or 'FÍSIO' in therapies_str:
+                specialties_map['FISIOTERAPIA'].append(clean_name)
+            elif 'FONO' in therapies_str or 'TL' in therapies_str or 'LENGUAJE' in therapies_str:
+                 specialties_map['FONOAUDIOLOGÍA'].append(clean_name)
+            elif 'OCUP' in therapies_str or 'TO' in therapies_str:
+                 specialties_map['TERAPIA OCUPACIONAL'].append(clean_name)
+            elif 'PSICO' in therapies_str:
+                 specialties_map['PSICOLOGÍA'].append(clean_name)
+            elif 'PEDAG' in therapies_str:
+                 specialties_map['PEDAGOGÍA'].append(clean_name)
+            else:
+                 specialties_map['OTROS'].append(clean_name)
+                 
+        # Print Grouped
+        for spec_name, prof_list in specialties_map.items():
+            if not prof_list:
+                continue
+                
+            # Subheader Specialty
+            pdf.set_font("Arial", 'B', 11)
+            pdf.set_text_color(0, 51, 102) # Dark Blue
+            pdf.cell(0, 8, f"  {spec_name}", 0, 1, 'L')
+            
+            # List Professionals
+            pdf.set_font("Arial", '', 10)
+            pdf.set_text_color(0, 0, 0)
+            for p in sorted(list(set(prof_list))): # Dedupe just in case
+                pdf.cell(10, 5, "", 0, 0)
+                pdf.cell(0, 5, f"- {p}", 0, 1)
+            
+            pdf.ln(2)
+            
+        pdf.ln(3)
+        
+    return pdf.output(dest='S').encode('latin-1', 'replace')
