@@ -45,6 +45,16 @@ def create_route_pdf(df_filtered, professional_name):
     pdf.set_font("Arial", 'I', 12)
     pdf.cell(0, 10, f"Profesional: {clean_text(professional_name.upper())}", 0, 1, 'C')
     pdf.cell(0, 10, f"Generado: {datetime.now().strftime('%Y-%m-%d')}", 0, 1, 'C')
+    
+    # NEW METADATA
+    total_patients = len(df_filtered)
+    total_sessions = df_filtered['CANTIDAD'].sum() if 'CANTIDAD' in df_filtered.columns else 0
+    
+    pdf.set_font("Arial", 'B', 11)
+    pdf.set_text_color(80, 80, 80) # Dark Gray for Metadata
+    pdf.cell(0, 8, f"Resumen: {total_patients} Pacientes | {int(total_sessions)} Sesiones", 0, 1, 'C')
+    pdf.set_text_color(0, 0, 0) # Reset to Black
+    
     pdf.ln(5)
     
     # Iterate patients
