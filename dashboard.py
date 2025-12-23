@@ -1393,10 +1393,12 @@ def module_rutas(df):
             selected_prof = st.selectbox("Profesional:", profs_available)
             
             if selected_prof:
-                # Filtrar solo pacientes con vigencia activa (tienen fecha de inicio)
-                df_prof = df[df['PROFESIONAL'] == selected_prof].copy()
+                # 1. Full dataframe for this professional (including pending dates)
+                df_prof_full = df[df['PROFESIONAL'] == selected_prof].copy()
                 
-                # Filtrar pacientes con fecha de inicio válida
+                # 2. Filtered dataframe for Metrics (Active only)
+                # Filtrar solo pacientes con vigencia activa
+                df_prof = df_prof_full.copy()
                 if 'FECHA DE INGRESO' in df_prof.columns:
                     df_prof = df_prof[
                         (df_prof['FECHA DE INGRESO'].notna()) & 
@@ -1409,15 +1411,15 @@ def module_rutas(df):
                 
                 # Metric 2: Total Sesiones
                 sessions = df_prof['CANTIDAD'].sum() if 'CANTIDAD' in df_prof.columns else 0
-                st.metric("Total Sesiones", int(sessions))
+                st.metric("Total Sesiones (Activas)", int(sessions))
                 
                 st.divider()
                 
-                if len(df_prof) > 0:
-                    st.info("Descargue la hoja de ruta lista para imprimir.")
+                if len(df_prof_full) > 0:
+                    st.info("Descargue la hoja de ruta (Incluye Eventos Pendientes).")
                     
-                    # Pre-generate PDF for direct download (Single Click)
-                    pdf_bytes = create_route_pdf(df_prof, selected_prof)
+                    # Pre-generate PDF using FULL data
+                    pdf_bytes = create_route_pdf(df_prof_full, selected_prof)
                     
                     st.download_button(
                         label=f"⬇️ Descargar Ruta PDF",

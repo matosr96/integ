@@ -34,11 +34,33 @@ class RoutePDF(FPDF):
         self.set_font('Arial', 'I', 8)
         self.cell(0, 10, f'Página {self.page_no()}', 0, 0, 'C')
 
-def create_route_pdf(df_filtered, professional_name):
+def create_route_pdf(df_full, professional_name):
     # Switch to Portrait for a document/list feel
     pdf = RoutePDF(orientation='P') 
     pdf.add_page()
     
+    # --- HELPER: Identify Valid Date ---
+    def is_valid_date(val):
+        s = str(val).strip().lower()
+        return s and s != 'nan' and s != 'nat' and s != ''
+    
+    # --- DATA SPLIT ---
+    active_rows = []
+    pending_rows = []
+    
+    for idx, row in df_full.iterrows():
+        if is_valid_date(row.get('FECHA DE INGRESO')):
+            active_rows.append(row)
+        else:
+            pending_rows.append(row)
+            
+    # Calculate Stats
+    n_active = len(active_rows)
+    s_active = sum([float(r.get('CANTIDAD', 0)) for r in active_rows if pd.notna(r.get('CANTIDAD'))])
+    
+    n_pending = len(pending_rows)
+    s_pending = sum([float(r.get('CANTIDAD', 0)) for r in pending_rows if pd.notna(r.get('CANTIDAD'))])
+
     # Title
     pdf.set_font("Arial", 'B', 16)
     pdf.cell(0, 10, "HOJA DE RUTA DETALLADA", 0, 1, 'C')
@@ -46,24 +68,21 @@ def create_route_pdf(df_filtered, professional_name):
     pdf.cell(0, 10, f"Profesional: {clean_text(professional_name.upper())}", 0, 1, 'C')
     pdf.cell(0, 10, f"Generado: {datetime.now().strftime('%Y-%m-%d')}", 0, 1, 'C')
     
-    # NEW METADATA
-    total_patients = len(df_filtered)
-    total_sessions = df_filtered['CANTIDAD'].sum() if 'CANTIDAD' in df_filtered.columns else 0
+    # NEW METADATA (Split Active vs Pending)
+    pdf.ln(2)
+    pdf.set_font("Arial", 'B', 10)
+    pdf.set_text_color(80, 80, 80) # Dark Gray
     
-    pdf.set_font("Arial", 'B', 11)
-    pdf.set_text_color(80, 80, 80) # Dark Gray for Metadata
-    pdf.cell(0, 8, f"Resumen: {total_patients} Pacientes | {int(total_sessions)} Sesiones", 0, 1, 'C')
+    summary_text = f"RESUMEN: {n_active} Activos ({int(s_active)} ses.)"
+    if n_pending > 0:
+        summary_text += f" | {n_pending} Pendientes ({int(s_pending)} ses.)"
+        
+    pdf.cell(0, 8, summary_text, 0, 1, 'C')
     pdf.set_text_color(0, 0, 0) # Reset to Black
-    
     pdf.ln(5)
     
-    # Iterate patients
-    for index, row in df_filtered.iterrows():
-        # Verificar vigencia - saltar si no tiene fecha de inicio (eventos pendientes)
-        f_ingreso = str(row.get('FECHA DE INGRESO', '')).strip()
-        if not f_ingreso or f_ingreso == '' or f_ingreso.lower() == 'nan':
-            continue  # Saltar este paciente
-        
+    # --- RENDER CARD FUNCTION ---
+    def render_patient_card(row, is_pending=False):
         # Extract Data
         name = clean_text(f"{row.get('NOMBRE', '')} {row.get('APELLIDOS', '')}")
         address = clean_text(str(row.get('DIRECCION', '')))
@@ -76,16 +95,20 @@ def create_route_pdf(df_filtered, professional_name):
         user_type = clean_text(str(row.get('TIPO DE USUARIO', '')))
         eps = clean_text(str(row.get('EPS', '')))
         diagnosis = clean_text(str(row.get('DIAGNOSTICO', '')))
-
-        f_ingreso = clean_text(f_ingreso)
+        f_ingreso = clean_text(str(row.get('FECHA DE INGRESO', '')))
         f_egreso = clean_text(str(row.get('FECHA DE EGRESO', '')))
-
-        # --- Card Start ---
-        pdf.set_font("Arial", 'B', 12)
-        pdf.set_fill_color(230, 240, 255) # Light Blue
         
-        # Patient Header
-        pdf.cell(0, 8, f" {name} ({doc_type}: {doc_num})", 0, 1, 'L', 1)
+        # Color Logic
+        if is_pending:
+            pdf.set_fill_color(255, 240, 230) # Light Orange for Pending
+            entry_title = f"[PENDIENTE] {name} ({doc_type}: {doc_num})"
+        else:
+            pdf.set_fill_color(230, 240, 255) # Light Blue for Active
+            entry_title = f"{name} ({doc_type}: {doc_num})"
+
+        # Header
+        pdf.set_font("Arial", 'B', 12)
+        pdf.cell(0, 8, f" {entry_title}", 0, 1, 'L', 1)
         
         # Details Block
         pdf.set_font("Arial", '', 10)
@@ -95,46 +118,37 @@ def create_route_pdf(df_filtered, professional_name):
             pdf.set_font("Arial", 'B', 10)
             pdf.cell(w_label, 6, label, 0, 0)
             pdf.set_font("Arial", '', 10)
-            # Clean value again just in case
             val_str = str(value) if value else "N/A"
             if end_line:
                 pdf.cell(0, 6, val_str, 0, 1)
             else:
                 pdf.cell(60, 6, val_str, 0, 0)
 
-        # Row 1: EPS | Mun
+        # Row 1
         print_field("EPS:", eps)
         print_field("Municipio:", mun, end_line=True)
-        
-        # Row 2: Phone
+        # Row 2
         print_field("Teléfono:", phone, end_line=True)
-        # print_field("No. Autorización:", auth_num[:25], end_line=True) # Limit length
-        
-        # Row 3: Service | User Type
+        # Row 3
         print_field("Servicio:", f"{tipo_terapia} ({cant} ses.)")
         print_field("Tipo Usuario:", user_type, end_line=True)
-
-        # Row 4: Dates
-        print_field("Vigencia:", f"{f_ingreso} al {f_egreso}", end_line=True)
+        # Row 4 (Dates)
+        if is_pending:
+             print_field("Estado:", "PENDIENTE DE INGRESO", end_line=True)
+        else:
+             print_field("Vigencia:", f"{f_ingreso} al {f_egreso}", end_line=True)
 
         # Full Width Entries
-        
-        # Address
         pdf.set_font("Arial", 'B', 10)
         pdf.cell(35, 6, "Dirección:", 0, 0)
         pdf.set_font("Arial", '', 10)
         pdf.multi_cell(0, 6, address)
         
-        # Diagnosis
         if diagnosis:
             pdf.set_font("Arial", 'B', 10)
             pdf.cell(35, 6, "Diagnóstico:", 0, 0)
             pdf.set_font("Arial", '', 10)
             pdf.multi_cell(0, 6, diagnosis)
-            
-            
-        # Familiar - REMOVED
-        # Novedades - REMOVED
 
         # Separator line
         pdf.ln(4)
@@ -142,9 +156,31 @@ def create_route_pdf(df_filtered, professional_name):
         pdf.line(10, pdf.get_y(), 200, pdf.get_y())
         pdf.set_draw_color(0, 0, 0)
         pdf.ln(4)
+
+
+    # 1. RENDER ACTIVE PATIENTS
+    for row in active_rows:
+        render_patient_card(row, is_pending=False)
         
-        # Page break check? FPDF handles it mostly, but if a card is huge...
-        # Just relying on auto-page break for now.
+    # 2. RENDER PENDING PATIENTS (If any)
+    if len(pending_rows) > 0:
+        pdf.add_page() # Start pending on new page or just spacing? Let's verify space. 
+        # Actually a new page for pending section is cleaner to separate responsibilities.
+        # But if active list works, maybe just a strong header is enough.
+        # Let's use a strong header.
+        
+        pdf.ln(10)
+        pdf.set_font("Arial", 'B', 14)
+        pdf.set_text_color(200, 0, 0) # Red
+        pdf.cell(0, 10, "EVENTOS PENDIENTES (NO INICIAR SIN AUTORIZACIÓN)", 0, 1, 'C')
+        
+        pdf.set_font("Arial", 'B', 10)
+        pdf.multi_cell(0, 5, "⚠️ PACIENTES PENDIENTES: Estos usuarios están por llegar. Solo deben iniciarse cuando se envíe la confirmación. Si se trabajan antes, la empresa NO se hace responsable de las sesiones en caso de que no lleguen.", 0, 'C')
+        pdf.set_text_color(0, 0, 0) # Reset
+        pdf.ln(10)
+        
+        for row in pending_rows:
+            render_patient_card(row, is_pending=True)
         
     return pdf.output(dest='S').encode('latin-1', 'replace')
 
