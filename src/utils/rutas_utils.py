@@ -252,7 +252,7 @@ def create_municipality_report_pdf(df):
         # Header for Municipality
         pdf.set_font("Arial", 'B', 14)
         pdf.set_fill_color(240, 240, 240)
-        pdf.cell(0, 10, f"📍 {clean_text(str(muni).upper())}", 0, 1, 'L', 1)
+        pdf.cell(0, 10, f"MUNICIPIO: {clean_text(str(muni).upper())}", 0, 1, 'L', 1)
         pdf.ln(2)
         
         # Identify Professionals and their Specialties in this context
