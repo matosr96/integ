@@ -8,6 +8,7 @@ from datetime import datetime
 import time
 import matplotlib.pyplot as plt
 import tempfile
+import re
 import seaborn as sns
 import os
 import re
@@ -682,6 +683,23 @@ def load_data(sheet_url):
         return pd.DataFrame()
     return pd.DataFrame(data)
 
+def normalize_data(df):
+    """
+    Global normalization for dataframe.
+    - Standardizes Professional Names (specifically merges Yeris Aponte variants).
+    """
+    if 'PROFESIONAL' in df.columns:
+        # Standardize strings to uppercase and strip
+        df['PROFESIONAL'] = df['PROFESIONAL'].astype(str).str.strip().str.upper()
+        
+        # Yeris Aponte Global Unification
+        # Matches: "YERIS APONTE", "YERIS APONTE VEREDA", "DR YERIS", etc.
+        regex_pattern = r'(YERIS\s+APONTE|DR\.?\s*YERIS)'
+        mask_yeris = df['PROFESIONAL'].str.contains(regex_pattern, regex=True, na=False)
+        df.loc[mask_yeris, 'PROFESIONAL'] = 'YERIS APONTE'
+        
+    return df
+
 def render_sidebar_header():
     st.sidebar.markdown(
         """
@@ -709,6 +727,9 @@ def module_historical_analysis(json_dir):
     if df.empty:
         st.warning("No se encontraron datos históricos procesados en JSON.")
         return
+        
+    # Global Normalization
+    df = normalize_data(df)
 
     # --- SIDEBAR FILTERS ---
     st.sidebar.subheader("🔍 Filtros de Análisis")
@@ -1676,6 +1697,9 @@ def main():
     if df.empty:
         st.error(f"No se pudieron cargar datos de: '{sheet_input}'")
         return
+        
+    # Global Normalization
+    df = normalize_data(df)
         
     # Preprocessing
     if 'CANTIDAD' in df.columns:
